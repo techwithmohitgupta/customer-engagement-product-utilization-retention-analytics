@@ -4298,7 +4298,8 @@ c1, c2, c3 = st.columns(3)
 with c1:
     st.markdown(
         """
-**👨‍💻 Developed by:** Mohit Gupta  
+**👨‍💻 Developed by:** Mohit Gupta
+  
 **🎯 Role:** Data Analyst Intern
         """
     )
@@ -4307,6 +4308,7 @@ with c2:
     st.markdown(
         """
 **📊 Project:** Customer Engagement & Product Utilization Analytics for Retention Strategy
+
 **🏢 Organization:** Unified Mentor Pvt. Ltd.
         """
     )
@@ -4314,7 +4316,8 @@ with c2:
 with c3:
     st.markdown(
         """
-**👨‍🏫 Mentor:** Saiprasad Kagne  
+**👨‍🏫 Mentor:** Saiprasad Kagne
+  
 **📅 Year:** 2026
         """
     )

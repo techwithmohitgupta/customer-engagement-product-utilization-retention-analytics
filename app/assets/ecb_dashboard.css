@@ -832,6 +832,124 @@
     box-shadow: 0 10px 24px rgba(16, 42, 76, 0.055) !important;
   }
 
+  /* =========================================================
+   DEFAULT FOOTER POLISH — NO APP.PY CHANGE REQUIRED
+   Works with existing Streamlit markdown + columns footer
+========================================================= */
+
+/* Footer divider refinement */
+[data-testid="stMarkdownContainer"] hr {
+    margin-top: 2.2rem !important;
+    margin-bottom: 1.4rem !important;
+    border: none !important;
+    height: 1px !important;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(11, 31, 58, 0.22) 14%,
+        rgba(15, 139, 114, 0.35) 48%,
+        rgba(215, 173, 69, 0.35) 78%,
+        transparent 100%
+    ) !important;
+}
+
+/* Footer heading: Project Information & Credits */
+[data-testid="stMarkdownContainer"] h3 {
+    color: #0b1f3a !important;
+    font-size: 27px !important;
+    line-height: 1.25 !important;
+    font-weight: 950 !important;
+    letter-spacing: 0.1px !important;
+    margin-top: 1.1rem !important;
+    margin-bottom: 1.2rem !important;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Give footer area soft premium spacing */
+[data-testid="column"] [data-testid="stMarkdownContainer"] {
+    padding: 2px 4px !important;
+}
+
+/* Footer column text visibility */
+[data-testid="column"] [data-testid="stMarkdownContainer"] p {
+    color: #0b1f3a !important;
+    font-size: 15.2px !important;
+    line-height: 1.75 !important;
+    font-weight: 650 !important;
+}
+
+/* Footer bold labels */
+[data-testid="column"] [data-testid="stMarkdownContainer"] strong {
+    color: #071827 !important;
+    font-weight: 950 !important;
+}
+
+/* Footer bottom built-with line */
+[data-testid="stMarkdownContainer"] div[style*="text-align: center"] {
+    margin-top: 18px !important;
+    padding: 12px 16px !important;
+    border-radius: 16px !important;
+    color: #0b1f3a !important;
+    font-size: 14.4px !important;
+    font-weight: 850 !important;
+    background: rgba(15, 139, 114, 0.075) !important;
+    border: 1px solid rgba(15, 139, 114, 0.16) !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.055) !important;
+}
+
+/* Footer columns hover polish */
+[data-testid="column"]:has([data-testid="stMarkdownContainer"] strong) {
+    border-radius: 16px !important;
+    transition: all 0.22s ease-in-out !important;
+}
+
+[data-testid="column"]:has([data-testid="stMarkdownContainer"] strong):hover {
+    transform: translateY(-1px) !important;
+}
+
+/* Keep footer readable on tablet */
+@media (max-width: 1100px) {
+    [data-testid="stMarkdownContainer"] h3 {
+        font-size: 23px !important;
+    }
+
+    [data-testid="column"] [data-testid="stMarkdownContainer"] p {
+        font-size: 14.2px !important;
+    }
+}
+
+/* Mobile footer readability */
+@media (max-width: 700px) {
+    [data-testid="stMarkdownContainer"] h3 {
+        font-size: 19px !important;
+        line-height: 1.35 !important;
+    }
+
+    [data-testid="column"] [data-testid="stMarkdownContainer"] p {
+        font-size: 13.2px !important;
+        line-height: 1.65 !important;
+    }
+
+    [data-testid="stMarkdownContainer"] div[style*="text-align: center"] {
+        font-size: 12.8px !important;
+        padding: 11px 12px !important;
+    }
+}
+
+/* =========================================================
+   FOOTER GAP COMPACT POLISH
+========================================================= */
+
+[data-testid="stMarkdownContainer"] hr {
+    margin-top: 1.4rem !important;
+    margin-bottom: 1.1rem !important;
+}
+
+[data-testid="stMarkdownContainer"] h3 {
+    margin-top: 0.4rem !important;
+    margin-bottom: 1rem !important;
+}
+
   /* =======================================================
      14. SCROLLBAR POLISH
      ======================================================= */
