@@ -1,0 +1,8 @@
+Engagement_Status,Relationship_Strength_Tier,Customer_Count,Churned_Customers,Churn_Rate,Engagement_Total,Customer_%_Within_Engagement
+Active Member,Weak Relationship,91,42,46.15,5151,1.77
+Active Member,Moderate Relationship,2267,391,17.25,5151,44.01
+Active Member,Strong Relationship,2793,302,10.81,5151,54.22
+Inactive Member,Very Weak Relationship,262,132,50.38,4849,5.4
+Inactive Member,Weak Relationship,2778,812,29.23,4849,57.29
+Inactive Member,Strong Relationship,80,16,20.0,4849,1.65
+Inactive Member,Moderate Relationship,1729,342,19.78,4849,35.66

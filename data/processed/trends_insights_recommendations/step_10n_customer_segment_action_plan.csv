@@ -1,0 +1,11 @@
+Customer Segment,Risk Level,Primary Issue,Recommended Action,Retention Strategy Type,Dashboard Flag
+Critical Retention Risk,Very High,Very weak retention score and high churn exposure,Immediate retention outreach and personalized intervention,Urgent Intervention,Critical Alert
+Weak Retention,High,Weak loyalty signals and elevated churn risk,Targeted engagement campaign and relationship strengthening,Proactive Recovery,High Risk
+Moderate Retention,Medium,Average retention behavior with potential movement in either direction,Monitor movement and improve product engagement,Preventive Monitoring,Watchlist
+Strong Retention,Low,Healthy retention behavior,Maintain engagement and cross-sell carefully,Relationship Maintenance,Healthy
+Very Strong Retention,Very Low,Strongest loyalty and lowest churn risk,Reward loyalty and use as benchmark segment,Loyalty Reinforcement,Best Segment
+High Product Load Risk,Very High,High product load with very high churn behavior,Simplify product experience and detect product dissatisfaction,Product Experience Review,Critical Alert
+Inactive Single-Product Risk,High,Low engagement and limited product relationship,Activate engagement and introduce relevant product education,Engagement Activation,High Risk
+At-Risk Premium,Medium-High,High-value customers with churn warning signals,Assign priority retention monitoring and personalized offers,Premium Retention Care,Premium Watch
+Standard Monitoring,Medium,Customers needing regular monitoring,Keep in automated monitoring workflow,Standard Monitoring,Monitor
+Sticky Active Customer,Low,Strong active customers with healthy retention behavior,Maintain loyalty experience and use for retention benchmarking,Loyalty Maintenance,Loyalty

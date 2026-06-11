@@ -1,0 +1,11 @@
+Balance_Segment,Engagement_Status,Customer_Count,Churned_Customers,Churn_Rate,Avg_Balance
+Low Balance,Inactive Member,35,18,51.43,38454.02
+High Balance,Inactive Member,1872,627,33.49,123727.96
+Premium Balance,Inactive Member,484,145,29.96,166625.4
+Medium Balance,Inactive Member,714,192,26.89,84612.43
+Low Balance,Active Member,40,8,20.0,40316.85
+High Balance,Active Member,1958,360,18.39,123661.01
+Zero Balance,Inactive Member,1744,320,18.35,0.0
+Premium Balance,Active Member,485,79,16.29,166909.65
+Medium Balance,Active Member,795,108,13.58,83197.73
+Zero Balance,Active Member,1873,180,9.61,0.0

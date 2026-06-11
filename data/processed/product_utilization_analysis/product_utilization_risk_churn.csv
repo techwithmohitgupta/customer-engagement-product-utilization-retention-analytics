@@ -1,0 +1,6 @@
+Product_Utilization_Risk_Segment,Customer_Count,Churned_Customers,Retained_Customers,Avg_Num_Products,Avg_Relationship_Strength,Churn_Rate,Retention_Rate
+Already Churned,2037,2037,0,1.48,55.68,100.0,0.0
+High Product Load Risk,46,0,46,3.0,45.98,0.0,100.0
+Inactive Single-Product Risk,1597,0,1597,1.0,43.81,0.0,100.0
+Optimal Active Product User,2310,0,2310,2.0,85.99,0.0,100.0
+Standard Product Monitoring,4010,0,4010,1.48,64.91,0.0,100.0

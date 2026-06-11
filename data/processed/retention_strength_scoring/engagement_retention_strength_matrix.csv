@@ -1,0 +1,9 @@
+Engagement_Status,Retention_Strength_Tier,Customer_Count,Churned_Customers,Retained_Customers,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Num_Products,Churn_Rate,Retention_Rate
+Active Member,Critical Retention Risk,75,75,0,28.49,57.4,1.0,100.0,0.0
+Active Member,Weak Retention,458,330,128,46.3,66.07,1.15,72.05,27.95
+Active Member,Moderate Retention,1891,286,1605,66.65,72.78,1.33,15.12,84.88
+Active Member,Strong Retention,1953,44,1909,82.3,82.62,1.66,2.25,97.75
+Active Member,Very Strong Retention,774,0,774,95.49,95.23,2.01,0.0,100.0
+Inactive Member,Critical Retention Risk,1701,1150,551,20.59,39.96,1.24,67.61,32.39
+Inactive Member,Weak Retention,2399,152,2247,45.88,50.28,1.57,6.34,93.66
+Inactive Member,Moderate Retention,749,0,749,62.98,64.87,2.01,0.0,100.0

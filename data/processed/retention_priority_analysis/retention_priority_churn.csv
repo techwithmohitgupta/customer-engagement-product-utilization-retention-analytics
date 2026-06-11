@@ -1,0 +1,6 @@
+Retention_Priority_Segment,Customer_Count,Churned_Customers,Retained_Customers,Avg_Balance,Avg_Salary,Avg_Num_Products,Avg_Relationship_Strength,Churn_Rate,Retention_Rate
+Already Churned,2037,2037,0,91108.54,101465.68,1.48,55.68,100.0,0.0
+Critical Priority,1565,0,1565,102362.71,131711.5,1.52,52.88,0.0,100.0
+High Priority,2143,0,2143,87698.65,113826.85,1.16,63.26,0.0,100.0
+Low Priority,3873,0,3873,59476.03,81471.58,1.73,76.56,0.0,100.0
+Medium Priority,382,0,382,2053.11,74916.07,1.96,42.3,0.0,100.0

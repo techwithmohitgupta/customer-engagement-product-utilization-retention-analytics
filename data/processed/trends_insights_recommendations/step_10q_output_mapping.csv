@@ -1,0 +1,12 @@
+Output Name,Notebook Step,Purpose,Future Use
+overall_retention_trend_summary,10G,Summarize overall retention and churn baseline,Dashboard KPI cards and report overview
+retention_tier_trend,10H,Analyze churn and retention across retention strength tiers,Retention segmentation dashboard module
+engagement_product_key_trends,10I,Summarize engagement and product utilization trends,Engagement and product utilization dashboard tabs
+customer_risk_trend,10J,Analyze churn by customer risk segment,Customer risk segmentation dashboard module
+relationship_strength_trend,10J,Analyze churn by relationship strength tier,Relationship strength dashboard module
+financial_commitment_key_trends,10K,Analyze salary-balance and credit card retention signals,Financial commitment dashboard module
+consolidated_key_insights,10L,Summarize final project insights,Notebook 10 final insights section
+strategic_recommendations,10M,Create actionable retention recommendations,Dashboard recommendations panel and report
+customer_segment_action_plan,10N,Define segment-level actions,Retention action planning
+dashboard_storyline_plan,10O,Plan dashboard storytelling flow,Streamlit dashboard layout planning
+final_executive_summary,10P,Prepare executive-level project summary,"README, report, presentation, and dashboard introduction"

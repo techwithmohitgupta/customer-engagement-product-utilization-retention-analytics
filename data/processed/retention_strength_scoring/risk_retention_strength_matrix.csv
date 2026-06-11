@@ -1,0 +1,20 @@
+Customer_Risk_Segment,Retention_Strength_Tier,Customer_Count,Churned_Customers,Retained_Customers,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Balance,Avg_Num_Products,Churn_Rate,Retention_Rate
+At-Risk Premium,Critical Retention Risk,583,505,78,22.89,43.74,114207.54,1.14,86.62,13.38
+At-Risk Premium,Weak Retention,1113,229,884,46.79,51.22,115175.29,1.32,20.58,79.42
+At-Risk Premium,Moderate Retention,1069,158,911,64.94,66.76,100839.88,1.6,14.78,85.22
+At-Risk Premium,Strong Retention,682,20,662,81.92,80.18,131395.09,1.07,2.93,97.07
+At-Risk Premium,Very Strong Retention,5,0,5,98.0,70.0,117651.63,3.0,0.0,100.0
+High Product Load Risk,Critical Retention Risk,75,75,0,24.17,31.27,58967.56,3.2,100.0,0.0
+High Product Load Risk,Moderate Retention,49,39,10,63.49,64.59,60504.39,3.18,79.59,20.41
+High Product Load Risk,Weak Retention,43,31,12,44.53,46.51,55797.16,3.14,72.09,27.91
+High Product Load Risk,Strong Retention,15,0,15,83.33,58.33,3300.59,3.0,0.0,100.0
+Inactive Single-Product Risk,Critical Retention Risk,882,479,403,17.43,36.89,62352.92,1.0,54.31,45.69
+Inactive Single-Product Risk,Weak Retention,397,0,397,39.47,48.68,96562.5,1.0,0.0,100.0
+Standard Monitoring,Critical Retention Risk,236,166,70,28.08,50.38,41631.33,1.7,70.34,29.66
+Standard Monitoring,Weak Retention,1281,199,1082,47.24,55.2,28118.62,1.76,15.53,84.47
+Standard Monitoring,Moderate Retention,1076,0,1076,65.35,71.8,84379.12,1.17,0.0,100.0
+Standard Monitoring,Strong Retention,48,0,48,76.0,90.0,113592.26,1.0,0.0,100.0
+Sticky Active Customer,Weak Retention,23,23,0,47.43,80.0,63388.75,2.0,100.0,0.0
+Sticky Active Customer,Moderate Retention,446,89,357,68.09,77.2,33468.39,2.0,19.96,80.04
+Sticky Active Customer,Strong Retention,1208,24,1184,82.75,84.01,33964.02,2.0,1.99,98.01
+Sticky Active Customer,Very Strong Retention,769,0,769,95.48,95.4,90271.66,2.0,0.0,100.0

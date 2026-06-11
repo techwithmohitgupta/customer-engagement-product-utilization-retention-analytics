@@ -1,0 +1,9 @@
+KPI,Value,Business Meaning
+Salary-Balance Mismatch Rate,8.91%,Share of customers with high salary but weak balance commitment
+At-Risk Premium Customer Rate,34.52%,Share of customers showing premium financial risk behavior
+High-Balance Disengagement Rate,49.88%,Inactive share among high-balance customers
+Critical Priority Customers,"1,565",Customers requiring immediate retention attention
+High Priority Customers,"2,143",Customers requiring proactive retention monitoring
+Credit Card Customer Retention Rate,79.82%,Retention rate among credit card customers
+No Credit Card Customer Retention Rate,79.19%,Retention rate among non-credit card customers
+Credit Card Stickiness Score,0.63 percentage points,Retention lift from credit card ownership

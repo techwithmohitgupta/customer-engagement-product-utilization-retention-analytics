@@ -1,0 +1,10 @@
+Summary Area,Executive Summary
+Project Objective,"The project analyzes customer engagement, product utilization, relationship strength, and retention scoring to support churn reduction strategy."
+Overall Churn Baseline,"The customer base contains 10,000 customers with an overall churn rate of 20.37% and retention rate of 79.63%."
+Retention Strength Finding,"Retention strength tiers clearly separate high-risk and low-risk customers, with Critical Retention Risk showing the highest churn exposure."
+Engagement Finding,Inactive customers show weaker retention behavior and require earlier engagement-focused intervention.
+Product Utilization Finding,"Product utilization patterns show that more products do not always guarantee better retention, especially for high product-load customers."
+Customer Risk Finding,High Product Load Risk is the highest churn-risk segment and should be treated as a priority intervention group.
+Relationship Strength Finding,"Relationship strength is one of the clearest retention drivers, with churn decreasing as relationship strength improves."
+Financial Signal Finding,Financial indicators such as salary-balance mismatch and credit card ownership provide supporting context but should not be used alone as retention predictors.
+Final Business Direction,"The business should combine retention score, engagement behavior, product depth, risk segment, and relationship strength to prioritize retention actions."

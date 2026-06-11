@@ -1,0 +1,5 @@
+Relationship_Strength_Tier,Customer_Count,Churned_Customers,Retained_Customers,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Balance,Avg_Num_Products,Churn_Rate,Retention_Rate
+Very Weak Relationship,262,132,130,17.39,22.12,9781.8,1.39,50.38,49.62
+Weak Relationship,2869,854,2015,34.69,43.17,67479.35,1.41,29.77,70.23
+Moderate Relationship,3996,733,3263,59.17,65.48,78214.53,1.51,18.34,81.66
+Strong Relationship,2873,318,2555,82.06,88.11,89158.56,1.69,11.07,88.93

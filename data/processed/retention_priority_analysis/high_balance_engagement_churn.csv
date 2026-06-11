@@ -1,0 +1,5 @@
+High_Balance_Status,Engagement_Status,Customer_Count,Churned_Customers,Retained_Customers,Churn_Rate,Avg_Balance,Avg_Relationship_Strength,Retention_Rate
+High Balance Customer,Inactive Member,1247,380,867,30.47,148857.68,54.86,69.53
+Not High Balance,Inactive Member,3602,922,2680,25.6,52304.02,46.85,74.4
+High Balance Customer,Active Member,1253,212,1041,16.92,149243.04,84.63,83.08
+Not High Balance,Active Member,3898,523,3375,13.42,52291.63,77.28,86.58

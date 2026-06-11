@@ -1,0 +1,7 @@
+Insight Area,Key Finding,Metric Evidence,Dashboard Use
+High-Balance Disengagement,High-balance inactive customers represent valuable but potentially vulnerable customers.,High-balance disengagement rate: 49.88%,High-value disengaged customer detector
+Salary-Balance Mismatch,Salary-balance mismatch identifies customers with high earning potential but weak balance commitment.,Salary-balance mismatch rate: 8.91%,Salary-balance mismatch warning card
+At-Risk Premium Customers,At-risk premium customers require proactive monitoring due to financial value and risk behavior.,At-risk premium customer rate: 34.52%,Premium customer risk panel
+Credit Card Stickiness,Credit card ownership provides only a small retention difference and should be combined with other signals.,Credit card stickiness score: 0.63 percentage points,Credit card stickiness KPI
+Retention Priority,Retention priority segments help separate customers by action urgency.,"Critical priority customers: 1,565",Retention priority scoring panel
+Financial Commitment Risk,Financial value alone does not guarantee retention without engagement and relationship strength.,"Balance, salary, engagement, product usage, and RSI combined",Customer risk segmentation table

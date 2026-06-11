@@ -1,0 +1,6 @@
+Trend_Area,Segment_Name,Customer_Count,Churned_Customers,Retained_Customers,Churn_Rate,Retention_Rate,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Num_Products
+Engagement Status,Active Member,5151,735,4416,14.27,85.73,74.55,79.07,1.54
+Engagement Status,Inactive Member,4849,1302,3547,26.85,73.15,39.65,48.91,1.52
+Product Depth Segment,High Product Load,326,280,46,85.89,14.11,48.2,48.65,3.18
+Product Depth Segment,Optimal Product Depth,4590,348,4242,7.58,92.42,68.46,72.37,2.0
+Product Depth Segment,Single Product,5084,1409,3675,27.71,72.29,48.45,58.3,1.0

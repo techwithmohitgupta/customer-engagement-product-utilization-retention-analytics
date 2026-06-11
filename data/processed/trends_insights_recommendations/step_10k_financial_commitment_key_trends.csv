@@ -1,0 +1,5 @@
+Trend_Area,Segment_Name,Customer_Count,Churned_Customers,Retained_Customers,Churn_Rate,Retention_Rate,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Num_Products,Avg_Balance
+Salary-Balance Mismatch,No Salary-Balance Mismatch,9109,1905,7204,20.91,79.09,56.91,65.0,1.5,83967.38
+Salary-Balance Mismatch,Salary-Balance Mismatch,891,132,759,14.81,85.19,65.01,58.74,1.8,0.0
+Credit Card Ownership,Has Credit Card,7055,1424,5631,20.18,79.82,61.64,67.29,1.53,75886.91
+Credit Card Ownership,No Credit Card,2945,613,2332,20.81,79.19,48.01,57.62,1.53,77920.79

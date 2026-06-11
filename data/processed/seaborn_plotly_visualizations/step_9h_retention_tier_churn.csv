@@ -1,0 +1,6 @@
+Retention_Strength_Tier,Customer_Count,Churned_Customers,Retained_Customers,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Churn_Rate,Retention_Rate,Tier_Color
+Critical Retention Risk,1776,1225,551,20.92,40.69,68.98,31.02,#D64545
+Weak Retention,2857,482,2375,45.95,52.81,16.87,83.13,#F2994A
+Moderate Retention,2640,286,2354,65.61,70.54,10.83,89.17,#F2C94C
+Strong Retention,1953,44,1909,82.3,82.62,2.25,97.75,#27AE60
+Very Strong Retention,774,0,774,95.49,95.23,0.0,100.0,#00A896

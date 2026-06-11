@@ -1,0 +1,9 @@
+Story Order,Dashboard Story Layer,Business Question Answered,Recommended Dashboard Components,Primary Output Source
+1,Executive Retention Overview,What is the current churn and retention baseline?,KPI cards and retention score distribution,Notebook 10G
+2,Retention Strength Segmentation,Which retention strength groups need urgent attention?,Retention tier distribution and churn chart,Notebook 10H
+3,Engagement and Product Usage Impact,How do engagement and product usage influence churn?,Engagement matrix and product depth matrix,Notebook 10I
+4,Customer Risk Segmentation,Which customer risk segments should be prioritized?,"Risk segment distribution, donut, and ranking",Notebook 10J
+5,Relationship Strength Monitoring,How does relationship strength connect with churn?,Relationship trend line and scatter exploration,Notebook 10J
+6,Financial Commitment Signal Review,Are salary-balance mismatch and credit card ownership strong retention signals?,Salary-balance mismatch and credit card panels,Notebook 10K
+7,Customer-Level Exploration,Which specific customers or segments need action?,Filterable customer table and scatter drill-down,Notebook 09R and final master dataset
+8,Final Recommendations Panel,What should the business do next?,Insight cards and recommendation table,Notebook 10L and 10M

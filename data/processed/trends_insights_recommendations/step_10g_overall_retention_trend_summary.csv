@@ -1,0 +1,9 @@
+Metric,Value,Business Meaning
+Total Customers,"10,000",Total customer base available for retention analysis
+Retained Customers,"7,963",Customers who stayed with the bank
+Churned Customers,"2,037",Customers who exited/churned
+Overall Retention Rate,79.63%,Baseline retention performance
+Overall Churn Rate,20.37%,Baseline churn exposure
+Average Retention Strength Score,57.63,Average customer-level retention strength
+Median Retention Strength Score,58.00,Middle-point retention strength score
+Average Relationship Strength Index,64.44,Average relationship depth and loyalty signal

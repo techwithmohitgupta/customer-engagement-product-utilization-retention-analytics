@@ -1,0 +1,4 @@
+Product_Depth_Segment,Customer_Count,Churned_Customers,Avg_Num_Products,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Churn_Rate,Retention_Rate
+Single Product,5084,1409,1.0,48.451219512195124,58.299567269866245,27.71,72.29
+Optimal Product Depth,4590,348,2.0,68.46143790849673,72.36928104575163,7.58,92.42
+High Product Load,326,280,3.184049079754601,48.20245398773006,48.65030674846626,85.89,14.11

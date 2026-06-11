@@ -1,0 +1,6 @@
+Customer_Risk_Segment,Customer_Count,Customer_%,Segment_Color
+At-Risk Premium,3452,34.52,#DC2626
+Standard Monitoring,2641,26.41,#2563EB
+Sticky Active Customer,2446,24.46,#059669
+Inactive Single-Product Risk,1279,12.79,#F97316
+High Product Load Risk,182,1.82,#7C3AED

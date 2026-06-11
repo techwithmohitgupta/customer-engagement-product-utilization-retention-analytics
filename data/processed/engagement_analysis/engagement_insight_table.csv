@@ -1,0 +1,8 @@
+Insight Area,Key Finding,Metric Evidence,Dashboard Use
+Engagement Retention Gap,Active customers retain better than inactive customers.,Active retention: 85.73% vs inactive retention: 73.15%,KPI card
+Churn Contribution Risk,Inactive customers contribute more churn than their customer share.,Inactive customers: 48.49% customer share but 63.92% churn contribution,Churn contribution chart
+Product Depth Risk,High product load customers show extreme churn risk.,High Product Load + Inactive churn rate: 90.22%,Product-depth risk chart
+Best Retention Profile,Active customers with optimal product depth show the strongest retention.,Optimal Product Depth + Active churn rate: 5.56%,Retention profile insight card
+Geographic Risk Segment,Germany inactive customers show the highest geography-engagement churn risk.,Germany + Inactive churn rate: 41.08%,Geography risk chart
+High-Value Disengagement Risk,High-value disengaged customers show elevated churn risk.,High-value disengaged churn rate: 29.06%,High-value disengaged detector
+Relationship Strength Signal,Active customers have much stronger relationship strength than inactive customers.,Active RSI: 79.07 vs inactive RSI: 48.91,Relationship Strength KPI

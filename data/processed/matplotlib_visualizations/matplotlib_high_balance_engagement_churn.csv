@@ -1,0 +1,5 @@
+High_Value_Customer_Status,Engagement_Status,Customer_Count,Churned_Customers,Retained_Customers,Avg_Balance,Avg_Retention_Strength_Score,Churn_Rate,Segment
+High Value Customer,Inactive Member,2154,626,1528,108144.36947539462,45.15041782729805,29.06,High Value Customer | Inactive Member
+Standard Value Customer,Inactive Member,2695,676,2019,52349.39575510204,35.252319109461965,25.08,Standard Value Customer | Inactive Member
+High Value Customer,Active Member,2197,343,1854,107507.50465634956,80.0933090578061,15.61,High Value Customer | Active Member
+Standard Value Customer,Active Member,2954,392,2562,52349.46233581585,70.43127962085308,13.27,Standard Value Customer | Active Member

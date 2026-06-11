@@ -1,0 +1,7 @@
+Insight Area,Key Finding,Metric Evidence,Dashboard Use
+Retention Strength Scoring,"Retention Strength Score combines engagement, product depth, relationship strength, card ownership, value, and churn status.",Average retention strength score: 57.63,Retention strength KPI cards
+Weak Retention Exposure,Customers in weaker retention tiers show elevated churn risk and require closer monitoring.,Highest churn tier: Critical Retention Risk with 68.98% churn,Weak retention warning panel
+Strong Retention Profile,Strong retention tiers show better relationship strength and lower churn behavior.,Best retention tier: Very Strong Retention with 100.0% retention,Strong retention profile card
+Risk and Strength Alignment,Risk segments and retention strength tiers together provide better prioritization than single-variable analysis.,Customer risk segment + retention strength tier matrix prepared,Risk vs strength matrix
+Sticky Customer Identification,Sticky customers represent customers with strong behavioral loyalty signals.,"Sticky customers identified: 2,330",Sticky customer profile section
+Dashboard Priority,"Retention scoring should be used as a core dashboard layer for segmentation, filtering, and prioritization.",Final customer retention profile prepared,Customer-level retention scoring table

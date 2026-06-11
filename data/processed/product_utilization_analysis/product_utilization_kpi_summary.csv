@@ -1,0 +1,9 @@
+KPI,Value,Business Meaning
+Single Product Customers,"5,084",Customers using only one banking product
+Multi Product Customers,"4,916",Customers using more than one banking product
+Single Product Churn Rate,27.71%,Churn rate among single-product customers
+Multi Product Churn Rate,12.77%,Churn rate among multi-product customers
+Multi Product Retention Lift,14.94 percentage points,Retention advantage of multi-product customers over single-product customers
+Single Product Churn Risk Multiplier,2.17x,How much higher single-product churn risk is compared with multi-product customers
+Optimal Product Depth Retention Rate,92.42%,Retention rate for customers with optimal product depth
+High Product Load Churn Rate,14.11% retention / 85.89% churn,Risk level among customers with high product load

@@ -1,0 +1,7 @@
+Insight Area,Key Finding,Metric Evidence,Dashboard Use
+Single Product Risk,Single-product customers show weaker retention compared with multi-product customers.,Single product churn: 27.71%,Single-product customer risk card
+Multi Product Retention Strength,Multi-product customers show stronger retention and lower churn risk.,Multi product retention: 87.23%,Multi-product retention KPI
+Optimal Product Depth,Customers with optimal product depth show the strongest retention profile.,Optimal product depth retention: 92.42%,Best retention profile insight
+High Product Load Risk,Customers with high product load show elevated churn risk and require monitoring.,High product load retention: 14.11%,High product load warning chart
+Product Depth Contribution,Product depth helps explain both churn rate and churn contribution.,Churn contribution calculated by product depth segment,Product depth contribution chart
+Dashboard Priority,Product utilization should be included as a core dashboard segmentation lens.,Product utilization risk segment created,Product utilization risk table

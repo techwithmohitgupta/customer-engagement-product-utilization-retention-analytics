@@ -1,0 +1,7 @@
+KPI,Value,Business Meaning
+Active Customer Retention Rate,85.73%,Retention rate among active customers
+Inactive Customer Retention Rate,73.15%,Retention rate among inactive customers
+Engagement Retention Ratio,1.17x,How much stronger active customer retention is compared with inactive customers
+Inactive Customer Churn Risk Multiplier,1.88x,How much higher inactive churn risk is compared with active customers
+Inactive Churn Contribution,63.92%,Share of total churn coming from inactive customers
+Active Churn Contribution,36.08%,Share of total churn coming from active customers

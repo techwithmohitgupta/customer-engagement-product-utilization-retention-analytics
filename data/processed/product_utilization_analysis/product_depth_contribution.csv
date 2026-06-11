@@ -1,0 +1,4 @@
+Product_Depth_Segment,Customer_Count,Customer_Share_%,Churned_Customers,Churn_Contribution_%,Churn_Rate,Retention_Rate
+Single Product,5084,50.84,1409,69.17,27.71,72.29
+Optimal Product Depth,4590,45.9,348,17.08,7.58,92.42
+High Product Load,326,3.26,280,13.75,85.89,14.11

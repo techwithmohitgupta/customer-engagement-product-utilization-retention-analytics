@@ -1,0 +1,6 @@
+Customer_Risk_Segment,Customer_Count,Churned_Customers,Retained_Customers,Avg_Retention_Strength_Score,Avg_Relationship_Strength,Avg_Balance,Avg_Num_Products,Customer_%,Churn_Rate,Retention_Rate
+High Product Load Risk,182,145,37,44.45,46.07,54044.33,3.16,1.82,79.67,20.33
+Inactive Single-Product Risk,1279,479,800,24.27,40.55,72971.53,1.0,12.79,37.45,62.55
+At-Risk Premium,3452,912,2540,55.39,60.52,113780.6,1.33,34.52,26.42,73.58
+Standard Monitoring,2641,365,2276,53.43,62.16,53801.33,1.5,26.41,13.82,86.18
+Sticky Active Customer,2446,136,2310,83.75,86.31,51852.94,2.0,24.46,5.56,94.44

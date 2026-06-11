@@ -1,0 +1,7 @@
+KPI,Value,Business Meaning
+Average Retention Strength Score,57.63,Average customer-level retention strength score
+Average Relationship Strength Index,64.44,Average customer relationship strength
+Strong Retention Customers,"2,727",Customers with strong or very strong retention profile
+Weak or Critical Retention Customers,"4,633",Customers requiring retention monitoring or action
+Sticky Customers,"2,330",Customers showing strong behavioral loyalty signals
+Critical Retention Risk Customers,"1,776",Customers with the weakest retention strength profile

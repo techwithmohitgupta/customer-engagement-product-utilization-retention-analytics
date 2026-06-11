@@ -1,0 +1,7 @@
+Product_Depth_Segment,Engagement_Status,Customer_Count,Churned_Customers,Churn_Rate,Avg_Relationship_Strength
+High Product Load,Inactive Member,184,166,90.22,36.09
+High Product Load,Active Member,142,114,80.28,64.93
+Single Product,Inactive Member,2521,924,36.65,43.42
+Single Product,Active Member,2563,485,18.92,72.93
+Optimal Product Depth,Inactive Member,2144,212,9.89,56.46
+Optimal Product Depth,Active Member,2446,136,5.56,86.31

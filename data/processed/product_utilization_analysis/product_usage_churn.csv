@@ -1,0 +1,3 @@
+Product_Usage_Group,Customer_Count,Churned_Customers,Retained_Customers,Avg_Num_Products,Avg_Relationship_Strength,Churn_Rate,Retention_Rate
+Single Product Customer,5084,1409,3675,1.0,58.3,27.71,72.29
+Multi Product Customer,4916,628,4288,2.08,70.8,12.77,87.23

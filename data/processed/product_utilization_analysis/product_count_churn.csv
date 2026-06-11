@@ -1,0 +1,5 @@
+NumOfProducts,Customer_Count,Churned_Customers,Retained_Customers,Churn_Rate,Avg_Relationship_Strength,Retention_Rate
+4,60,60,0,100.0,52.67,0.0
+3,266,220,46,82.71,47.74,17.29
+1,5084,1409,3675,27.71,58.3,72.29
+2,4590,348,4242,7.58,72.37,92.42

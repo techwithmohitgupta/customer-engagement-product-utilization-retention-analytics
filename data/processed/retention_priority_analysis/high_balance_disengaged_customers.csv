@@ -1,0 +1,1248 @@
+CustomerId,Geography,Gender,Age,Tenure,Balance,EstimatedSalary,NumOfProducts,Credit_Card_Status,Engagement_Status,Product_Depth_Segment,Customer_Risk_Segment,Relationship_Strength_Index,Churn_Status
+15815490,Germany,Male,40,2,164948.98,177028.0,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,30,Churned
+15653776,Germany,Female,57,1,162082.31,27145.73,4,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,30,Churned
+15711843,Germany,Male,40,1,147856.82,107961.11,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,30,Churned
+15621550,Spain,Female,50,1,140292.58,69531.22,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,30,Churned
+15709920,France,Female,33,2,208165.53,50774.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15624729,France,Male,27,0,197041.8,151912.49,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15804721,France,Male,49,0,191808.73,97640.2,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15731507,France,Female,33,1,188285.68,58363.94,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15593425,Spain,Female,54,1,187997.15,111442.71,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15737792,France,Female,31,1,186796.37,178252.63,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15594391,France,Female,68,2,183555.24,159557.28,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15707078,France,Female,26,1,180530.51,123454.62,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15600337,Spain,Male,42,2,178820.91,29358.57,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15705298,Germany,Male,29,0,172693.54,141798.98,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15741403,Spain,Female,38,1,171848.38,16957.45,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15689786,Germany,Male,56,1,169743.83,155850.4,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15807269,Germany,Male,43,2,166522.78,119644.59,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15761497,Spain,Female,48,1,163760.82,157381.14,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15787619,France,Male,18,2,160980.03,145936.28,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15621435,France,Female,39,1,160903.2,78774.36,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15753549,France,Male,25,1,157848.53,37543.93,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15661548,France,Female,29,0,157829.12,129891.66,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15599152,France,Male,31,1,156111.24,134790.74,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15694376,Germany,Female,64,3,153469.26,146573.66,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,35,Churned
+15603319,France,Male,29,2,151352.74,197145.89,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15751748,France,Male,51,2,148222.65,156953.54,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15771059,Germany,Female,34,2,148200.72,194584.48,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15707199,France,Male,36,0,148159.71,55835.66,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15722548,France,Male,48,0,148116.48,116973.48,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15699492,Germany,Female,27,2,147435.96,187508.06,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15799924,Spain,Male,43,1,147167.25,141679.73,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15636089,Germany,Female,51,1,145751.03,109718.44,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15739357,Spain,Male,30,2,145127.85,7554.68,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15594576,France,Male,32,1,144875.71,187740.04,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15596013,Germany,Female,58,1,143212.22,102628.56,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15793307,Spain,Female,41,4,142880.28,185541.2,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,35,Churned
+15646609,France,Male,33,1,142645.43,69132.66,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15737832,Spain,Male,45,0,139825.56,170984.97,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15746139,France,Male,33,2,139451.67,63142.12,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15721303,Spain,Male,34,1,137523.02,24761.36,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15660316,Germany,Female,34,1,135549.9,149471.13,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15690540,Spain,Female,41,1,134177.06,177506.66,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15611767,Germany,Female,52,0,133723.43,4859.59,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15738588,Germany,Female,37,2,133200.09,71433.88,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15642787,France,Male,37,1,133043.66,111243.09,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15574480,Spain,Male,31,1,132862.59,158054.49,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15692819,Germany,Male,32,1,132178.67,11865.76,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15672594,France,Female,60,0,131778.08,10703.53,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15755196,France,Female,49,2,131394.56,194365.76,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15761053,Germany,Male,48,2,131326.47,1140.02,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15679611,Spain,Female,37,2,130404.92,34548.74,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15583764,Germany,Male,31,1,130240.33,96546.55,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15700540,Germany,Female,38,2,129893.56,102076.03,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15694510,France,Male,45,1,129855.32,24218.65,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Retained
+15811690,Germany,Male,54,2,128966.13,18633.4,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,35,Churned
+15662098,Spain,Male,41,3,128808.65,113677.53,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,35,Churned
+15780212,France,Male,37,4,212692.97,176395.02,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15638989,France,Female,25,5,190066.54,51345.39,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15696605,France,Male,49,4,180614.04,523.0,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15689594,France,Male,29,5,179539.2,112010.02,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15689616,Spain,Male,34,5,168094.01,20058.61,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15656100,France,Female,49,5,167962.7,140201.21,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15680685,France,Male,30,3,165257.2,134822.05,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15659364,Spain,Male,23,5,164902.43,141152.28,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15603554,France,Female,45,0,164649.52,49915.52,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15662243,France,Male,50,5,162702.35,150548.5,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15637476,Germany,Female,57,5,162448.69,9221.78,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15570485,Spain,Male,40,4,161766.87,92378.54,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15762277,France,Male,47,5,158623.14,83499.89,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15639077,France,Female,30,2,158584.82,142342.55,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15811927,France,Female,38,3,157658.36,19658.43,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15702138,France,Female,22,3,156834.34,44374.44,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15716155,France,Female,36,5,156021.31,122662.98,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15748552,Germany,Male,37,4,155994.15,143665.44,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15625964,France,Female,43,5,153313.67,170563.73,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15577831,Germany,Male,41,4,152532.3,10779.69,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15697310,Germany,Female,28,3,152264.81,64242.31,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15790067,Spain,Male,39,3,151914.93,56459.45,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15737748,Spain,Female,33,3,151233.62,199336.63,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15614365,Germany,Male,31,3,150604.52,5566.6,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15602312,Spain,Male,33,5,150092.8,71862.79,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15626012,France,Male,26,4,149879.66,50016.17,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15623210,Germany,Female,55,8,149349.58,137519.92,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15781777,France,Male,33,3,148659.48,42437.75,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15778320,Germany,Female,40,5,148495.64,158853.98,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15647975,Germany,Male,26,5,147037.32,141763.26,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15782364,Spain,Female,39,3,146408.68,72993.67,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15756321,Spain,Female,52,5,144772.69,98302.57,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15721377,France,Female,34,3,144751.81,166472.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15744873,Germany,Female,48,5,143595.87,101314.65,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15663161,Germany,Female,51,5,143139.87,47795.43,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15591489,France,Male,26,5,142662.68,60285.3,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15616525,Spain,Male,31,4,141356.47,137985.69,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15696989,Germany,Female,52,8,139493.25,150093.32,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15685320,France,Male,36,3,139180.2,123880.19,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15644280,France,Male,45,4,138825.19,10828.78,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15722004,France,Female,31,4,138317.94,61843.73,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15677087,France,Female,39,5,138106.75,19596.73,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15566894,France,Male,39,3,137817.52,83997.79,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15792102,France,Female,42,3,137781.65,199316.19,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15782630,France,Male,35,5,137482.19,62389.35,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15710671,France,Male,34,3,137361.96,183682.09,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15791535,France,Male,28,5,137222.77,39608.58,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15651280,Germany,Male,35,5,136857.0,84509.57,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15691119,Germany,Male,68,4,136525.99,175399.14,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15799357,France,Male,35,5,136364.46,142754.71,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15720284,Germany,Female,37,4,135927.06,180890.4,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15710315,Germany,Male,29,4,135759.4,112813.79,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15798398,France,Female,36,4,135438.4,190627.01,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15716609,Germany,Male,54,3,134388.11,49954.79,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15787189,Germany,Male,60,8,134250.17,153046.16,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15703793,Germany,Male,58,2,133745.44,28373.86,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15643635,Spain,Male,32,5,133705.74,134455.84,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15597536,Spain,Male,45,5,133618.01,135244.87,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15730339,Spain,Male,30,3,133446.34,3154.95,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15638983,France,Female,38,5,133189.4,127388.06,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15761102,Spain,Female,32,4,132835.56,136877.24,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15798975,Germany,Male,48,4,132403.56,36091.91,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15656613,France,Female,34,3,131283.11,130500.65,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15607347,France,Male,22,5,130056.23,121894.31,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15678882,Germany,Male,37,3,129965.18,19374.08,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15640442,France,Male,31,4,129722.57,41176.6,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15571002,France,Female,44,4,129605.99,69865.49,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15574122,France,Male,34,5,129278.43,165562.84,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15775203,France,Male,45,3,129209.48,60151.77,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15652693,France,Female,26,4,129109.02,149814.68,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15795519,Germany,Female,18,3,128743.8,197322.13,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15669281,Spain,Male,38,3,128718.78,114793.45,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Retained
+15681007,France,Female,35,2,128548.49,75478.95,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15591036,Germany,Female,43,3,127940.47,125140.72,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,40,Churned
+15603851,France,Male,32,7,127785.17,184464.7,4,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,40,Churned
+15594408,Spain,Female,48,2,213146.2,75161.25,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15671256,France,Female,35,1,211774.31,188574.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15627971,France,Female,32,8,206663.75,16281.94,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15737509,Spain,Male,34,8,199229.14,68106.29,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15766458,France,Male,33,1,198113.86,69664.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15688409,France,Female,28,2,191864.51,108457.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15616530,France,Male,36,6,188455.19,47031.4,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15721460,France,Male,60,8,185648.56,192156.54,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15616152,France,Female,47,1,185513.67,27438.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15626787,Spain,Female,31,8,185078.26,115337.74,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15747503,Spain,Male,44,0,184552.12,68860.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15600911,France,Male,33,2,182888.08,3061.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15779182,Spain,Male,46,8,182364.53,139266.48,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15775104,France,Female,38,1,182065.85,49503.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15728006,France,Male,40,2,180516.9,180002.42,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15774151,Spain,Female,41,7,179915.85,14666.35,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15711251,France,Male,45,1,178827.79,60375.18,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15573319,Germany,Female,35,8,178317.6,197428.64,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15694200,France,Male,36,8,178111.82,58719.63,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15761713,France,Female,43,7,178074.33,110405.9,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15744914,Germany,Male,42,1,177728.55,105013.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15706005,France,Male,46,2,174701.05,90189.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15726289,France,Male,25,0,174400.36,42669.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15699797,France,Male,30,8,174356.13,31928.5,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15654562,Spain,Female,45,5,174088.3,5669.31,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15678146,Spain,Female,24,7,173962.32,106457.11,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15809100,France,Female,32,2,172448.77,188083.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15795954,France,Male,35,2,172274.01,22374.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15632210,Germany,Male,25,2,171770.55,22745.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15774847,France,Male,50,6,171740.69,20893.61,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15792720,France,Male,33,6,171490.78,79099.64,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15601569,France,Female,40,2,171178.25,137980.58,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15756804,France,Female,48,1,170833.46,110510.28,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15672374,France,Male,52,8,170008.84,56407.42,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15610686,France,Male,63,8,169832.57,184107.26,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15571973,France,Female,38,2,169824.46,169291.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15648967,Germany,Female,64,1,169362.43,84760.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15705953,Spain,Male,51,0,169312.13,109078.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15580148,Germany,Male,40,5,168286.81,20451.99,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15609676,France,Female,35,2,167924.95,43024.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15702541,France,Female,59,2,166968.28,159483.76,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15701605,France,Male,37,1,166115.42,67208.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15726557,France,Female,42,7,165679.92,32916.29,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15626135,France,Male,34,1,165312.27,155495.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15764432,Germany,Female,42,2,164307.77,48498.19,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15572361,Germany,Female,34,2,164011.48,199420.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15642063,France,Male,40,6,163505.16,90424.09,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15690898,France,Male,44,8,161889.79,75562.47,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15803947,Germany,Female,30,6,161378.02,71926.28,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15584580,France,Male,35,6,161111.45,13946.66,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15585047,France,Male,28,7,160376.61,196853.11,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15805909,Spain,Male,28,8,159900.38,22698.56,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15684196,France,Female,55,2,159441.27,100686.11,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15625929,France,Female,44,7,159316.64,24780.13,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15774250,France,Male,42,1,159024.71,100982.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15751185,Spain,Female,50,0,158633.61,193785.87,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15674442,France,Male,23,7,157761.56,147759.84,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15727489,Spain,Female,45,1,157320.51,62193.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15735687,Spain,Male,37,2,157084.99,134767.13,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15593795,Germany,Female,53,1,156674.2,118502.34,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15745250,France,Male,58,8,156652.13,25899.21,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15812766,Spain,Male,40,6,156111.08,190889.13,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15750258,France,Female,32,2,155663.31,97658.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15776128,France,Female,44,6,155114.9,133871.83,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15719991,Spain,Female,52,1,154733.97,80259.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15643903,France,Male,27,1,154483.98,156394.74,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15623536,Germany,Male,39,0,154439.86,171519.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15650018,France,Female,43,8,154100.3,114659.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15569764,Germany,Female,41,2,154007.21,158408.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15812040,France,Male,36,6,153880.15,135431.72,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15569098,France,Male,44,6,153548.12,35300.08,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15738828,Germany,Male,45,6,152880.97,162478.11,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15568963,Germany,Male,34,2,152797.9,175709.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15716082,Spain,Male,39,6,152685.4,183656.12,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15645200,Germany,Female,54,2,152508.99,187597.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15792228,France,Male,60,0,152335.7,126743.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15652218,France,Male,33,2,152302.72,71333.44,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15626507,France,Male,27,1,152283.39,183271.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15583303,France,Female,29,2,152265.43,34004.44,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15737265,Germany,Male,39,6,152182.83,161203.6,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15809515,Germany,Male,32,1,151922.94,8877.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15613749,Spain,Male,34,0,151839.26,102299.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15701042,Germany,Female,27,2,151027.56,170320.58,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15789611,Germany,Male,46,8,150836.92,64516.8,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15769353,France,Female,40,8,150490.32,166468.21,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15613017,Germany,Male,32,1,149814.54,31830.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15683625,France,Male,37,1,149762.08,20629.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15654456,Germany,Male,48,6,149726.08,88307.87,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15752375,Germany,Male,33,8,149564.61,149913.84,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15627517,Spain,Male,27,7,149400.27,167522.19,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15639552,Germany,Female,40,8,148897.02,105052.9,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15728838,France,Male,45,1,148600.91,143397.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15782688,Germany,Male,56,0,148507.24,46824.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15647292,France,Male,63,7,148368.02,118862.08,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15632503,France,Female,32,0,148326.09,191604.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15601627,France,Male,33,8,148163.57,122925.4,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15577695,France,Male,41,2,148088.11,14083.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15629575,France,Male,36,2,148061.89,179128.69,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15775756,Germany,Male,33,8,148055.74,199203.21,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15781234,France,Female,35,2,147900.43,140000.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15666270,France,Female,40,2,147803.48,95181.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15618410,Germany,Male,26,7,147527.03,51099.56,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15692106,Spain,Female,25,3,147386.72,45482.04,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15662736,France,Male,49,2,147069.78,120540.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15603247,Germany,Female,35,1,146781.24,189307.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15601274,Spain,Female,40,1,146502.07,19162.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15756425,France,Male,30,7,146301.31,96847.91,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15709447,France,Female,26,0,146286.22,105105.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15646276,France,Female,32,2,146033.62,191260.74,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15758692,France,Female,29,7,146011.4,50249.16,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15765402,France,Female,39,6,145644.05,104118.93,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15707567,Germany,Male,50,6,145338.76,91936.1,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15665238,Germany,Male,36,8,145071.24,6078.46,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15626147,France,Female,62,8,144976.5,175836.03,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15744843,Spain,Female,34,6,144855.34,196555.32,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15767231,France,Male,36,7,144852.06,130861.95,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15744553,France,Male,34,2,144318.97,112668.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15622658,France,Female,26,2,144258.52,49778.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15764448,Germany,Male,35,0,144037.6,145325.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15607314,Spain,Male,53,2,143923.96,2019.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15700627,Germany,Female,46,2,143500.82,166996.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15668323,France,Female,41,1,143443.61,196622.28,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15791131,Germany,Female,30,2,143340.44,145796.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15805260,Germany,Female,56,2,143249.67,88428.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15583863,Germany,Male,49,8,142946.18,187280.51,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15695280,Germany,Male,24,8,142755.25,34231.48,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15665579,France,Female,28,0,142705.95,127233.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15698902,Germany,Female,42,1,142703.4,86207.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15765857,Spain,Male,41,2,142412.13,28778.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15604130,Spain,Female,47,6,142319.03,100183.05,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15655339,France,Male,36,1,142120.91,79616.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15691287,Germany,Female,33,0,141816.25,64815.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15590676,France,Male,34,1,141796.43,45858.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15613216,Spain,Female,39,1,141789.15,92455.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15768104,Spain,Male,37,8,141541.25,66013.27,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15796114,France,Female,34,7,141525.55,9443.15,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15805303,Germany,Male,44,1,141136.62,189742.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15591986,Germany,Male,46,6,141078.37,34580.8,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15688612,France,Male,33,7,140956.99,3510.18,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15586264,France,Male,43,2,140431.98,26450.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15618562,Germany,Female,40,0,140306.38,160618.61,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15667751,Spain,Female,36,1,140137.15,194073.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15578825,France,Female,29,0,139994.66,17744.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15610930,Germany,Female,35,1,139979.07,185662.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15621520,Germany,Female,42,2,139707.28,2150.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15640034,France,Male,42,2,139561.46,43435.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15708139,France,Female,40,1,139532.34,181294.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15766683,Germany,Male,36,6,139422.37,83983.39,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15637977,Germany,Male,25,8,139330.1,54372.37,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15694408,France,Male,40,1,139290.41,182855.42,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15713463,Germany,Female,41,2,138881.04,129936.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15680449,Germany,Female,44,2,138843.7,37688.31,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15594041,Spain,Female,41,2,138734.94,90020.74,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15663489,Germany,Female,29,0,138577.34,193362.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15808386,Germany,Female,45,7,138523.2,59604.45,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15583371,Spain,Male,37,1,138207.08,60778.11,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15613326,France,Female,33,1,138162.81,85412.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15680234,Germany,Male,27,2,138032.15,166317.71,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15722993,France,Female,27,6,137963.07,8996.79,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15690130,France,Female,32,8,137649.47,198714.29,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15723894,France,Male,45,7,137555.44,124607.7,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15787907,Germany,Female,42,5,137227.04,149097.38,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15802220,Spain,Male,35,6,137102.65,76870.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15679651,Spain,Female,37,1,136689.66,197890.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15693764,Spain,Male,52,0,136298.65,144593.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15769272,France,Female,26,6,136214.08,159742.33,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15583026,France,Female,38,0,135919.33,80425.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15723654,France,Male,25,2,135903.33,73656.38,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15646372,France,Female,66,1,135842.41,183840.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15721047,Germany,Male,37,1,135650.88,199428.19,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15669899,Germany,Female,45,7,135643.0,143619.52,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15602979,France,Male,29,1,135536.5,66825.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15623647,Spain,Female,36,1,135515.76,86013.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15797960,Germany,Female,59,0,135296.33,182822.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15812351,Spain,Female,27,2,135277.96,142200.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15791114,France,Male,37,1,135179.49,160670.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15769246,Germany,Male,59,2,135078.41,187636.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15639357,France,Male,46,9,134950.19,178587.36,3,No Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15724620,France,Male,37,1,134752.08,162511.55,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15571666,Germany,Male,30,8,134497.27,43250.54,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15758073,France,Female,20,7,134397.61,28029.54,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15794171,France,Female,45,0,134264.04,27822.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15708867,Spain,Female,38,3,134168.5,3966.5,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15792986,Germany,Male,24,1,133811.78,17185.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15658929,Spain,Male,29,0,133702.89,55582.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15795290,France,Female,42,2,133616.39,28615.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15655410,Germany,Male,49,1,133384.66,102397.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15734649,Spain,Female,55,0,133295.98,22832.71,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15785559,France,Male,43,1,133237.21,111032.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15668248,Germany,Female,62,7,133201.17,168507.68,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15604706,Germany,Male,38,1,133105.47,105732.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15726046,France,Female,27,2,133009.51,126809.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15702377,Spain,Male,48,1,132759.8,78899.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15722701,Germany,Male,18,1,132694.73,167689.56,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15790782,Spain,Male,39,6,132628.98,38812.67,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15737452,Germany,Male,58,1,132602.88,5097.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15619529,Spain,Male,27,8,132576.25,7222.92,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15771417,France,Male,43,7,132412.38,69584.3,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15772482,Germany,Male,28,3,132405.52,104889.2,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15682541,Spain,Female,36,6,132311.71,15462.84,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15572291,France,Male,40,6,132308.22,117122.5,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15670528,Germany,Male,43,0,132217.45,20955.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15773751,France,Female,29,1,132144.35,158086.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15732884,France,Male,29,7,131959.86,189268.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15655961,Germany,Male,27,1,131899.0,93302.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15707674,France,Female,58,2,131852.81,81436.68,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15593736,Germany,Female,46,7,131769.04,184980.23,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15655632,France,Male,27,2,131691.33,49480.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15656937,Spain,Male,26,1,131643.25,64436.16,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15617482,Germany,Female,52,1,131441.51,37240.11,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15579996,Germany,Female,25,7,131402.21,193668.49,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15711716,France,Female,56,1,131368.3,106918.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15770995,Germany,Female,47,1,131160.85,197444.69,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15593782,Germany,Female,38,5,130878.75,71905.77,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15647898,Spain,Female,50,5,130554.51,184758.17,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,45,Churned
+15586522,Spain,Male,37,2,130461.02,21967.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15778005,France,Female,39,1,130147.98,163798.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15593834,Spain,Male,36,7,129934.64,75664.56,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15726403,Germany,Male,41,1,129901.21,26025.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15667934,France,Male,36,0,129804.17,53020.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15688644,France,Male,31,1,129743.75,109145.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15681924,Germany,Male,38,2,129728.6,89289.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15731669,France,Male,39,2,129709.62,173197.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15624343,Spain,Female,50,7,129667.77,42028.16,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15798844,France,Male,54,7,128914.97,191746.23,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15610711,Germany,Female,40,8,128644.46,167673.37,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15702095,Spain,Female,56,1,128472.8,186476.91,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15591711,Spain,Male,38,0,128366.44,12796.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15730433,Germany,Female,38,1,128218.47,125953.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15807008,Germany,Female,35,6,128100.28,69454.24,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15645136,Spain,Male,30,1,128065.12,121525.48,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15612524,Germany,Male,41,2,127841.52,172363.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15580493,France,Male,33,1,127818.52,163477.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15773260,France,Female,32,0,127763.24,100717.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Retained
+15597896,Germany,Male,30,0,127760.07,81537.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15651052,Germany,Male,46,2,127655.22,139994.68,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,45,Churned
+15714241,Spain,Male,42,9,222267.63,101108.85,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15571958,Spain,Male,40,3,221532.8,171867.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15620268,Germany,Male,43,3,212696.32,115268.86,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15588670,Spain,Female,40,5,203715.15,179978.68,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15620570,France,Male,43,4,202443.47,72375.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15617065,Spain,Male,42,4,194532.66,171045.31,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15623314,Germany,Female,59,3,190353.08,78365.75,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15785373,Spain,Female,42,5,190305.78,99347.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15764922,Spain,Male,20,3,187294.46,103456.47,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15771668,France,Male,59,10,185966.64,9445.42,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15800524,Germany,Male,29,3,185379.02,64679.07,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15687477,Germany,Male,28,5,185013.02,16481.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15679297,Spain,Male,43,3,184926.61,122937.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15624793,Germany,Male,23,5,184244.86,103099.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15800793,Germany,Female,39,4,182491.57,185830.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15732740,Spain,Female,32,9,178095.55,47247.56,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15587535,Spain,Female,46,5,177619.71,54227.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15586680,France,Male,27,4,176913.52,80587.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15609824,France,Female,41,7,176845.41,166526.26,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15627801,Spain,Male,33,3,176666.62,94670.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15791944,France,Male,32,7,175464.85,116442.42,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15633141,Germany,Female,35,4,174902.26,69079.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15611905,Spain,Female,31,5,174853.46,84238.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15778696,Spain,Female,36,5,174180.39,119830.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15743817,Germany,Male,40,8,174126.75,172490.78,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15761168,France,Female,38,4,171913.87,51820.87,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15724336,Germany,Female,49,5,171601.27,126223.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15648075,Germany,Female,47,5,170935.94,173179.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15586310,France,Male,30,4,169462.09,112187.11,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15751137,Germany,Female,36,3,169025.83,174235.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15681206,France,Female,49,3,168197.66,140765.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15811177,France,Female,31,3,167949.48,143162.34,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15619972,France,Female,47,9,167664.83,125440.11,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15633574,France,Female,41,4,167545.32,128246.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15728963,Germany,Female,51,10,167273.71,93439.75,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15655341,Spain,Female,35,5,166492.48,135287.74,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15757759,Spain,Female,28,7,165969.26,156122.13,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15799859,France,Male,50,4,165438.26,120770.75,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15585985,France,Male,48,5,165282.42,153786.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15636624,Spain,Female,39,5,165272.13,14109.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15815271,Germany,Male,43,6,165048.5,16929.41,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15743893,France,Male,42,3,164951.56,190531.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15764604,France,Female,35,7,164769.02,119814.25,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15641733,France,Female,34,5,164757.56,110748.88,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15632118,Spain,Male,45,5,164450.94,141970.02,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15750049,France,Male,40,10,163823.37,89519.47,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15568088,Germany,Male,44,3,163714.52,96123.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15679249,Germany,Female,57,4,163146.46,169621.69,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15639946,Germany,Female,39,8,162532.14,36051.46,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15639415,France,Male,35,3,162442.35,183566.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15565701,Spain,Female,39,9,161993.89,90212.38,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15625426,Germany,Female,55,3,161608.81,8080.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15711977,France,Male,36,4,161533.0,100940.91,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15705739,Germany,Male,32,5,159904.79,148811.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15619304,France,Female,42,8,159660.8,113931.57,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15732268,France,Male,29,3,159597.45,39934.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15571586,Spain,Male,29,3,159035.45,2705.31,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15694601,France,Female,31,4,158978.79,12538.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15618258,Spain,Male,37,5,158024.38,81298.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15736990,France,Male,28,3,157842.07,86911.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15738884,Germany,Male,41,4,157777.58,67484.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15694444,Germany,Female,32,8,157138.99,190994.48,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15660646,France,Male,35,3,156687.1,199320.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15615012,France,Male,23,5,156267.59,160968.44,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15747927,France,Male,26,4,155739.76,171552.02,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15670427,Spain,Male,37,4,155187.3,48930.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15712121,Spain,Male,34,5,154983.98,27738.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15580701,France,Male,33,3,153819.58,79176.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15689322,Spain,Male,31,3,153316.14,59927.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15576990,Germany,Female,25,5,152885.77,58214.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15653849,Germany,Female,48,3,152827.99,38411.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15754494,France,Female,33,4,152805.05,63239.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15734008,Germany,Male,59,5,152581.06,71830.1,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15701741,France,Female,39,3,152462.79,90305.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15667871,Spain,Male,35,4,152390.26,128123.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15628813,France,Female,43,4,152341.55,9241.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15737705,France,Female,27,4,152309.37,104112.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15768006,France,Male,34,3,152303.8,12128.69,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15714087,Germany,Female,45,5,151855.33,68794.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15610643,Germany,Male,44,3,151739.65,167461.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15617320,Spain,Female,46,3,151709.33,180736.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15720511,Germany,Male,41,3,151191.31,175295.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15714832,Germany,Male,36,9,150956.71,72350.17,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15710206,France,Female,39,4,150500.64,14928.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15711889,France,Male,42,3,150461.07,108139.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15575445,Spain,Male,41,10,150148.51,6936.27,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15600975,France,Female,54,4,150005.38,157015.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15605059,Germany,Male,63,3,148843.56,69414.13,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15655360,Germany,Female,72,5,148666.99,2605.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15759874,France,Male,44,3,148595.55,74838.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15663441,Germany,Female,40,4,148571.07,189826.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15686835,Germany,Female,57,9,148384.64,155047.11,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15657342,Germany,Male,28,4,147972.19,60708.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15730287,France,Male,41,8,147726.98,172749.4,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15750602,France,Male,29,5,147092.65,10928.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15743532,Germany,Male,27,5,147004.34,64381.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15698791,France,Male,45,3,146758.24,48466.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15739847,Germany,Male,38,5,146756.68,78268.61,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15614168,Germany,Female,50,4,146710.76,16528.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15687171,Spain,Male,34,5,146679.77,102179.86,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15779947,Spain,Female,28,6,146098.43,100615.14,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15787693,Spain,Male,38,3,145874.35,56311.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15654230,Germany,Male,31,5,145537.21,132404.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15729832,France,Male,29,3,145512.84,20207.02,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15765952,France,Male,29,4,145471.37,188382.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15743245,France,Male,42,3,145155.37,72169.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15640521,Germany,Male,33,3,144962.74,58844.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15596870,Germany,Male,54,3,144768.94,93336.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15736601,France,Male,35,4,144428.87,134132.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15716164,France,Female,41,3,144260.5,172114.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15601594,France,Female,51,6,144237.91,157143.61,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15589589,France,Male,34,5,144094.2,44510.26,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15703707,France,Male,44,10,143571.52,127444.14,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15692416,Spain,Female,52,8,143542.36,141959.11,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15566253,Germany,Male,44,9,143391.07,146891.07,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15775293,France,Male,34,3,143292.95,66526.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15591724,France,Female,44,5,143244.97,98661.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15614934,Germany,Female,37,4,142711.81,35625.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15692463,Spain,Female,28,3,142253.65,45042.56,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15797900,France,Male,56,9,142147.32,39488.04,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15664270,Germany,Male,45,6,142084.04,188305.85,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15759038,France,Female,41,3,141806.46,102921.17,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15639590,France,Female,30,3,141581.08,156249.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15759991,Spain,Male,36,4,141573.55,82158.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15701176,France,Male,26,5,141462.13,440.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15578045,Spain,Female,49,9,141434.04,173779.25,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15661936,France,Male,40,3,141004.46,105028.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15723721,France,Male,30,4,140916.81,157711.18,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15575002,France,Male,29,4,140720.93,36221.18,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15637118,France,Male,33,4,140700.61,103557.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15693468,Spain,Female,39,9,140553.46,12440.44,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15679410,France,Female,62,4,140549.4,30990.16,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15806049,Germany,Female,49,5,140510.89,141914.94,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15744041,France,Female,26,3,140356.7,117144.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15611029,Germany,Female,33,4,140002.35,123613.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15770548,Germany,Female,28,3,139986.65,136846.75,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15633108,France,Male,26,4,139848.17,164696.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15675842,Spain,Male,26,4,139584.57,36308.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15668444,Spain,Female,44,3,139432.37,62222.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15812482,France,Male,27,3,139301.68,99843.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15761986,Spain,Female,32,3,138901.61,75685.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15621116,Germany,Male,33,5,138664.24,29076.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15691625,Germany,Female,41,3,138306.34,106761.47,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15582033,Germany,Male,44,3,138076.47,15523.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15582797,Spain,Male,35,4,137948.51,113639.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15566563,France,Female,30,4,137851.31,5008.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15609998,Germany,Female,59,5,137648.41,142977.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15797329,France,Male,43,4,137638.69,130442.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15654238,France,Female,40,5,137494.28,81753.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15777054,Germany,Male,42,3,137479.13,25669.1,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15591169,Germany,Female,49,4,137455.99,184178.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15806983,France,Male,44,3,137148.68,92381.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15690829,Germany,Male,49,3,137115.16,146516.86,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15773972,France,Male,50,4,137104.47,127166.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15608344,Germany,Female,29,7,137059.05,102975.72,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15647333,France,Male,27,4,137003.68,21254.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15677785,Spain,Male,32,5,136963.12,133814.28,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15759066,France,Female,44,5,136836.49,192359.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15665180,France,Female,31,3,136789.14,59346.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15676242,Spain,Male,31,3,136556.44,82152.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15658889,France,Male,22,4,136444.25,51980.25,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15672945,France,Female,37,5,136425.18,81102.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15585192,Spain,Male,39,10,136258.06,89199.51,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15657449,Germany,Male,25,3,136202.78,176743.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15598070,France,Female,33,4,135946.26,63170.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15769064,Germany,Male,39,3,135309.36,31728.86,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15640078,Germany,Female,39,5,135134.99,173683.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15747867,France,Male,24,9,135125.28,89801.9,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15801395,France,Female,33,10,135120.72,195204.99,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15577274,Germany,Female,43,3,134985.66,6101.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15693864,Germany,Female,49,5,134956.02,93953.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15735878,Germany,Female,47,10,134381.52,26812.89,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15708228,Germany,Male,30,3,134366.42,68343.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15656333,France,Female,33,3,134348.57,63163.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15662152,France,Female,38,9,134105.01,57850.1,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15583212,France,Female,43,5,134022.06,194764.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15632826,France,Male,38,3,134006.77,89578.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15733888,Spain,Female,36,3,133686.52,190958.48,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15786617,Germany,Male,34,3,133658.24,70209.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15752342,Germany,Female,54,6,133656.91,145071.33,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15629750,France,Male,35,5,133087.76,64771.61,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15703614,Spain,Male,48,5,132876.23,79259.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15697249,Germany,Female,25,3,132837.7,131647.31,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15644453,Germany,Female,41,4,132670.53,156476.36,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15788776,Germany,Male,49,6,132623.76,36292.94,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15570141,France,Female,34,3,132352.69,80320.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15716449,Spain,Male,33,9,132168.28,98734.15,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15745827,France,Male,30,3,132005.77,142940.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15680706,Germany,Male,48,4,131834.8,166476.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15641480,France,Male,32,5,131354.25,125256.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15772383,France,Male,36,9,131307.11,83343.73,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15680587,France,Male,23,4,131254.81,20199.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15648455,Germany,Male,51,4,131156.76,29883.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15592412,Germany,Male,45,4,131038.14,74005.04,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15605461,Germany,Female,29,3,130830.22,61048.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15668775,France,Male,47,3,130747.1,143829.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15743067,Germany,Male,26,3,130483.95,122810.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15628319,France,Female,28,4,130142.79,38190.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15587562,France,Female,29,4,130114.39,164017.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15582335,France,Female,40,9,129860.37,17992.94,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15711309,Germany,Male,33,3,129834.67,193131.42,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15692750,Germany,Female,45,7,129818.39,9217.55,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15686611,France,Male,30,10,129755.99,172749.65,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15645544,Germany,Female,30,5,129753.69,582.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15600724,Germany,Male,29,5,129750.68,109257.59,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15651533,Germany,Female,50,5,129293.74,177805.44,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15787161,Germany,Male,46,4,129269.27,163504.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15594928,Germany,Female,38,4,129055.13,157147.59,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15766172,France,Male,34,3,128743.55,134851.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15800515,France,Male,35,5,128653.59,127558.26,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15664639,France,Male,19,9,128514.84,175969.19,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15724154,Germany,Female,49,4,128504.76,126812.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15711287,Spain,Female,35,5,128415.45,142626.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15728012,Spain,Female,40,3,128398.38,168658.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15724321,Germany,Female,47,9,128298.74,149614.17,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15749519,France,Male,38,6,128289.7,9149.96,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,50,Churned
+15692599,France,Male,34,5,128270.56,191092.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15689953,Spain,Male,43,10,128226.37,188486.94,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15659100,France,Male,33,9,128152.82,147822.81,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15649536,Germany,Male,38,4,128015.83,58440.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15732266,Germany,Male,53,5,127997.83,165378.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Churned
+15660541,France,Male,34,5,127900.03,101737.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15630053,France,Male,45,5,127864.4,87107.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15649101,France,Male,40,10,127847.86,173245.68,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15621409,France,Male,32,4,127845.83,66469.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15636407,Germany,Female,34,5,127758.09,143357.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15611365,France,Female,32,9,127661.69,60905.51,1,No Credit Card,Inactive Member,Single Product,At-Risk Premium,50,Retained
+15664498,France,Male,26,7,205962.0,156424.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15745433,Germany,Female,30,2,205770.78,65464.66,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15746664,Spain,Male,20,8,204223.03,128268.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15689514,France,Male,43,8,201696.07,133020.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15807663,France,Male,43,8,190227.46,97508.04,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15765520,Germany,Male,27,7,188614.07,171344.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15811588,Spain,Female,53,7,187602.18,186392.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15740442,France,Male,51,8,186825.57,93739.71,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15801788,Germany,Female,29,6,185544.36,171037.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15697441,France,Male,29,7,182123.79,116828.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15735400,France,Male,28,8,179960.2,89938.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15713347,Spain,Male,48,6,179852.26,193580.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15795224,France,Male,39,6,178585.46,67131.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15727177,France,Male,42,6,177822.03,150944.31,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15633352,France,Female,31,6,175443.75,113167.17,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15661412,France,Male,32,8,175307.32,187051.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15794396,Germany,Female,38,7,174937.64,40084.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15654673,France,Male,49,6,173434.9,165580.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15641640,Spain,Female,33,7,173331.52,150452.88,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15699284,France,Male,49,8,172713.44,113860.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15796993,France,Male,52,1,171236.3,21834.4,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15585865,France,Female,38,2,170061.92,134901.34,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15650391,France,Female,29,7,169988.35,4272.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15777352,Spain,Female,32,7,169399.6,61936.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15578374,Spain,Male,36,7,169312.72,45414.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15650538,Germany,Female,48,7,168286.58,16645.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15657829,Germany,Male,30,8,168078.83,85028.36,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15689031,Spain,Female,37,7,168066.87,35450.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15705512,Germany,Female,37,6,167864.4,115638.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15790324,France,Female,20,6,167685.56,57929.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15569678,Germany,Male,32,6,166824.59,139451.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15756680,France,Male,28,6,165798.1,147090.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15621815,France,Female,40,6,165526.71,12328.08,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15588944,France,Female,63,1,165350.61,140758.07,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15761763,France,Male,33,8,164385.53,150664.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15692575,France,Male,38,6,162888.73,91098.76,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15742824,Germany,Male,42,7,162318.61,121061.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15678206,France,Male,46,6,161798.53,182944.47,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15625916,Spain,Male,32,6,161628.66,91482.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15757385,Spain,Female,28,8,161592.76,177834.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15661532,France,Female,31,1,160566.11,27073.81,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15633274,France,Male,34,7,160515.37,121904.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15764253,France,Male,32,6,160485.16,29023.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15568562,France,Male,40,8,160272.27,49656.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15660608,France,Male,44,8,158697.61,107181.22,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15609758,France,Female,45,7,158621.04,120892.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15749123,Spain,Male,45,7,157332.26,125424.42,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15705009,France,Female,56,8,156974.26,89405.26,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15695492,France,Female,29,6,156569.43,180598.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15596992,Germany,Male,45,7,156353.46,72643.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15632079,Germany,Female,37,8,156282.79,45985.52,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15681180,France,Female,23,7,156123.73,72990.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15601719,Germany,Male,24,6,156007.09,191368.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15802106,France,Male,34,8,155973.88,154208.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15612187,Germany,Male,32,8,155726.85,67789.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15764343,Spain,Female,46,8,155681.72,26287.21,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15636069,Spain,Male,28,7,155519.59,1843.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15650933,Spain,Female,48,8,155413.06,187921.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15607988,Germany,Female,37,8,155303.71,118716.63,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15646196,Spain,Female,36,2,155180.56,169415.54,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15569266,France,Male,28,7,155060.41,29179.52,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15623668,Germany,Male,31,2,154741.45,25183.01,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15654390,France,Male,33,7,154575.76,25722.28,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15796790,France,Female,47,8,154543.98,29586.73,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15630920,France,Male,34,2,154485.74,78560.64,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15622631,France,Male,44,8,154409.74,49324.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15706116,Germany,Female,30,8,154159.51,40441.1,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15568915,France,Male,38,6,153722.47,101319.76,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15798256,France,Female,45,1,153697.53,89891.4,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15787830,Germany,Male,33,7,153663.27,111868.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15761720,France,Male,41,6,153238.88,11663.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15671987,Spain,Male,35,8,153137.74,88659.07,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15666197,Germany,Female,38,8,153058.64,99377.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15570299,Germany,Female,31,6,152622.34,99298.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15799652,France,Female,38,0,152582.2,31892.82,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15739972,Germany,Female,45,9,152367.21,150835.21,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15801915,France,Female,31,6,152310.55,13054.25,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15771409,France,Male,58,7,151933.63,162960.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15571415,Germany,Male,56,6,151802.29,46791.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15785899,Germany,Male,33,8,151607.56,4389.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15793478,Germany,Female,39,8,151391.68,27274.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15655574,Germany,Female,40,8,150777.1,114732.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15609299,France,Male,29,6,150685.79,87771.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15651144,Germany,Female,35,2,150561.03,64722.61,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15723604,France,Male,39,6,150555.83,30414.17,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15669301,Germany,Female,29,6,150358.97,62454.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15576044,Germany,Male,28,6,150329.15,145558.42,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15733597,France,Female,41,0,150219.41,107839.03,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15699415,France,Female,46,6,150213.71,120668.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15742798,France,Female,22,7,150126.44,152107.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15631512,France,Female,26,8,149989.39,42330.58,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15724145,Germany,Male,29,8,149318.55,140746.13,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15614520,France,Female,37,8,148580.12,35179.18,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15617078,France,Female,44,6,148481.09,130529.13,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15698167,France,Female,24,0,148298.59,182913.95,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15573628,Germany,Female,51,7,148074.79,146411.41,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15651713,France,Male,45,6,148071.39,183575.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15792818,Germany,Female,29,6,148051.52,118623.94,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15713845,France,Male,38,7,148045.68,175479.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15651823,France,Female,60,6,147751.75,88206.04,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15713594,France,Female,32,7,147256.86,112771.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15673971,Germany,Female,44,6,146498.76,64853.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15732281,Germany,Male,34,6,146422.22,67142.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15766826,France,Male,26,7,146266.0,21903.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15771966,France,Male,39,8,146200.01,177944.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15788494,France,Male,31,8,145875.74,137491.23,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15581388,Spain,Male,33,8,145729.71,41365.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15735522,Germany,Male,37,2,145610.07,186300.59,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15629273,Germany,Male,42,8,145177.84,193471.74,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15760294,France,Female,41,8,145150.28,64869.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15788068,Germany,Male,45,10,144677.19,22512.44,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15589793,France,Male,53,8,144453.75,190998.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15717056,Germany,Female,25,7,144351.86,116613.26,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15584620,Germany,Female,36,6,143644.16,22102.25,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15717893,Germany,Male,36,8,143421.74,97879.02,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15680243,France,Male,19,7,143390.51,33282.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15676576,France,Female,43,8,143061.88,61937.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15658475,France,Male,36,8,142882.49,89983.02,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15635277,Spain,Male,47,7,142643.54,189310.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15705890,France,Male,45,7,142072.02,37013.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15727353,France,Female,64,7,142028.36,32275.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15760865,Germany,Female,48,7,141819.02,93550.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15743016,Spain,Female,22,7,141604.76,30379.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15566988,Germany,Female,46,7,141535.52,50595.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15770174,France,Male,29,6,141389.06,54122.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15793317,Spain,Female,22,7,141287.15,118142.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15686463,France,Male,38,7,141074.59,52795.56,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15770525,Spain,Male,28,1,141038.57,16287.38,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15766575,Germany,Female,62,8,140745.33,193437.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15572093,France,Female,24,7,140453.91,129001.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15776596,Spain,Female,39,6,140094.59,172450.04,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15645496,France,Female,43,7,139972.18,143668.58,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15799964,Germany,Female,30,7,139872.81,188795.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15624510,France,Male,52,6,139781.06,27445.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15596811,France,Male,36,8,139753.35,79871.16,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15587451,Germany,Male,41,7,139706.31,63337.19,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15753174,Germany,Male,37,9,139592.98,104152.65,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15724719,France,Female,22,7,139096.85,129890.94,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15595937,Germany,Male,36,1,138992.48,122373.42,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15694395,France,Female,29,1,138740.24,154700.61,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15571529,Germany,Female,48,7,138232.24,57594.78,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15796496,France,Female,31,8,137687.72,190067.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15761294,Germany,Female,56,8,137464.04,130846.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15788536,Germany,Male,40,2,137430.82,176768.59,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15677307,Germany,Female,40,6,137326.65,186976.6,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15660871,France,Male,28,8,137300.23,90174.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15724161,France,Female,40,9,137285.26,77063.63,4,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15768163,Germany,Female,46,7,137145.12,115146.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15784736,France,Male,45,6,136855.24,46864.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15780514,France,Male,33,8,136678.52,54290.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15802741,France,Female,51,7,136294.97,38867.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15631912,France,Male,30,8,136291.71,54113.38,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15590097,Spain,Female,33,7,136082.0,62746.54,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15629390,France,Male,37,7,135847.47,144880.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15583392,Germany,Male,37,9,135776.36,85470.45,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15593969,Spain,Female,39,7,135483.17,140881.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15747821,Germany,Female,31,6,135470.9,107074.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15737647,Germany,Female,77,6,135120.56,37836.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15740458,Spain,Male,36,7,135095.47,143859.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15691808,France,Male,43,7,134919.85,194691.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15580629,France,Male,31,6,134837.58,192029.19,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15604044,France,Male,38,8,134811.3,1299.75,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15567993,Spain,Male,28,8,134766.85,79355.87,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15578809,Germany,Male,40,1,134760.21,174434.06,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15595221,Germany,Female,33,7,134678.13,113177.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15757617,France,Male,55,6,134140.68,2267.88,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15653110,France,Male,42,8,133767.19,36405.21,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15620111,France,Male,54,8,133436.52,56787.8,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15791216,Germany,Male,43,8,133379.41,177378.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15799515,France,Female,48,8,133297.24,77764.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15788930,Spain,Male,37,7,132730.17,199293.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15673367,Germany,Male,33,6,132603.36,55775.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15570060,France,Female,43,8,132558.26,67046.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15795640,Germany,Female,35,1,132371.3,186123.57,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15648800,Germany,Female,21,8,132312.06,106663.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15750248,France,Female,35,8,132292.63,65682.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15736069,Germany,Female,35,6,132253.22,115566.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15616709,Germany,Female,38,0,132122.42,31730.32,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15795370,Germany,Male,37,6,131753.41,86894.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15680112,Germany,Female,35,7,131504.73,189560.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15597239,Spain,Male,39,7,131468.44,164975.82,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15655123,Spain,Female,45,9,131355.3,195395.33,3,Has Credit Card,Inactive Member,High Product Load,At-Risk Premium,55,Churned
+15746802,France,Female,30,6,131286.46,194144.45,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15678944,Germany,Female,32,6,130935.56,9241.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15783958,Spain,Female,37,1,130922.81,2186.83,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15631333,Spain,Female,25,8,130866.19,42410.21,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15569641,Germany,Female,41,8,130701.29,59354.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15692977,Germany,Female,36,2,130700.92,77592.8,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15804394,Germany,Male,32,8,130627.66,47161.25,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15810444,Germany,Female,39,6,130565.02,9854.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15755649,Germany,Male,47,7,130538.77,92915.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15789379,France,Male,26,6,130428.78,173365.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15736078,Germany,Female,33,7,130367.87,15142.1,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15613282,France,Male,29,8,130306.49,77469.38,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15584091,Germany,Female,36,2,129748.54,47271.61,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Churned
+15774727,Germany,Female,34,1,129398.01,44965.44,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15750407,Germany,Female,43,2,129264.05,19150.14,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15610727,France,Male,36,7,128829.25,190588.59,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15658258,France,Male,43,6,128760.32,36342.79,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15612494,France,Female,44,6,128747.69,146955.71,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15739578,France,Male,49,6,128663.9,65769.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15628992,Germany,Male,32,2,128647.98,54416.18,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,55,Retained
+15769548,France,Female,37,7,128645.67,92149.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15628298,Spain,Female,47,8,128486.11,179227.12,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15814675,Germany,Female,39,8,128264.03,61792.76,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15753332,Germany,Male,48,8,128140.17,175753.55,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Churned
+15597909,Germany,Male,33,7,128135.99,158437.73,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15585823,France,Male,31,8,128131.73,96131.47,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15689412,France,Female,32,7,127849.38,15798.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,55,Retained
+15769412,Spain,Male,39,4,207034.96,157694.76,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Churned
+15793688,France,Male,50,9,201009.64,158032.5,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15807003,France,Male,32,10,191775.65,179657.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15790355,Germany,Male,36,5,190479.48,179351.89,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15648047,Germany,Male,27,5,190125.43,21793.59,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15763460,France,Male,33,10,183768.47,164119.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15678034,France,Male,46,9,180226.24,13464.64,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15641250,Spain,Male,38,9,179581.31,23596.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15762331,France,Male,37,9,178755.84,199929.17,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15664339,Spain,Male,48,4,178144.91,50168.41,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Churned
+15668472,Spain,Female,24,5,177799.83,79886.06,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15792729,Germany,Female,34,9,176311.36,160213.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15757867,France,Female,30,10,176173.52,97045.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15726494,France,Male,44,9,175303.06,65500.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15701301,France,Female,42,3,175159.9,67124.48,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Churned
+15738448,Germany,Female,25,3,174330.35,181647.13,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15715047,Spain,Male,43,9,172478.15,191084.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15722010,Spain,Male,53,9,170491.84,35588.07,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15762716,Spain,Female,60,10,168920.75,31445.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15624866,Germany,Male,37,3,168735.74,70370.24,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15598338,Germany,Female,33,3,168560.46,90270.16,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15803337,France,Male,23,9,168372.52,134676.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15590327,Germany,Female,42,10,166031.45,98293.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15730705,France,Male,37,9,165252.52,85286.3,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15591628,Germany,Male,41,9,164046.1,49405.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15570895,France,Male,42,10,163548.07,38866.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15784597,France,Male,26,9,162923.85,98368.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15673619,France,Male,25,9,162560.32,64129.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15809347,Germany,Male,32,9,160680.41,30886.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15632609,France,Female,39,10,160132.75,32824.15,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15682600,Germany,Male,39,9,159492.79,80582.34,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15594450,France,Male,49,9,159458.53,135841.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15738662,Germany,Male,41,9,159434.03,178373.93,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15749093,France,Male,43,4,158713.08,98586.14,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15656522,Spain,Male,32,10,158537.42,166850.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15640161,Germany,Male,44,5,157955.83,139297.71,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15628530,France,Male,42,3,156864.2,88890.75,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15663263,France,Male,47,5,156265.31,1055.66,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15647099,France,Female,37,9,156091.97,72008.61,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15699619,France,Male,31,10,155978.17,91510.71,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15609187,France,Female,27,5,155879.09,70774.97,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15723907,Germany,Female,49,5,154776.42,196257.68,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15604818,France,Male,34,9,154495.79,191395.88,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15684211,Spain,Female,44,9,153656.85,158742.81,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15741092,Spain,Male,34,10,153360.02,140509.86,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15648136,Germany,Female,28,9,152812.58,166682.57,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15589949,Spain,Male,34,9,152806.74,19687.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15627360,France,Male,42,9,152603.45,110265.24,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15590993,Spain,Male,37,5,152212.88,120219.14,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15692744,France,Male,36,4,152169.12,38629.3,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Churned
+15675794,Germany,Male,47,9,152076.93,121840.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15630419,France,Male,44,9,149961.11,57121.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15660679,Spain,Female,38,9,149571.94,118383.18,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15588419,Germany,Female,34,10,148962.46,66389.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15771540,France,Male,38,9,148912.44,80416.16,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15752507,Germany,Male,60,9,148846.39,192831.67,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15638882,Germany,Female,62,9,148214.36,48571.14,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15631756,France,Female,35,5,147813.05,109029.72,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15778936,France,Male,33,9,147510.34,190611.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15733904,France,Male,32,9,147493.89,33656.35,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15603683,Spain,Female,23,3,146584.19,125445.8,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15721779,Spain,Male,41,5,146466.46,180934.67,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15809178,Germany,Female,42,9,146100.75,32574.01,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15753639,France,Male,37,5,146093.39,160593.41,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15768193,Germany,Male,36,5,146050.97,86424.57,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15789201,Germany,Female,35,9,145623.36,163181.62,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15576615,Spain,Male,37,10,145382.61,80408.59,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15717527,France,Female,49,9,145359.99,38186.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15794266,France,Male,32,9,145303.52,103560.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15570990,Spain,Female,30,4,145222.99,145160.96,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15578369,Germany,Female,37,9,145219.3,159132.83,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15719809,Germany,Male,32,3,145166.09,111421.45,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15717984,France,Male,47,9,144900.58,61315.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15796334,Germany,Male,39,10,144757.02,22878.16,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15590810,Germany,Female,41,9,144326.09,73979.85,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15606273,France,Male,37,5,144235.73,154957.66,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Churned
+15642530,Germany,Female,47,10,144090.42,140938.95,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15813917,Germany,Male,31,9,143321.97,83679.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15635660,Germany,Male,30,9,142910.15,105890.55,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15602043,Germany,Female,46,5,141788.63,164967.21,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15724127,France,Female,26,4,141581.71,98309.27,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15654901,France,Male,51,10,141556.96,130189.53,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15815070,Germany,Female,44,5,141428.99,68408.74,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15665811,France,Male,33,9,141234.98,95673.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15762268,France,Female,41,10,141162.08,50908.48,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15587394,France,Male,39,4,140133.08,131304.45,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15606944,Germany,Male,43,9,140121.17,11302.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15641474,France,Male,46,9,139859.54,38967.29,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15713975,Germany,Female,47,10,139756.12,165849.49,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15662854,Germany,Male,48,5,139714.4,73066.72,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15749068,France,Female,40,9,139625.34,93702.96,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15572801,Spain,Male,34,5,139393.19,33950.08,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15635396,Germany,Female,29,9,139106.19,141872.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15589496,France,Male,34,5,139064.06,67949.32,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15723169,France,Female,31,9,138857.59,48640.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15579781,Germany,Male,31,10,138653.51,190803.37,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15801169,Germany,Female,39,9,138341.51,50072.94,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15616213,Germany,Female,51,9,138214.5,198715.27,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15746995,Germany,Male,31,9,138166.3,12920.43,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15684669,France,Female,41,9,137891.35,142009.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15743498,Germany,Male,52,9,137755.76,163191.99,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15707011,France,Male,47,10,137682.68,71071.47,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15698932,Germany,Male,44,10,137452.09,189543.9,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15785024,France,Female,40,9,137409.19,175877.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15798615,France,Female,47,9,137301.87,44351.77,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15763665,France,Female,28,4,136674.51,5278.78,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15639576,France,Male,26,9,136623.19,153228.0,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15647266,Spain,Female,45,10,135923.16,18732.84,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15730759,France,Female,27,9,135637.0,153080.4,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15771942,Germany,Female,46,9,135555.66,133146.03,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15781451,France,Male,42,3,134936.97,135178.91,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15775750,France,Male,37,9,134560.62,27596.39,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15649280,Germany,Female,40,9,134504.78,18082.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15644356,Spain,Female,47,10,134032.01,144290.97,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15663249,Spain,Female,37,9,133292.45,111175.09,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15698786,France,Female,39,9,133102.92,27046.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15591698,Germany,Female,49,9,132934.89,171056.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15592877,Spain,Male,42,9,132657.55,35367.19,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15780088,Spain,Male,34,9,132439.99,177747.72,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15767818,France,Male,55,10,132436.34,978.66,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15589204,France,Male,33,9,131765.72,118782.06,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15815443,Spain,Female,46,10,131414.76,54947.51,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15807340,Germany,Male,33,4,131023.76,55072.93,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15617301,Germany,Male,36,9,130809.77,152290.28,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15737310,France,Male,29,10,130206.28,184654.87,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15768600,Germany,Male,50,9,130023.38,62989.82,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15651022,Germany,Male,44,10,129608.57,5472.7,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15788683,Germany,Female,34,10,129417.82,153727.32,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15677796,Germany,Male,47,9,129289.98,169935.46,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15727499,Germany,Female,36,3,129118.5,139435.12,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,60,Retained
+15665784,France,Male,27,9,128940.24,46786.92,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15658980,Germany,Male,26,9,128793.63,19262.05,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15632051,Germany,Female,42,10,128707.31,63092.65,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15644400,France,Male,44,9,128601.98,117031.2,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15763063,Spain,Female,25,10,128509.63,121562.33,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15777046,France,Female,39,9,128362.59,86044.98,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Retained
+15755405,France,Male,43,9,128284.45,32996.89,1,Has Credit Card,Inactive Member,Single Product,At-Risk Premium,60,Churned
+15807245,Germany,Female,41,1,200117.76,94142.35,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15713370,Spain,Male,36,8,188241.05,183058.51,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15578251,France,Male,37,2,186347.97,92809.73,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15786042,Germany,Female,44,2,185932.18,65413.41,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15690372,Spain,Male,38,1,181110.13,184544.59,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15681843,Germany,Female,35,0,180303.24,163587.9,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15570051,Germany,Female,38,6,179886.41,153122.58,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15588859,Spain,Female,44,0,179356.28,2919.21,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15780961,France,Female,21,1,178718.19,22388.0,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15739194,Spain,Male,38,0,178056.54,38434.73,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15665327,France,Male,18,2,176139.5,129654.22,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15757632,France,Female,41,1,176024.05,182337.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15569430,Spain,Female,36,2,175509.8,152039.67,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15707110,Germany,Male,28,2,170890.05,41758.9,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15770974,Germany,Female,37,8,170840.08,109843.16,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15572265,Germany,Male,46,1,170826.55,45041.32,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15783501,France,Female,38,2,168190.33,68052.08,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15701962,Spain,Female,29,2,166930.76,122487.73,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15683524,Germany,Female,23,6,166070.48,90494.72,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15605020,France,Male,45,2,165901.59,23054.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15650086,France,Male,43,2,165896.0,130795.52,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15756539,Germany,Female,39,7,165610.41,131852.01,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15723064,Spain,Male,24,1,165149.13,21858.28,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15697625,France,Male,37,2,163789.49,75832.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15601045,Spain,Male,37,8,163708.58,76259.23,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15738672,Germany,Female,40,2,162485.8,149381.32,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15621075,Germany,Female,45,1,162150.42,174531.27,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15742971,France,Female,44,2,161887.81,84870.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15752047,Germany,Male,33,2,161814.64,169381.9,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15629244,Spain,Male,50,7,159453.64,54560.79,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15686957,Germany,Male,35,2,158584.28,43640.16,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15656121,Germany,Male,31,6,157791.07,177994.81,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15719779,Germany,Male,25,1,157404.02,93073.04,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15591047,Spain,Female,47,6,157296.02,147278.43,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15772604,Spain,Male,36,1,157267.95,141533.19,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15733491,Germany,Female,40,8,153537.57,23101.13,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15575399,France,Female,42,1,152160.21,101778.9,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15602845,Germany,Male,41,2,152102.18,181879.56,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15680666,Spain,Female,39,2,151963.26,158948.63,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15755223,Germany,Male,53,7,150926.99,119817.19,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15753955,Spain,Male,34,7,149940.04,156648.81,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15657163,Germany,Male,42,1,149332.48,100834.22,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15569394,France,Male,24,2,148197.15,182775.08,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15592578,Spain,Female,41,7,146997.64,137791.18,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15636872,France,Female,32,8,144705.87,171482.56,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15801904,Germany,Male,28,0,143988.0,8755.69,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15761018,Germany,Male,50,2,143829.2,181224.24,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15636330,Germany,Female,48,1,143279.58,31580.8,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15699257,Spain,Male,42,2,143145.87,43612.06,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15633419,Germany,Female,28,1,143124.63,81723.8,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15801152,Spain,Female,39,1,142876.98,44363.42,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15632365,Germany,Male,33,8,142871.27,77737.86,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15638513,France,Female,40,7,142856.95,38019.74,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15683521,Germany,Male,28,0,142574.71,129084.82,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15786905,Germany,Female,40,8,141782.57,86333.63,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15583138,France,Male,42,2,141642.92,172149.76,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15664214,France,Male,33,2,141204.65,76257.46,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15600357,France,Female,40,1,140197.71,150720.39,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15700083,Spain,Male,39,2,139443.75,9234.06,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15809286,Germany,Male,37,8,138292.64,152422.91,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15706200,Germany,Male,41,2,138014.4,140298.24,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15575883,France,Male,34,2,137390.11,9677.0,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15720463,France,Male,30,2,137262.71,62905.29,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15690526,Germany,Male,31,2,137260.45,55387.28,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15659094,Germany,Female,34,8,136729.51,47058.21,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15795527,Spain,Male,43,2,136487.86,82815.93,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15768137,Spain,Female,23,6,136100.69,169669.33,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15754578,France,Female,35,0,135984.15,186778.89,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15659475,France,Female,33,6,135703.59,74850.84,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15726556,Germany,Female,26,6,135067.52,131211.86,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15769346,France,Female,36,1,134997.49,44688.08,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15752578,France,Female,37,2,133968.96,148689.65,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15674331,Germany,Male,30,7,132174.41,93767.03,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15691624,France,Male,33,2,132150.26,23067.97,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15656417,France,Female,39,1,132077.48,192255.15,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15591135,France,Male,37,2,132057.92,34743.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15598521,Germany,Female,33,7,131647.01,79775.19,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15654859,Spain,Female,63,2,131629.17,122109.58,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15605134,France,Female,34,0,131244.65,183229.02,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15720968,Germany,Male,27,2,130274.26,147533.09,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15632521,Germany,Male,45,0,130170.82,150856.38,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15672912,Spain,Female,39,7,130051.66,55356.39,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15672894,France,Female,36,8,129944.39,198914.8,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15738954,France,Male,35,7,129717.3,86937.2,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15793042,France,Male,39,2,129669.32,82774.07,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15682472,France,Male,34,8,129433.34,38131.77,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15648067,France,Male,39,1,129299.28,73107.6,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15669994,Germany,Female,31,1,128663.81,125083.29,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15639882,France,Male,30,2,128262.72,50771.16,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15574830,Germany,Male,58,2,128137.42,147635.33,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15806081,Germany,Female,48,2,127924.25,32202.61,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15669342,Germany,Male,35,2,127862.93,139083.7,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15767908,France,Male,38,6,127678.8,45422.89,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15707918,Germany,Female,36,0,127675.39,74260.16,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Retained
+15800287,Spain,Female,46,2,127660.46,150156.82,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,65,Churned
+15599131,Germany,Male,26,4,214346.96,128815.33,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15680683,Spain,Male,29,5,197200.04,141453.62,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15797760,France,Male,40,3,193354.86,149188.41,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15600781,Germany,Male,34,4,185173.81,120834.48,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15722599,France,Female,37,9,183613.66,49734.94,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15753161,France,Female,36,5,180169.44,17348.56,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15804142,Spain,Female,57,3,175575.95,99061.75,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15774164,Germany,Male,33,5,174673.65,33300.56,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15699029,France,Male,37,4,170557.91,198252.88,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15721469,Germany,Male,45,9,170295.04,164741.81,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15727197,France,Female,52,9,170228.59,148477.57,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15796813,France,Male,54,3,167831.88,150159.95,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15796313,France,Female,36,4,166909.2,138871.12,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15685997,Spain,Female,39,5,166733.92,14279.44,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15665376,Germany,Female,35,3,166518.63,147930.46,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15803415,France,Female,39,3,166501.17,93835.64,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15771702,France,Female,35,5,166118.45,127827.18,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15783955,France,Female,25,4,165686.11,15467.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15654408,Spain,Male,41,5,165445.04,85787.31,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15771674,Spain,Female,39,5,162390.52,54702.66,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15685653,Germany,Female,40,3,162261.01,137028.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15574372,France,Male,35,5,161274.05,181429.87,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15740470,France,Male,39,4,160652.45,57643.55,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15652192,France,Female,33,9,160541.36,93541.14,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15696703,Germany,Male,27,3,160358.68,142367.72,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15619708,France,Male,25,5,157993.15,146041.45,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15669262,France,Male,43,9,157960.49,136602.8,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15600879,Germany,Female,36,3,157780.93,6089.13,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15694628,Germany,Female,39,4,157731.6,162820.6,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15697879,France,Male,30,3,156660.72,45742.42,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15603465,Germany,Female,45,5,155447.65,51871.95,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15703588,Germany,Male,25,5,153611.83,35321.65,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15622182,Germany,Female,28,3,153538.13,110776.01,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15773469,Germany,Female,27,9,152328.88,126494.82,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15798749,Germany,Female,43,3,152063.59,97910.06,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15757541,France,Female,33,9,151772.63,180249.94,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15657540,France,Male,50,5,151215.34,169804.4,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15805676,Spain,Male,29,4,151012.55,9770.97,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15732102,Germany,Female,27,3,150905.03,16998.72,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15809999,France,Female,41,3,150300.65,71672.86,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15765283,Germany,Female,40,3,149961.99,104610.86,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15572408,Germany,Male,39,3,149887.49,63846.36,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15582168,Germany,Female,61,4,149525.34,123663.63,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15575498,France,Female,39,5,149379.66,96075.55,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15593501,France,Female,36,5,148667.81,56092.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15621195,Germany,Male,41,3,147974.16,170518.83,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15786014,France,Male,28,5,145105.64,185489.11,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15715184,Spain,Female,31,4,144637.86,40496.72,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15780128,France,Male,33,3,144427.96,113845.19,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15682435,France,Male,35,4,143744.77,104076.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15782456,France,Male,46,9,143267.14,193099.43,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15766289,France,Male,47,5,142669.93,162760.96,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15674950,Germany,Male,39,4,142406.43,146637.45,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15685290,Germany,Male,46,5,142360.62,48421.4,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15677146,France,Female,28,4,142243.54,33074.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15688563,Germany,Male,31,4,141989.27,26116.82,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15669945,France,Male,35,4,141359.37,39519.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15756125,Spain,Male,44,5,140856.16,158735.1,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15737910,Germany,Male,35,5,140691.08,167810.26,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15598046,France,Female,39,5,139562.05,61636.22,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15612627,Germany,Male,29,5,139541.58,80607.33,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15614491,France,Male,39,3,139153.68,147662.33,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15705515,Germany,Male,40,5,138241.9,159418.1,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15639322,Spain,Male,33,4,137847.41,98349.13,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15571917,Germany,Female,38,5,137657.71,72985.61,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15648030,Spain,Female,33,5,137388.01,165000.68,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15811026,Germany,Male,43,5,136855.94,171070.52,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15797733,Germany,Male,30,10,136622.55,47310.24,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15785326,Spain,Female,35,5,136526.26,59653.03,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15742238,Germany,Male,35,4,136496.12,116672.02,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15595350,France,Female,31,3,136067.82,65567.91,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15595609,Germany,Male,52,9,135870.01,54038.62,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15658240,France,Female,44,9,135814.7,115091.38,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15695819,Germany,Male,43,5,134740.19,181430.91,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15726186,Spain,Male,29,4,133434.57,97983.44,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15793331,France,Male,32,5,133050.97,89385.92,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15642468,France,Male,42,9,132739.26,174667.65,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15750104,Germany,Male,43,5,132615.73,32999.1,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15596939,Germany,Male,36,4,132578.92,84320.94,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15717328,France,Female,37,4,132446.08,87071.18,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15766906,France,Female,25,4,132116.13,129933.5,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15723818,France,Female,37,4,131834.76,8949.2,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15774224,Germany,Female,30,5,131563.88,170638.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15575581,Germany,Female,30,3,131344.52,54776.64,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15654574,Germany,Male,36,5,131142.53,174918.46,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15704053,Spain,Male,62,3,131078.42,119348.76,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15761477,Germany,Male,24,4,130806.42,80241.14,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15622833,Germany,Female,29,10,130420.2,106276.55,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15733872,Germany,Female,33,10,130229.71,54019.93,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15636551,France,Female,29,3,130181.47,31811.44,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15589572,Spain,Female,61,4,129855.72,170214.82,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15679283,France,Female,33,4,129731.64,178123.86,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15762216,France,Female,41,4,129553.76,187599.8,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15675791,France,Male,36,4,129440.3,102638.35,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15699772,Germany,Female,40,3,129248.11,72876.43,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Churned
+15677395,France,Female,39,9,129189.15,170998.83,2,No Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15682773,France,Female,38,3,128345.69,63218.85,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,70,Retained
+15663888,Germany,Male,34,6,204017.4,109538.35,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15634141,Germany,Female,42,8,192390.52,823.36,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15785547,France,Male,28,8,191402.82,83238.4,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15567860,Spain,Female,44,7,189318.16,45026.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15606601,France,Female,22,6,186788.96,73286.8,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15599251,Germany,Male,32,7,184715.86,113781.99,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15686776,France,Female,32,6,184686.41,14956.44,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15763895,France,Male,32,7,178011.5,22375.14,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15719352,Spain,Male,39,6,170184.99,89593.26,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15662403,France,Female,32,6,169089.38,101057.95,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15690169,France,Male,31,7,161171.7,12599.94,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15594404,France,Female,49,8,160602.25,129273.94,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15665064,France,Male,36,8,158351.02,155304.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15669253,Spain,Male,39,7,157691.98,133600.89,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15633930,Spain,Female,56,6,157559.59,140991.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15713160,Spain,Male,25,7,157228.61,124382.9,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15660211,Germany,Male,35,7,156847.29,31824.29,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15629793,Spain,Male,28,8,156823.7,198251.52,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15641413,Germany,Female,49,7,155393.98,13308.2,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15813503,Spain,Male,37,8,154712.58,89099.18,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15597709,France,Female,39,6,154121.32,176614.86,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15673238,Germany,Female,59,8,154110.99,101240.08,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15647782,Germany,Male,36,8,152899.24,177130.33,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15619343,France,Male,56,7,152759.0,133167.11,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15788775,Germany,Male,40,8,152576.25,73073.68,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15685500,Germany,Male,26,7,152400.51,79414.0,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15742613,Germany,Female,42,8,152324.66,171733.22,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15810716,Germany,Male,42,8,151836.36,68695.38,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15587133,France,Male,42,7,151027.05,119377.36,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15628274,Germany,Male,35,8,149995.72,42143.55,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15735106,Spain,Male,28,6,149594.02,102325.19,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15607381,Germany,Female,31,7,148913.72,53817.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15810732,France,Female,36,8,148749.29,91830.75,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15771139,Germany,Male,34,8,147487.23,66680.77,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15613844,France,Female,28,7,146445.24,184317.74,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15747980,Spain,Male,38,6,146282.79,198516.2,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15792180,Germany,Male,22,7,144954.75,102246.0,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15658548,Germany,Female,36,6,144773.29,53217.3,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15807595,Germany,Male,51,7,144244.59,51113.14,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15720187,Germany,Female,30,7,143964.36,41879.99,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15801296,Germany,Female,37,7,143258.85,192721.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15649450,Germany,Male,24,6,143221.35,186035.72,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15622083,Germany,Male,30,6,143138.91,2955.46,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15629846,Germany,Female,47,8,143001.5,108977.5,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15683993,France,Female,37,8,142987.46,158840.99,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15722061,Germany,Female,41,8,142015.76,114323.66,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15662955,France,Male,27,8,141223.68,90591.15,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15704014,Germany,Male,37,7,140950.92,195333.98,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15759456,Spain,Male,34,7,140694.78,46266.63,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15734987,France,Female,43,7,140260.36,2748.72,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15659399,Germany,Male,50,7,139675.07,45591.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15581323,Germany,Female,28,7,139246.22,106799.49,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15730639,France,Male,23,7,139224.92,65057.71,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15788118,France,Male,33,7,138705.02,37136.15,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15711635,Germany,Female,42,6,138650.49,64746.07,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15728043,Germany,Female,37,7,138503.51,57215.85,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15705707,Spain,Female,29,8,138296.94,141075.51,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15566295,France,Female,33,6,138053.79,148779.41,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15775430,Germany,Male,31,7,138008.06,129912.74,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15747807,France,Female,43,6,137824.03,172557.77,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15664752,Germany,Male,39,8,136000.45,31708.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15734917,Germany,Male,21,8,133974.36,50294.09,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15812647,France,Male,34,8,133936.04,91359.79,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15733661,Spain,Female,27,8,133806.54,6251.3,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15582116,Germany,Female,45,7,132746.2,26628.88,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15602934,France,Female,33,6,131698.57,151623.91,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15661734,Germany,Male,42,8,131390.75,71178.09,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15654292,Germany,Male,33,8,130368.31,105642.43,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15685300,France,Male,35,6,128993.76,130483.56,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15763256,Germany,Female,64,8,128751.65,189398.18,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15695197,Germany,Female,25,7,128524.19,20682.46,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15673578,Germany,Female,40,7,128486.91,10109.47,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15663421,Spain,Male,28,6,128396.33,79919.97,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15763093,Germany,Female,35,7,128369.75,198256.15,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Retained
+15649033,Germany,Female,55,7,127723.25,139469.11,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,75,Churned
+15725665,France,Male,47,10,198546.1,191198.92,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15670943,Germany,Male,31,9,182275.23,190631.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15698510,Germany,Male,42,9,181627.14,172668.39,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15595537,Germany,Male,49,9,171787.84,187192.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15664150,Germany,Female,29,9,170214.23,49284.0,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15806134,Germany,Male,34,9,162691.16,94912.78,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15717225,France,Female,21,10,161525.96,9262.77,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15770091,Germany,Male,28,9,160858.13,27149.27,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15620341,Germany,Male,44,9,160838.13,196261.64,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15660101,France,Male,31,9,157120.86,141300.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15646817,France,Male,51,9,156773.78,40257.79,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15624850,France,Male,30,10,153972.89,62811.03,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15678129,Spain,Female,45,9,150840.03,155516.35,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15810457,Germany,Female,33,9,150412.14,170764.08,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15728224,Germany,Female,41,9,149155.53,42131.26,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15694039,Germany,Female,46,9,149003.76,176902.83,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15732704,Spain,Male,25,9,148042.97,52341.15,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15640491,France,Female,33,10,147493.7,100447.53,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15730353,Germany,Male,29,9,145294.08,147484.13,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15762169,Germany,Male,37,9,145018.64,90928.02,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15727391,Germany,Male,29,9,144553.5,143454.95,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15605791,Germany,Male,29,9,144287.6,32063.3,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15793723,Germany,Male,32,9,144272.07,176580.63,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15638047,Germany,Female,45,9,142765.24,34749.65,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15811314,Germany,Female,36,9,140355.56,136329.96,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15687688,Germany,Female,32,10,139875.2,15378.23,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15786153,Germany,Male,47,9,137774.11,151902.78,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15757829,Germany,Female,40,10,137389.77,170122.22,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15580935,Germany,Male,33,9,135962.4,121747.96,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15698522,Germany,Male,39,9,134599.33,183095.87,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15755225,Germany,Male,34,9,134464.58,178833.34,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15630244,France,Male,40,10,134320.23,150757.35,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15703482,Germany,Male,34,9,134260.36,147074.67,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15683930,Germany,Female,32,9,134096.53,53931.05,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15703820,France,Male,42,9,133701.07,101069.71,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15650889,Germany,Female,30,10,133537.1,155593.74,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15624703,Germany,Male,35,9,129847.75,197325.4,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15797194,France,Male,39,10,129674.89,80552.36,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained
+15593128,France,Female,56,10,129255.2,142492.04,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Churned
+15592846,Germany,Male,35,10,128173.9,59093.39,2,Has Credit Card,Inactive Member,Optimal Product Depth,At-Risk Premium,80,Retained

@@ -1,0 +1,3 @@
+Salary_Balance_Mismatch_Status,Customer_Count,Churned_Customers,Retained_Customers,Avg_Balance,Avg_Salary,Avg_Retention_Strength_Score,Churn_Rate
+No Salary-Balance Mismatch,9109,1905,7204,83967.38312438248,92806.54412559008,56.90547809858382,20.91
+Salary-Balance Mismatch,891,132,759,0.0,174553.9712345679,65.01234567901234,14.81
