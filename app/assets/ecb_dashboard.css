@@ -996,8 +996,115 @@
     color: var(--ecb-slate-900) !important;
   }
 
-  /* =======================================================
-     16. SAFETY: KEEP MOBILE/TABLET UNTOUCHED
-     This whole file is wrapped in min-width:1025px.
-     ======================================================= */
+}
+
+/* =========================================================
+   DESKTOP ONLY — FULL SCREEN VIEWPORT / REMOVE TOP WHITE STRIP
+   Paste this at the END of app/assets/ecb_dashboard.css
+   Mobile and tablet untouched
+========================================================= */
+
+@media (min-width: 1025px) {
+
+  /* Remove Streamlit default top header white strip */
+  header[data-testid="stHeader"] {
+    height: 0rem !important;
+    min-height: 0rem !important;
+    max-height: 0rem !important;
+    visibility: hidden !important;
+    background: transparent !important;
+  }
+
+  /* Hide Streamlit toolbar/menu/decorative top line on desktop */
+  div[data-testid="stToolbar"],
+  div[data-testid="stDecoration"],
+  div[data-testid="stStatusWidget"],
+  #MainMenu,
+  footer {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+  }
+
+  /* Main app should start from very top */
+  .stApp {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    min-height: 100vh !important;
+    background:
+      radial-gradient(circle at top left, rgba(22, 91, 186, 0.10), transparent 32%),
+      radial-gradient(circle at top right, rgba(214, 164, 28, 0.10), transparent 34%),
+      linear-gradient(135deg, #f4f8fd 0%, #edf4fb 45%, #f8fbff 100%) !important;
+  }
+
+  /* Main section full viewport */
+  section[data-testid="stMain"],
+  div[data-testid="stAppViewContainer"],
+  div[data-testid="stAppViewBlockContainer"] {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Main content full width after sidebar */
+  section[data-testid="stMain"] > div {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Remove default Streamlit container top gap */
+  .main .block-container,
+  section[data-testid="stMain"] .block-container,
+  div[data-testid="stVerticalBlock"] > div:has(.stTabs) {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+  }
+
+  /* Make dashboard content use full desktop canvas */
+  .main .block-container,
+  section[data-testid="stMain"] .block-container {
+    max-width: none !important;
+    width: 100% !important;
+    padding-left: 3.8rem !important;
+    padding-right: 3.8rem !important;
+    padding-bottom: 5rem !important;
+  }
+
+  /* Reduce first element top gap */
+  section[data-testid="stMain"] .block-container > div:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Sidebar should also start cleanly from top */
+  section[data-testid="stSidebar"] {
+    top: 0 !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    padding-top: 0 !important;
+    background:
+      linear-gradient(180deg, #f5f9fe 0%, #edf5fc 52%, #f7fbff 100%) !important;
+    border-right: 1px solid rgba(15, 45, 83, 0.12) !important;
+  }
+
+  section[data-testid="stSidebar"] > div {
+    padding-top: 1.8rem !important;
+    height: 100vh !important;
+  }
+
+  /* Hero/header card should sit closer to top in full-screen mode */
+  .hero-section,
+  .dashboard-hero,
+  .hero-card,
+  [class*="hero"] {
+    margin-top: 0.8rem !important;
+  }
+
+  /* Remove accidental empty top blocks */
+  .element-container:empty,
+  div[data-testid="stVerticalBlock"] > div:empty {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
