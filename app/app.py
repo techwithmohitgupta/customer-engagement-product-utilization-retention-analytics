@@ -502,84 +502,90 @@ def render_sidebar_filters(
     """
     Render only project-required sidebar filters.
 
-    Final sidebar follows the project guidelines strictly:
-    - Engagement filters
-    - Product count slider
-    - Balance and salary thresholds
+    Locked sidebar scope:
+    - Keep the same sidebar items only.
+    - Keep all filter return keys unchanged.
+    - Keep filters fully connected with the dashboard filtering system.
     """
-    with st.sidebar:
-        if unified_mentor_logo_path.exists():
-            sidebar_logo_image = prepare_sidebar_logo_image(unified_mentor_logo_path)
-            
-            logo_left, logo_center, logo_right = st.columns([0.01, 0.98, 0.01])
+    selected_filters = {}
 
-            with logo_center:
+    with st.sidebar:
+        with st.container(key="sidebar_logo_panel"):
+            if unified_mentor_logo_path.exists():
+                sidebar_logo_image = prepare_sidebar_logo_image(unified_mentor_logo_path)
                 st.image(
                     sidebar_logo_image,
-                    width=320
+                    width=225,
                 )
 
-        st.title("Dashboard Filters")
+        with st.container(key="sidebar_header_panel"):
+            st.title("Dashboard Filters")
 
-        st.caption(
-            "Use the required controls to filter customer engagement, product count, "
-            "balance threshold, and salary threshold."
-        )
-
-        st.divider()
-
-        st.subheader("Engagement Filters")
-
-        selected_filters = {}
-
-        selected_filters["engagement_status"] = st.multiselect(
-            label="Engagement Status",
-            options=engagement_options,
-            default=engagement_options,
-            help=(
-                "Filter customers by engagement behavior. "
-                "Select both Active and Inactive members to compare engagement retention ratio."
-            ),
-        )
+            st.caption(
+                "Use the required controls to filter customer engagement, product count, "
+                "balance threshold, and salary threshold."
+            )
 
         st.divider()
 
-        st.subheader("Product Count Slider")
+        with st.container(key="sidebar_engagement_panel"):
+            st.subheader("Engagement Filters")
 
-        selected_filters["product_count_range"] = st.slider(
-            label="Product Count Range",
-            min_value=product_min,
-            max_value=product_max,
-            value=(product_min, product_max),
-            step=1,
-            help="Filter customers by number of banking products used.",
-        )
-
-        st.divider()
-
-        st.subheader("Balance & Salary Thresholds")
-
-        selected_filters["min_balance"] = st.slider(
-            label="Minimum Balance Threshold",
-            min_value=balance_min_value,
-            max_value=balance_max_value,
-            value=balance_min_value,
-            step=1000.0,
-            help="Show customers with balance greater than or equal to this threshold.",
-        )
-
-        selected_filters["min_salary"] = st.slider(
-            label="Minimum Salary Threshold",
-            min_value=salary_min_value,
-            max_value=salary_max_value,
-            value=salary_min_value,
-            step=1000.0,
-            help="Show customers with estimated salary greater than or equal to this threshold.",
-        )
+            selected_filters["engagement_status"] = st.multiselect(
+                label="Engagement Status",
+                options=engagement_options,
+                default=engagement_options,
+                help=(
+                    "Filter customers by engagement behavior. "
+                    "Select both Active and Inactive members to compare engagement retention ratio."
+                ),
+            )
 
         st.divider()
 
-        st.success("Required filters loaded.")
+        with st.container(key="sidebar_product_panel"):
+            st.subheader("Product Count Slider")
+
+            selected_filters["product_count_range"] = st.slider(
+                label="Product Count Range",
+                min_value=product_min,
+                max_value=product_max,
+                value=(product_min, product_max),
+                step=1,
+                format="%d",
+                key="filter_product_count_range",
+                help="Filter customers by number of banking products used.",
+            )
+
+        st.divider()
+
+        with st.container(key="sidebar_threshold_panel"):
+            st.subheader("Balance & Salary Thresholds")
+
+            selected_filters["min_balance"] = st.slider(
+                label="Minimum Balance Threshold",
+                min_value=balance_min_value,
+                max_value=balance_max_value,
+                value=balance_min_value,
+                step=1000.0,
+                format="%.0f",
+                key="filter_min_balance",
+                help="Show customers with balance greater than or equal to this threshold.",
+            )
+
+            selected_filters["min_salary"] = st.slider(
+                label="Minimum Salary Threshold",
+                min_value=salary_min_value,
+                max_value=salary_max_value,
+                value=salary_min_value,
+                step=1000.0,
+                format="%.0f",
+                key="filter_min_salary",
+                help="Show customers with estimated salary greater than or equal to this threshold.",
+            )
+
+        st.divider()
+        
 
     return selected_filters
 
@@ -1924,7 +1930,13 @@ def create_engagement_churn_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
 
 def create_engagement_outcome_chart(engagement_summary: pd.DataFrame) -> go.Figure:
     """
-    Grouped bar chart: retained vs churned by engagement.
+    Premium grouped bar chart: retained vs churned by engagement segment.
+
+    V2 layout direction:
+    - Removes bottom/right legend to prevent truncation.
+    - Adds a compact color guide annotation.
+    - Uses direct value labels above bars.
+    - Keeps chart clean, stable, and responsive.
     """
     chart_data = engagement_summary.melt(
         id_vars="Engagement_Status",
@@ -1964,6 +1976,11 @@ def create_engagement_outcome_chart(engagement_summary: pd.DataFrame) -> go.Figu
         texttemplate="%{text:,}",
         textposition="outside",
         cliponaxis=False,
+        marker_line_width=0,
+        textfont=dict(
+            size=13,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
         hovertemplate=(
             "<b>%{x}</b><br>"
             "Outcome: %{fullData.name}<br>"
@@ -1974,13 +1991,61 @@ def create_engagement_outcome_chart(engagement_summary: pd.DataFrame) -> go.Figu
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Engagement Outcome Split: Retained vs Churned Customers",
-        height=430,
+        height=500,
         xaxis_title="Engagement Status",
         yaxis_title="Customer Count",
-        legend_title="Customer Outcome",
+        legend_title=None,
     )
 
-    fig.update_layout(bargap=0.30)
+    fig.update_layout(
+        showlegend=False,
+        bargap=0.34,
+        bargroupgap=0.12,
+        margin=dict(l=82, r=62, t=92, b=86),
+        uniformtext_minsize=11,
+        uniformtext_mode="show",
+    )
+
+    fig.add_annotation(
+        x=1,
+        y=1.12,
+        xref="paper",
+        yref="paper",
+        text="<span style='color:#00875A'>■ Retained</span> &nbsp;&nbsp; <span style='color:#D64545'>■ Churned</span>",
+        showarrow=False,
+        align="right",
+        font=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+    )
+
+    fig.update_xaxes(
+        automargin=True,
+        tickangle=0,
+        title_standoff=18,
+        tickfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        title_font=dict(
+            size=13,
+            color=ECB_CHART_COLORS["gray"],
+        ),
+    )
+
+    fig.update_yaxes(
+        automargin=True,
+        title_standoff=18,
+        tickfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        title_font=dict(
+            size=13,
+            color=ECB_CHART_COLORS["gray"],
+        ),
+    )
 
     return fig
 
@@ -1991,10 +2056,10 @@ def create_engagement_churn_contribution_donut(
     """
     Premium 100% stacked bar: churn contribution by engagement segment.
 
-    Note:
-    - Function name is intentionally kept unchanged for safe call-order stability.
-    - This replaces the previous donut because two-category donuts created too much
-      empty left/right space in the Streamlit wide layout.
+    V2 layout direction:
+    - Removes legend because segment labels are already inside the bar.
+    - Prevents bottom legend/axis collision.
+    - Keeps the chart compact, centered, and business-readable.
     """
     chart_data = engagement_summary[
         engagement_summary["Churned_Customers"] > 0
@@ -2024,13 +2089,23 @@ def create_engagement_churn_contribution_donut(
                 y=["Churn Contribution"],
                 orientation="h",
                 name=row["Engagement_Status"],
-                marker_color=color_map.get(row["Engagement_Status"], ECB_CHART_COLORS["blue"]),
+                marker=dict(
+                    color=color_map.get(
+                        row["Engagement_Status"],
+                        ECB_CHART_COLORS["blue"],
+                    ),
+                    line=dict(width=0),
+                ),
                 text=[
                     f"{row['Engagement_Status']}<br>"
                     f"{row['Contribution_Share']:.1f}% | {int(row['Churned_Customers']):,}"
                 ],
                 textposition="inside",
                 insidetextanchor="middle",
+                textfont=dict(
+                    size=13,
+                    color=ECB_CHART_COLORS["dark_text"],
+                ),
                 hovertemplate=(
                     f"<b>{row['Engagement_Status']}</b><br>"
                     f"Churned Customers: {int(row['Churned_Customers']):,}<br>"
@@ -2043,23 +2118,32 @@ def create_engagement_churn_contribution_donut(
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Churn Contribution Share by Engagement Segment",
-        height=300,
+        height=360,
         xaxis_title="Share of Churned Customers (%)",
         yaxis_title=None,
-        legend_title="Engagement Segment",
+        legend_title=None,
     )
 
     fig.update_layout(
+        showlegend=False,
         barmode="stack",
-        bargap=0.55,
-        margin=dict(l=24, r=24, t=76, b=44),
-        legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=-0.30,
-            xanchor="center",
-            x=0.5,
-            title="Engagement Segment",
+        bargap=0.68,
+        margin=dict(l=54, r=54, t=88, b=76),
+        uniformtext_minsize=10,
+        uniformtext_mode="show",
+    )
+
+    fig.add_annotation(
+        x=0,
+        y=1.12,
+        xref="paper",
+        yref="paper",
+        text="Higher share = larger contribution to total churn",
+        showarrow=False,
+        align="left",
+        font=dict(
+            size=12,
+            color=ECB_CHART_COLORS["gray"],
         ),
     )
 
@@ -2068,12 +2152,23 @@ def create_engagement_churn_contribution_donut(
         ticksuffix="%",
         showgrid=True,
         gridcolor="#E6ECF3",
+        automargin=True,
+        title_standoff=18,
+        tickfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        title_font=dict(
+            size=13,
+            color=ECB_CHART_COLORS["gray"],
+        ),
     )
 
     fig.update_yaxes(
         showticklabels=False,
         showgrid=False,
         zeroline=False,
+        fixedrange=True,
     )
 
     return fig
@@ -2091,9 +2186,15 @@ def create_engagement_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
 
 def create_engagement_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure:
     """
-    Heatmap: engagement × retention strength tier.
+    Premium heatmap: engagement × retention strength tier.
+
+    V2 layout direction:
+    - Gives heatmap more visual dominance.
+    - Keeps x-axis labels readable.
+    - Keeps colorbar compact and visible.
+    - Avoids CSS-dependent Plotly fixes.
     """
-    return create_churn_heatmap(
+    fig = create_churn_heatmap(
         matrix_summary=matrix_summary,
         row_column="Engagement_Status",
         column_column="Retention_Strength_Tier",
@@ -2102,8 +2203,81 @@ def create_engagement_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure:
         title="Engagement × Retention Tier Churn Risk Matrix",
         xaxis_title="Retention Strength Tier",
         yaxis_title="Engagement Status",
-        height=440,
+        height=560,
     )
+
+    fig.update_layout(
+        height=560,
+        margin=dict(l=118, r=118, t=82, b=138),
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+    )
+
+    fig.update_xaxes(
+        tickangle=-22,
+        automargin=True,
+        title_standoff=30,
+        tickfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        title_font=dict(
+            size=13,
+            color=ECB_CHART_COLORS["gray"],
+        ),
+        showgrid=False,
+        zeroline=False,
+    )
+
+    fig.update_yaxes(
+        automargin=True,
+        title_standoff=28,
+        tickfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        title_font=dict(
+            size=13,
+            color=ECB_CHART_COLORS["gray"],
+        ),
+        showgrid=False,
+        zeroline=False,
+    )
+
+    fig.update_traces(
+        textfont=dict(
+            size=12,
+            color=ECB_CHART_COLORS["dark_text"],
+        ),
+        hovertemplate=(
+            "<b>%{y}</b><br>"
+            "Retention Tier: %{x}<br>"
+            "Churn Rate: %{z:.2f}%<extra></extra>"
+        ),
+        colorbar=dict(
+            title=dict(
+                text="Churn Rate (%)",
+                side="right",
+                font=dict(
+                    size=12,
+                    color=ECB_CHART_COLORS["dark_text"],
+                ),
+            ),
+            tickfont=dict(
+                size=11,
+                color=ECB_CHART_COLORS["dark_text"],
+            ),
+            ticksuffix="%",
+            thickness=16,
+            len=0.68,
+            x=1.02,
+            y=0.50,
+            outlinewidth=0,
+        ),
+        selector=dict(type="heatmap"),
+    )
+
+    return fig
 
 
 def calculate_engagement_decision_signals(
