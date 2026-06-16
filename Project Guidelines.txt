@@ -1,0 +1,137 @@
+Project Guidelines:
+
+
+Project Title:   Customer Engagement & Product Utilization Analytics for Retention Strategy
+
+
+Detailed guide and project requirements for the Customer Engagement & Product Utilization Analytics for Retention Strategy analysis.
+
+
+Background and Context
+Banks increasingly recognize that customer behavior and engagement—not just demographics—determine long-term retention. Customers may appear financially strong (high balance or salary) but still churn due to:
+
+• Low engagement
+• Limited product adoption
+• Weak relationship depth with the bank
+
+
+Understanding how customers use banking products and services is essential to designing:
+
+• Cross-sell strategies
+• Loyalty programs
+• Engagement-driven retention initiatives
+
+
+This project evaluates retention through the lens of customer behavior and relationship strength.
+
+
+Problem Statement
+Despite having data on customer engagement and product usage, banks often lack:
+
+• Quantitative insight into which behaviors drive retention
+• Clarity on whether product depth reduces churn
+• Evidence on whether high balances alone ensure loyalty
+
+
+As a result, retention strategies are frequently generic and misaligned with actual customer behavior.
+
+
+Project Objectives
+• Evaluate the relationship between engagement and churn
+• Measure retention impact of product count and product mix
+• Identify disengaged yet high-value customers
+
+
+Secondary Objectives
+• Support engagement-driven retention strategies
+• Improve product bundling decisions
+• Reduce silent churn among premium customers
+
+
+
+Dataset Description
+Column	                                                   Description
+CustomerId	                               Unique customer identifier
+Surname	                                           Customer surname
+CreditScore	                           Customer creditworthiness
+Geography	                              France, Spain, Germany
+Gender	                                             Male / Female
+Age	                                                    Customer age
+Tenure	                                         Years with the bank
+Balance	                                          Account balance
+NumOfProducts	                  Number of bank products
+HasCrCard	                          Credit card ownership
+IsActiveMember	                     Activity indicator
+EstimatedSalary	                  Estimated annual salary
+Exited	                                     Churn indicator (target)
+
+
+
+
+Analytical Methodology (Step-by-Step)
+Data Ingestion & Validation
+• Load dataset
+• Validate engagement and product fields
+• Ensure binary variables consistency
+• Confirm churn labeling accuracy
+Engagement Classification
+Create engagement profiles:
+
+• Active engaged customers
+• Inactive disengaged customers
+• Active but low-product customers
+• Inactive high-balance customers
+Product Utilization Analysis
+• Churn rate by number of products
+• Single-product vs multi-product retention
+• Product depth vs churn relationship
+Financial Commitment vs Engagement Analysis
+• Balance vs activity cross-analysis
+• Salary–balance mismatch detection
+• Identification of “at-risk premium customers”
+Retention Strength Assessment
+• Define “sticky customer” profiles
+• Measure churn stability across engagement tiers
+• Identify engagement thresholds linked to retention
+
+
+
+
+
+Key Performance Indicators (KPIs)
+
+KPI Name	                                                               Description
+Engagement Retention Ratio	                    Active vs inactive churn comparison
+Product Depth Index	                                   Products used vs loyalty
+High-Balance Disengagement Rate	              Premium churn risk
+Credit Card Stickiness Score	                       Card ownership retention impact
+Relationship Strength Index	              Combined engagement & product score
+
+
+
+
+
+Streamlit Web Application Requirements
+Core Modules
+• Engagement vs churn overview
+• Product utilization impact analysis
+• High-value disengaged customer detector
+• Retention strength scoring panels
+User Capabilities
+• Engagement filters
+• Product count sliders
+• Balance and salary thresholds
+
+
+
+
+Deliverables and Submission
+• Research paper (EDA, insights, recommendations)
+• Streamlit dashboard (live analytics)
+• Executive summary for government stakeholders
+
+
+
+
+Conclusion
+This project reframes customer churn from a behavioral and relationship-strength perspective. By focusing on engagement and product utilization rather than demographics, it provides actionable insights for retention strategy design, product optimization, and customer loyalty enhancement.

@@ -2054,12 +2054,16 @@ def create_engagement_churn_contribution_donut(
     engagement_summary: pd.DataFrame,
 ) -> go.Figure:
     """
-    Premium 100% stacked bar: churn contribution by engagement segment.
+    Premium donut chart: churn contribution share by engagement segment.
 
-    V2 layout direction:
-    - Removes legend because segment labels are already inside the bar.
-    - Prevents bottom legend/axis collision.
-    - Keeps the chart compact, centered, and business-readable.
+    V7 Final Polish:
+    - Keeps donut chart.
+    - Removes legend.
+    - Reduces blank space.
+    - Places insight note as a compact subtitle.
+    - Enlarges donut slightly.
+    - Keeps left/right callouts balanced and away from the donut ring.
+    - Keeps center label clean and readable.
     """
     chart_data = engagement_summary[
         engagement_summary["Churned_Customers"] > 0
@@ -2068,108 +2072,197 @@ def create_engagement_churn_contribution_donut(
     if chart_data.empty:
         chart_data = engagement_summary.copy()
 
+    if chart_data.empty:
+        return go.Figure()
+
     chart_data["Engagement_Status"] = chart_data["Engagement_Status"].astype(str)
-    total_churned = chart_data["Churned_Customers"].sum()
+    total_churned = float(chart_data["Churned_Customers"].sum())
+
+    if total_churned <= 0:
+        return go.Figure()
 
     chart_data["Contribution_Share"] = chart_data["Churned_Customers"].apply(
         lambda value: safe_divide(value, total_churned, 100)
     )
 
-    color_map = build_dynamic_color_map(
-        chart_data["Engagement_Status"].tolist(),
-        ENGAGEMENT_COLOR_MAP,
+    preferred_order = ["Inactive Member", "Active Member"]
+    order_map = {segment: index for index, segment in enumerate(preferred_order)}
+    chart_data["Sort_Order"] = chart_data["Engagement_Status"].map(order_map).fillna(99)
+    chart_data = chart_data.sort_values(
+        ["Sort_Order", "Churned_Customers"],
+        ascending=[True, False],
     )
 
-    fig = go.Figure()
+    color_map = {
+        "Inactive Member": "#D64545",
+        "Active Member": "#1565C0",
+    }
 
-    for _, row in chart_data.iterrows():
-        fig.add_trace(
-            go.Bar(
-                x=[row["Contribution_Share"]],
-                y=["Churn Contribution"],
-                orientation="h",
-                name=row["Engagement_Status"],
+    labels = chart_data["Engagement_Status"].tolist()
+    values = chart_data["Churned_Customers"].astype(float).tolist()
+    colors = [color_map.get(label, ECB_CHART_COLORS["blue"]) for label in labels]
+
+    fig = go.Figure(
+        data=[
+            go.Pie(
+                labels=labels,
+                values=values,
+                hole=0.69,
+                sort=False,
+                direction="clockwise",
+                rotation=92,
+                domain=dict(
+                    x=[0.355, 0.645],
+                    y=[0.18, 0.82],
+                ),
                 marker=dict(
-                    color=color_map.get(
-                        row["Engagement_Status"],
-                        ECB_CHART_COLORS["blue"],
+                    colors=colors,
+                    line=dict(
+                        color="#FFFFFF",
+                        width=5,
                     ),
-                    line=dict(width=0),
                 ),
-                text=[
-                    f"{row['Engagement_Status']}<br>"
-                    f"{row['Contribution_Share']:.1f}% | {int(row['Churned_Customers']):,}"
-                ],
-                textposition="inside",
-                insidetextanchor="middle",
-                textfont=dict(
-                    size=13,
-                    color=ECB_CHART_COLORS["dark_text"],
-                ),
+                textinfo="none",
                 hovertemplate=(
-                    f"<b>{row['Engagement_Status']}</b><br>"
-                    f"Churned Customers: {int(row['Churned_Customers']):,}<br>"
-                    f"Contribution Share: {row['Contribution_Share']:.2f}%<br>"
-                    f"Segment Churn Rate: {row['Churn_Rate']:.2f}%<extra></extra>"
+                    "<b>%{label}</b><br>"
+                    "Churned Customers: %{value:,}<br>"
+                    "Contribution Share: %{percent}<extra></extra>"
                 ),
+                pull=[
+                    0.025 if label == "Inactive Member" else 0.0
+                    for label in labels
+                ],
+                showlegend=False,
             )
-        )
-
-    fig = apply_premium_plotly_layout(
-        fig=fig,
-        title="Churn Contribution Share by Engagement Segment",
-        height=360,
-        xaxis_title="Share of Churned Customers (%)",
-        yaxis_title=None,
-        legend_title=None,
+        ]
     )
 
     fig.update_layout(
+        title=dict(
+            text="Churn Contribution Share by Engagement Segment",
+            x=0.035,
+            y=0.965,
+            xanchor="left",
+            yanchor="top",
+            font=dict(
+                size=18,
+                color="#07172F",
+                family="Inter, Segoe UI, Arial, sans-serif",
+            ),
+        ),
+        height=510,
+        margin=dict(t=72, r=54, b=46, l=54),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(
+            family="Inter, Segoe UI, Arial, sans-serif",
+            size=13,
+            color="#07172F",
+        ),
         showlegend=False,
-        barmode="stack",
-        bargap=0.68,
-        margin=dict(l=54, r=54, t=88, b=76),
-        uniformtext_minsize=10,
-        uniformtext_mode="show",
+    )
+
+    # Compact subtitle / insight note
+    fig.add_annotation(
+        x=0.035,
+        y=0.875,
+        xref="paper",
+        yref="paper",
+        text=(
+            "<span style='font-size:12.5px;color:#52637A'>"
+            "<b>Higher share</b> indicates larger contribution to total churn"
+            "</span>"
+        ),
+        showarrow=False,
+        align="left",
+        bgcolor="rgba(234,243,255,0.78)",
+        bordercolor="rgba(16,42,76,0.12)",
+        borderwidth=1,
+        borderpad=7,
+        font=dict(
+            family="Inter, Segoe UI, Arial, sans-serif",
+            color="#52637A",
+        ),
+    )
+
+    # Center text
+    fig.add_annotation(
+        x=0.50,
+        y=0.515,
+        xref="paper",
+        yref="paper",
+        text="<b>Total Churn</b>",
+        showarrow=False,
+        font=dict(
+            size=14,
+            color="#52637A",
+            family="Inter, Segoe UI, Arial, sans-serif",
+        ),
+        align="center",
     )
 
     fig.add_annotation(
-        x=0,
-        y=1.12,
+        x=0.50,
+        y=0.465,
         xref="paper",
         yref="paper",
-        text="Higher share = larger contribution to total churn",
+        text=f"<b>{int(total_churned):,}</b>",
         showarrow=False,
-        align="left",
         font=dict(
-            size=12,
-            color=ECB_CHART_COLORS["gray"],
+            size=33,
+            color="#07172F",
+            family="Inter, Segoe UI, Arial, sans-serif",
         ),
+        align="center",
     )
 
-    fig.update_xaxes(
-        range=[0, 100],
-        ticksuffix="%",
-        showgrid=True,
-        gridcolor="#E6ECF3",
-        automargin=True,
-        title_standoff=18,
-        tickfont=dict(
-            size=12,
-            color=ECB_CHART_COLORS["dark_text"],
-        ),
-        title_font=dict(
-            size=13,
-            color=ECB_CHART_COLORS["gray"],
-        ),
-    )
+    # Final balanced callout cards
+    callout_positions = {
+        "Active Member": {
+            "x": 0.215,
+            "y": 0.465,
+            "align": "right",
+        },
+        "Inactive Member": {
+            "x": 0.785,
+            "y": 0.535,
+            "align": "left",
+        },
+    }
 
-    fig.update_yaxes(
-        showticklabels=False,
-        showgrid=False,
-        zeroline=False,
-        fixedrange=True,
-    )
+    for _, row in chart_data.iterrows():
+        segment = row["Engagement_Status"]
+        share = float(row["Contribution_Share"])
+        churned = int(row["Churned_Customers"])
+        segment_color = color_map.get(segment, ECB_CHART_COLORS["blue"])
+
+        position = callout_positions.get(
+            segment,
+            {"x": 0.50, "y": 0.12, "align": "center"},
+        )
+
+        fig.add_annotation(
+            x=position["x"],
+            y=position["y"],
+            xref="paper",
+            yref="paper",
+            text=(
+                f"<span style='color:{segment_color};font-size:13.5px'>● "
+                f"<b>{segment}</b></span><br>"
+                f"<span style='font-size:25px;color:#07172F'><b>{share:.1f}%</b></span><br>"
+                f"<span style='font-size:12px;color:#52637A'>{churned:,} churned customers</span>"
+            ),
+            showarrow=False,
+            align=position["align"],
+            bgcolor="rgba(255,255,255,0.96)",
+            bordercolor="rgba(16,42,76,0.14)",
+            borderwidth=1,
+            borderpad=9,
+            font=dict(
+                family="Inter, Segoe UI, Arial, sans-serif",
+                color="#07172F",
+            ),
+        )
 
     return fig
 

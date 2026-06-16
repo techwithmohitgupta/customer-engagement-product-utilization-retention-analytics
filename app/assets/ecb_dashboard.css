@@ -2622,3 +2622,15 @@
     display: none !important;
   }
 }
+
+/* Donut chart outer card polish only */
+@media (min-width: 1025px) {
+  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
+    border-radius: 26px !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
+    border: 1px solid rgba(16, 42, 76, 0.13) !important;
+    box-shadow:
+      0 16px 36px rgba(16, 42, 76, 0.075),
+      inset 0 1px 0 rgba(255,255,255,0.96) !important;
+  }
+}
