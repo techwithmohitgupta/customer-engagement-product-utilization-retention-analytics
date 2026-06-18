@@ -31,6 +31,11 @@ PROJECT_ROOT = APP_DIR.parent
 ASSETS_DIR = APP_DIR / "assets"
 CSS_FILE = ASSETS_DIR / "ecb_dashboard.css"
 
+# Safe-mode fallback: this optimized app can run side-by-side during testing,
+# and it will still work after you rename the optimized CSS back to ecb_dashboard.css.
+if not CSS_FILE.exists():
+    CSS_FILE = ASSETS_DIR / "ecb_dashboard.css"
+
 IMAGE_DIR = ASSETS_DIR / "images"
 
 ECB_LOGO_FILE = IMAGE_DIR / "ecb_logo.svg"
@@ -96,10 +101,8 @@ def load_css(css_path: Path) -> None:
     """
     Load external CSS safely.
 
-    Current rule:
-    - CSS file is connected in Step 1A.
-    - CSS file can stay blank during app.py development.
-    - Styling work will start only after full app.py approval.
+    Safe-mode optimized CSS loader.
+    Uses the optimized CSS file when available, otherwise falls back to the original CSS.
     """
     if not css_path.exists():
         st.warning("CSS file not found: app/assets/ecb_dashboard.css")
@@ -367,6 +370,7 @@ def calculate_customer_count(data_frame: pd.DataFrame) -> int:
     return len(data_frame)
 
 
+@st.cache_data(show_spinner=False)
 def create_segment_summary(
     data_frame: pd.DataFrame,
     segment_column: str,
@@ -1050,6 +1054,7 @@ def calculate_relationship_strength_index(data_frame: pd.DataFrame) -> float:
     return safe_np_round(relationship_index, 2)
 
 
+@st.cache_data(show_spinner=False)
 def calculate_required_dashboard_kpis(data_frame: pd.DataFrame) -> dict:
     """
     Calculate all project-required KPIs from filtered_df.
@@ -1746,6 +1751,7 @@ def render_business_explanation_block(
         st.write(when)
 
 
+@st.cache_data(show_spinner=False)
 def create_rate_summary(
     data_frame: pd.DataFrame,
     group_columns: list[str],
@@ -1925,6 +1931,7 @@ def create_churn_heatmap(
 # 3. Heatmap risk matrix
 # =========================================================
 
+@st.cache_data(show_spinner=False)
 def create_engagement_churn_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Create engagement-level churn and retention summary.
@@ -2306,6 +2313,7 @@ def create_engagement_churn_contribution_donut(
     return fig
 
 
+@st.cache_data(show_spinner=False)
 def create_engagement_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Engagement Status × Retention Strength Tier churn matrix summary.
@@ -2412,6 +2420,7 @@ def create_engagement_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure:
     return fig
 
 
+@st.cache_data(show_spinner=False)
 def calculate_engagement_decision_signals(
     engagement_summary: pd.DataFrame,
     matrix_summary: pd.DataFrame,
@@ -2694,9 +2703,9 @@ def render_engagement_vs_churn_module(data_frame: pd.DataFrame) -> None:
 
     render_business_explanation_block(
         title="How to read Visual 2: Churn Contribution Share",
-        what="This 100% stacked bar shows which engagement segment contributes the largest share of churned customers.",
+        what="This donut chart shows which engagement segment contributes the largest share of churned customers.",
         why="A segment can have high churn rate but low volume. Churn contribution helps prioritize business impact.",
-        how="Use the full-width segments to compare churn contribution share, then validate priority with churn rate and customer volume.",
+        how="Use the donut share and callouts to compare churn contribution, then validate priority with churn rate and customer volume.",
         when="Take action when one engagement segment dominates churn contribution after filters are applied.",
     )
 
@@ -2739,6 +2748,7 @@ def render_engagement_vs_churn_module(data_frame: pd.DataFrame) -> None:
 # 4. Heatmap risk matrix
 # =========================================================
 
+@st.cache_data(show_spinner=False)
 def create_product_utilization_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Product-count-level churn and retention summary.
@@ -2821,13 +2831,13 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Product Count Impact on Retention and Churn",
-        height=460,
+        height=500,
         xaxis_title="Number of Products",
         yaxis_title="Customer Count",
-        legend_title="Metric",
+        legend_title=None,
     )
 
-    fig.update_xaxes(type="category")
+    fig.update_xaxes(type="category", automargin=True)
     fig.update_layout(
         yaxis2=dict(
             title="Rate (%)",
@@ -2836,14 +2846,27 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
             rangemode="tozero",
             ticksuffix="%",
             showgrid=False,
+            automargin=True,
         ),
         bargap=0.35,
-        margin=dict(l=24, r=72, t=76, b=60),
+        margin=dict(l=62, r=34, t=76, b=112),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.18,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=11, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
     )
 
     return fig
 
 
+@st.cache_data(show_spinner=False)
 def create_single_multi_product_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Single-product vs multi-product summary.
@@ -3009,6 +3032,7 @@ def create_product_strength_bubble_chart(product_summary: pd.DataFrame) -> go.Fi
     return fig
 
 
+@st.cache_data(show_spinner=False)
 def create_product_depth_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Product depth × retention tier matrix summary.
@@ -3036,6 +3060,7 @@ def create_product_depth_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure
     )
 
 
+@st.cache_data(show_spinner=False)
 def calculate_product_decision_signals(
     product_summary: pd.DataFrame,
     product_type_summary: pd.DataFrame,
@@ -3380,6 +3405,7 @@ def render_product_utilization_module(data_frame: pd.DataFrame) -> None:
 # 4. Heatmap risk matrix
 # =========================================================
 
+@st.cache_data(show_spinner=False)
 def create_high_value_working_frame(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Clean high-value customer working frame.
@@ -3434,6 +3460,7 @@ def create_high_value_working_frame(data_frame: pd.DataFrame) -> pd.DataFrame:
     return high_value_df.reset_index(drop=True)
 
 
+@st.cache_data(show_spinner=False)
 def create_high_value_detector_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     High-value engaged vs disengaged summary.
@@ -3458,6 +3485,7 @@ def create_high_value_detector_summary(data_frame: pd.DataFrame) -> pd.DataFrame
     return summary
 
 
+@st.cache_data(show_spinner=False)
 def create_high_value_salary_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Salary-balance mismatch summary for high-value customers.
@@ -3478,6 +3506,7 @@ def create_high_value_salary_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+@st.cache_data(show_spinner=False)
 def create_high_value_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     High-value engagement × retention tier summary.
@@ -3703,6 +3732,7 @@ def create_high_value_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure:
     )
 
 
+@st.cache_data(show_spinner=False)
 def calculate_high_value_signals(
     detector_summary: pd.DataFrame,
     salary_summary: pd.DataFrame,
@@ -4046,6 +4076,7 @@ def render_high_value_disengaged_module(data_frame: pd.DataFrame) -> None:
 # 4. Tier bar ranking
 # =========================================================
 
+@st.cache_data(show_spinner=False)
 def create_retention_strength_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
     """
     Retention-tier-level scoring summary.
@@ -4290,6 +4321,7 @@ def create_retention_tier_ranking_chart(retention_summary: pd.DataFrame) -> go.F
     return fig
 
 
+@st.cache_data(show_spinner=False)
 def calculate_retention_signals(
     retention_summary: pd.DataFrame,
     data_frame: pd.DataFrame,
@@ -4549,43 +4581,47 @@ def render_retention_strength_module(data_frame: pd.DataFrame) -> None:
 
 def render_dashboard_module_tabs(data_frame: pd.DataFrame) -> None:
     """
-    Render the four required dashboard modules using Streamlit-native tabs.
+    Render the four required dashboard modules with lazy loading.
 
-    Important:
-    - No custom HTML
-    - No CSS changes
-    - No mobile/tablet changes
-    - All modules receive filtered_df, so every module stays connected to sidebar filters
+    Performance upgrade:
+    - Replaces eager st.tabs rendering.
+    - Only the selected module is calculated and rendered on each rerun.
+    - Keeps all required project modules and sidebar filters connected.
     """
     st.divider()
 
     st.subheader("Dashboard Analysis Modules")
 
     st.caption(
-        "Explore the filtered customer base through four required retention analytics modules: "
-        "engagement behavior, product utilization, high-value disengagement risk, "
-        "and retention strength scoring."
+        "Choose one retention analytics module at a time. This safe-mode layout keeps the dashboard "
+        "fast by rendering only the selected module instead of all modules together."
     )
 
-    module_1_tab, module_2_tab, module_3_tab, module_4_tab = st.tabs(
-        [
-            "Engagement vs Churn",
-            "Product Utilization",
-            "High-Value Disengaged",
-            "Retention Strength",
-        ]
+    module_options = [
+        "Engagement vs Churn",
+        "Product Utilization",
+        "High-Value Disengaged",
+        "Retention Strength",
+    ]
+
+    selected_module = st.radio(
+        label="Select analysis module",
+        options=module_options,
+        index=0,
+        horizontal=True,
+        label_visibility="collapsed",
+        key="selected_dashboard_module_safe_mode",
     )
 
-    with module_1_tab:
+    st.caption(f"Active module: {selected_module}")
+
+    if selected_module == "Engagement vs Churn":
         render_engagement_vs_churn_module(data_frame)
-
-    with module_2_tab:
+    elif selected_module == "Product Utilization":
         render_product_utilization_module(data_frame)
-
-    with module_3_tab:
+    elif selected_module == "High-Value Disengaged":
         render_high_value_disengaged_module(data_frame)
-
-    with module_4_tab:
+    elif selected_module == "Retention Strength":
         render_retention_strength_module(data_frame)
 
 

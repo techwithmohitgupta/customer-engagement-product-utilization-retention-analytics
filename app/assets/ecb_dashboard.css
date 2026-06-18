@@ -1,2960 +1,909 @@
+:root {
+  --ecb-navy: #07172f;
+  --ecb-blue: #003399;
+  --ecb-blue-soft: #eaf3ff;
+  --ecb-gold: #d7a900;
+  --ecb-slate: #344054;
+  --ecb-muted: #667085;
+  --ecb-border: rgba(16, 42, 76, 0.13);
+  --ecb-shadow: 0 10px 26px rgba(16, 42, 76, 0.07);
+  --ecb-radius: 18px;
+}
+
+html,
+body,
+.stApp,
+div[data-testid="stAppViewContainer"],
+div[data-testid="stMain"] {
+  overflow-x: hidden !important;
+  scroll-behavior: auto !important;
+}
+
+.stApp {
+  background:
+    radial-gradient(circle at 15% 8%, rgba(0, 51, 153, 0.055), transparent 30%),
+    linear-gradient(135deg, #f7fbff 0%, #eef5ff 45%, #ffffff 100%) !important;
+  color: var(--ecb-navy) !important;
+}
+
+.block-container {
+  max-width: min(1220px, calc(100vw - 340px)) !important;
+  padding: 2rem 2.35rem 3.8rem 2.35rem !important;
+  overflow: visible !important;
+}
+
+/* ---------- Typography ---------- */
+div[data-testid="stMain"] h1,
+div[data-testid="stMain"] h2,
+div[data-testid="stMain"] h3,
+div[data-testid="stMain"] h4 {
+  color: var(--ecb-navy) !important;
+  letter-spacing: -0.02em !important;
+}
+
+div[data-testid="stMain"] h1 {
+  font-size: clamp(2.2rem, 2.5vw, 3rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.08 !important;
+}
+
+div[data-testid="stMain"] h2 {
+  font-size: 1.85rem !important;
+  font-weight: 880 !important;
+}
+
+div[data-testid="stMain"] h3 {
+  font-size: 1.42rem !important;
+  font-weight: 860 !important;
+}
+
+div[data-testid="stMain"] p,
+div[data-testid="stMain"] li,
+div[data-testid="stMain"] label,
+div[data-testid="stMain"] span {
+  color: #1d2939 !important;
+  font-weight: 550 !important;
+  line-height: 1.6 !important;
+}
+
+div[data-testid="stCaptionContainer"] p {
+  color: var(--ecb-muted) !important;
+  font-weight: 650 !important;
+}
+
+hr {
+  border: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(0, 51, 153, 0.18), transparent) !important;
+  margin: 1.3rem 0 1.6rem 0 !important;
+}
+
+/* ---------- Sidebar ---------- */
+section[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #f8fbff 0%, #edf5ff 100%) !important;
+  border-right: 1px solid rgba(16, 42, 76, 0.12) !important;
+}
+
+section[data-testid="stSidebar"] > div {
+  padding: 1.3rem 1rem !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+  color: var(--ecb-navy) !important;
+  font-weight: 850 !important;
+}
+
+section[data-testid="stSidebar"] .st-key-sidebar_logo_panel {
+  background: #ffffff !important;
+  border: 1px solid var(--ecb-border) !important;
+  border-radius: 18px !important;
+  padding: 1rem !important;
+  margin-bottom: 1.25rem !important;
+  box-shadow: 0 8px 20px rgba(16, 42, 76, 0.06) !important;
+}
+
+section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel,
+section[data-testid="stSidebar"] .st-key-sidebar_product_panel,
+section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel {
+  background: rgba(255,255,255,0.82) !important;
+  border: 1px solid var(--ecb-border) !important;
+  border-radius: 16px !important;
+  padding: 1rem !important;
+  margin: 1rem 0 !important;
+}
+
+/* ---------- Header ---------- */
+.st-key-ecb_header {
+  position: relative !important;
+  border: 1px solid rgba(0, 51, 153, 0.16) !important;
+  border-radius: 24px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f8ff 100%) !important;
+  padding: 2rem 2.25rem !important;
+  margin: 0.35rem 0 2rem 0 !important;
+  box-shadow: var(--ecb-shadow) !important;
+  overflow: hidden !important;
+}
+
+.st-key-ecb_header::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 1.5rem !important;
+  right: 1.5rem !important;
+  top: 0.75rem !important;
+  height: 4px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, var(--ecb-blue), #1e75d8, var(--ecb-gold)) !important;
+}
+
+.st-key-ecb_header h1 {
+  margin-bottom: 0.5rem !important;
+}
+
+.st-key-ecb_header img {
+  filter: contrast(1.04) saturate(1.03) !important;
+}
+
+/* ---------- KPI cards ---------- */
+[class*="st-key-kpi_card_"] {
+  position: relative !important;
+  min-height: 158px !important;
+  padding: 1.15rem 1.15rem 1.05rem 1.15rem !important;
+  border: 1px solid var(--ecb-border) !important;
+  border-radius: 18px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(16, 42, 76, 0.055) !important;
+  overflow: hidden !important;
+}
+
+[class*="st-key-kpi_card_"]::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, var(--ecb-blue), #1e75d8, var(--ecb-gold)) !important;
+}
+
+[class*="st-key-kpi_card_"] h4 {
+  font-size: 1.04rem !important;
+  font-weight: 850 !important;
+  margin: 0 0 0.75rem 0 !important;
+}
+
+[class*="st-key-kpi_card_"] div[data-testid="stMetricLabel"] {
+  display: none !important;
+}
+
+[class*="st-key-kpi_card_"] div[data-testid="stMetricValue"],
+[class*="st-key-kpi_card_"] div[data-testid="stMetricValue"] * {
+  color: var(--ecb-navy) !important;
+  font-size: 2rem !important;
+  font-weight: 850 !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+}
+
+[class*="st-key-kpi_card_"] div[data-testid="stMetricDelta"] > div {
+  border-radius: 999px !important;
+  padding: 0.22rem 0.58rem !important;
+  font-weight: 800 !important;
+}
+
+/* ---------- Lazy module radio navigation ---------- */
+div[role="radiogroup"] {
+  gap: 0.6rem !important;
+  margin: 0.9rem 0 1.35rem 0 !important;
+}
+
+div[role="radiogroup"] label {
+  border: 1px solid rgba(0, 51, 153, 0.14) !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.88) !important;
+  padding: 0.45rem 0.8rem !important;
+  box-shadow: 0 6px 14px rgba(16, 42, 76, 0.045) !important;
+}
+
+/* ---------- Plotly charts: lightweight and label-safe ---------- */
+div[data-testid="stPlotlyChart"] {
+  position: relative !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(16, 42, 76, 0.11) !important;
+  border-radius: 20px !important;
+  padding: 1rem 1rem 0.95rem 1rem !important;
+  margin: 1rem 0 1.25rem 0 !important;
+  box-shadow: 0 8px 20px rgba(16, 42, 76, 0.05) !important;
+  overflow: visible !important;
+  transition: none !important;
+}
+
+div[data-testid="stPlotlyChart"]::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 1.25rem !important;
+  right: 1.25rem !important;
+  height: 3px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, var(--ecb-blue), #1e75d8, var(--ecb-gold)) !important;
+}
+
+div[data-testid="stPlotlyChart"] .js-plotly-plot,
+div[data-testid="stPlotlyChart"] .plot-container,
+div[data-testid="stPlotlyChart"] .svg-container,
+div[data-testid="stPlotlyChart"] svg {
+  overflow: visible !important;
+}
+
+div[data-testid="stPlotlyChart"] text {
+  font-family: inherit !important;
+  font-weight: 640 !important;
+}
+
+/* ---------- Expanders ---------- */
+div[data-testid="stExpander"] {
+  border: 1px solid var(--ecb-border) !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(16, 42, 76, 0.045) !important;
+  margin: 0.9rem 0 1.35rem 0 !important;
+  overflow: hidden !important;
+}
+
+div[data-testid="stExpander"] summary {
+  color: var(--ecb-navy) !important;
+  font-weight: 820 !important;
+  padding: 0.7rem 0.95rem !important;
+  background: linear-gradient(90deg, rgba(0,51,153,0.04), rgba(215,169,0,0.03)) !important;
+}
+
+div[data-testid="stExpander"] p,
+div[data-testid="stExpander"] li {
+  font-size: 1rem !important;
+  line-height: 1.62 !important;
+}
+
+/* ---------- DataFrames ---------- */
+div[data-testid="stDataFrame"] {
+  border: 1px solid var(--ecb-border) !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 18px rgba(16, 42, 76, 0.045) !important;
+  overflow: hidden !important;
+  margin: 1rem 0 1.4rem 0 !important;
+}
+
+/* ---------- Alerts / insights ---------- */
+div[data-testid="stAlert"] {
+  border-radius: 16px !important;
+  border: 1px solid var(--ecb-border) !important;
+  box-shadow: 0 6px 16px rgba(16, 42, 76, 0.045) !important;
+  margin: 0.85rem 0 1rem 0 !important;
+}
+
+div[data-testid="stAlert"] p,
+div[data-testid="stAlert"] span,
+div[data-testid="stAlert"] li {
+  font-weight: 680 !important;
+}
+
+/* ---------- KPI formula cards from existing app.py ---------- */
+[class*="st-key-kpi_formula_card_"] {
+  border: 1px solid rgba(0, 51, 153, 0.15) !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f6faff 100%) !important;
+  padding: 1.1rem 1.2rem !important;
+  margin: 0.95rem 0 1.1rem 0 !important;
+  box-shadow: 0 8px 18px rgba(16, 42, 76, 0.045) !important;
+}
+
+[class*="st-key-kpi_formula_card_"] h3 {
+  margin-top: 0 !important;
+  font-size: 1.15rem !important;
+}
+
+[class*="st-key-kpi_formula_card_"] code {
+  display: inline-block !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  border: 1px solid rgba(0, 51, 153, 0.14) !important;
+  border-radius: 10px !important;
+  background: var(--ecb-blue-soft) !important;
+  padding: 0.4rem 0.6rem !important;
+  color: var(--ecb-navy) !important;
+  font-weight: 760 !important;
+}
+
+/* ---------- Footer ---------- */
+.block-container > div:last-child {
+  padding-bottom: 1rem !important;
+}
+
+/* ---------- Responsive safety ---------- */
+@media (max-width: 1024px) {
+  .block-container {
+    max-width: 100% !important;
+    padding: 1.2rem 1rem 3rem 1rem !important;
+  }
+
+  .st-key-ecb_header {
+    padding: 1.4rem 1.2rem !important;
+    border-radius: 18px !important;
+  }
+
+  [class*="st-key-kpi_card_"] {
+    min-height: 140px !important;
+  }
+
+  div[data-testid="stPlotlyChart"] {
+    padding: 0.75rem 0.65rem !important;
+    border-radius: 16px !important;
+  }
+}
+
 /* =========================================================
-   CUSTOMER ENGAGEMENT & PRODUCT UTILIZATION DASHBOARD
-   FULL A-Z PREMIUM DESKTOP-ONLY CSS REPLACEMENT
-   Scope: Desktop only | Mobile + Tablet untouched
-   Breakpoint: min-width 1025px
-   Replace full app/assets/ecb_dashboard.css with this file.
+   SAFE PATCH — FULL SCREEN / FULL VIEWPORT DASHBOARD WIDTH
+   Add this at the END of ecb_dashboard.css only.
+   Do not replace existing CSS.
    ========================================================= */
 
 @media (min-width: 1025px) {
 
-  /* =======================================================
-     01. DESIGN TOKENS + GLOBAL DESKTOP CANVAS
-     ======================================================= */
-
-  :root {
-    --ecb-navy-950: #07172f;
-    --ecb-navy-900: #0b1f3a;
-    --ecb-navy-850: #102a4c;
-    --ecb-navy-800: #15375f;
-    --ecb-blue-700: #003399;
-    --ecb-blue-650: #064ab8;
-    --ecb-blue-600: #0b63ce;
-    --ecb-blue-500: #1e75d8;
-    --ecb-blue-100: #eaf3ff;
-    --ecb-blue-075: #f2f7ff;
-    --ecb-gold-500: #d7a900;
-    --ecb-gold-300: #f2d46b;
-    --ecb-green-700: #006b4f;
-    --ecb-green-100: #ddf4ec;
-    --ecb-red-700: #b4232d;
-    --ecb-red-100: #fde7ea;
-    --ecb-amber-700: #875500;
-    --ecb-amber-100: #fff3cf;
-    --ecb-slate-900: #101828;
-    --ecb-slate-800: #1d2939;
-    --ecb-slate-700: #344054;
-    --ecb-slate-600: #475467;
-    --ecb-slate-500: #667085;
-    --ecb-slate-400: #8a95a6;
-    --ecb-border: rgba(16, 42, 76, 0.13);
-    --ecb-border-strong: rgba(0, 51, 153, 0.22);
-    --ecb-shadow-soft: 0 14px 34px rgba(16, 42, 76, 0.075);
-    --ecb-shadow-strong: 0 22px 54px rgba(16, 42, 76, 0.11);
-    --ecb-radius-lg: 24px;
-    --ecb-radius-md: 18px;
-    --ecb-radius-sm: 12px;
-  }
-
-  html,
-  body,
-  .stApp,
-  div[data-testid="stAppViewContainer"],
-  div[data-testid="stMain"],
-  section.main,
-  .main {
-    overflow-x: hidden !important;
-    scroll-behavior: smooth !important;
-  }
-
-  .stApp {
-    background:
-      radial-gradient(circle at 16% 7%, rgba(0, 51, 153, 0.075), transparent 30%),
-      radial-gradient(circle at 86% 16%, rgba(215, 169, 0, 0.06), transparent 28%),
-      linear-gradient(135deg, #f7fbff 0%, #eef5ff 38%, #f8fbff 72%, #ffffff 100%) !important;
-    color: var(--ecb-slate-900) !important;
-  }
-
-  div[data-testid="stAppViewContainer"],
-  div[data-testid="stMain"] {
-    background: transparent !important;
-  }
-
+  /* Main content should use full available viewport after sidebar */
   .block-container {
-    max-width: min(1220px, calc(100vw - 360px - 3.4rem)) !important;
-    padding: 2.35rem 2.55rem 4.5rem 2.55rem !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    background: transparent !important;
-    overflow: visible !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: clamp(1.25rem, 2vw, 2.4rem) !important;
+    padding-right: clamp(1.25rem, 2vw, 2.4rem) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  .main .block-container > div {
-    overflow: visible !important;
+  /* Streamlit main area full width */
+  div[data-testid="stMain"],
+  div[data-testid="stMain"] > div,
+  div[data-testid="stAppViewContainer"] {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  ::selection {
-    background: rgba(0, 51, 153, 0.18) !important;
-    color: var(--ecb-navy-950) !important;
+  /* Header should stretch properly */
+  .st-key-ecb_header {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  /* =======================================================
-     02. BASE TYPOGRAPHY — HIGH VISIBILITY
-     ======================================================= */
-
-  div[data-testid="stMain"] h1,
-  div[data-testid="stMain"] h2,
-  div[data-testid="stMain"] h3,
-  div[data-testid="stMain"] h4,
-  div[data-testid="stMain"] h5,
-  div[data-testid="stMain"] h6 {
-    color: var(--ecb-navy-950) !important;
-    letter-spacing: -0.018em !important;
-    text-shadow: none !important;
+  /* KPI rows / module content full available width */
+  div[data-testid="stHorizontalBlock"] {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  div[data-testid="stMain"] h1 {
-    font-size: clamp(2.25rem, 2.4vw, 3.2rem) !important;
-    font-weight: 920 !important;
-    line-height: 1.08 !important;
-    margin: 0 0 0.8rem 0 !important;
+  /* Plotly chart containers full width */
+  div[data-testid="stPlotlyChart"] {
+    width: 100% !important;
+    max-width: 100% !important;
   }
+
+  div[data-testid="stPlotlyChart"] > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Dataframes full width */
+  div[data-testid="stDataFrame"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
+/* =========================================================
+   SAFE PATCH — REMOVE TOP WHITE STRIP + FULL VIEWPORT LOOK
+   Add this at the END of ecb_dashboard.css only.
+   Do not replace existing CSS.
+   ========================================================= */
+
+/* Hide Streamlit's default top white app header */
+header[data-testid="stHeader"] {
+  height: 0rem !important;
+  min-height: 0rem !important;
+  max-height: 0rem !important;
+  background: transparent !important;
+  visibility: hidden !important;
+  display: none !important;
+}
+
+/* Remove default toolbar / deploy strip spacing */
+div[data-testid="stToolbar"],
+div[data-testid="stDecoration"],
+div[data-testid="stStatusWidget"],
+.stDeployButton {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* Remove top padding created by Streamlit main wrapper */
+div[data-testid="stAppViewContainer"] {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+div[data-testid="stMain"] {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Main dashboard content starts near top */
+.block-container {
+  padding-top: 0.85rem !important;
+  margin-top: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Header card should sit close to the top */
+.st-key-ecb_header {
+  margin-top: 0 !important;
+}
+
+/* Sidebar also starts from full viewport top */
+section[data-testid="stSidebar"] {
+  top: 0 !important;
+  height: 100vh !important;
+}
+
+/* Sidebar inner area full height */
+section[data-testid="stSidebar"] > div {
+  padding-top: 1rem !important;
+  height: 100vh !important;
+}
+
+/* =========================================================
+   SAFE PATCH — LIGHTWEIGHT MODULE NAVIGATION + MODULE UI
+   Add this at the END of ecb_dashboard.css only.
+   Do not replace existing CSS.
+   ========================================================= */
+
+@media (min-width: 1025px) {
+
+  /* ---------- Dashboard Analysis Modules area ---------- */
 
   div[data-testid="stMain"] h2 {
-    font-size: 2.02rem !important;
-    font-weight: 920 !important;
-    line-height: 1.13 !important;
-    margin: 2.1rem 0 1.1rem 0 !important;
+    margin-top: 1.6rem !important;
+    margin-bottom: 0.75rem !important;
+    color: #07172f !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.025em !important;
   }
 
   div[data-testid="stMain"] h3 {
-    font-size: 1.58rem !important;
-    font-weight: 900 !important;
-    line-height: 1.18 !important;
-    margin: 1.85rem 0 1rem 0 !important;
+    margin-top: 1.35rem !important;
+    margin-bottom: 0.65rem !important;
+    color: #07172f !important;
+    font-weight: 860 !important;
+    letter-spacing: -0.018em !important;
   }
 
-  div[data-testid="stMain"] h4 {
-    font-size: 1.18rem !important;
-    font-weight: 880 !important;
+  div[data-testid="stMain"] h2::after {
+    content: "" !important;
+    display: block !important;
+    width: 72px !important;
+    height: 3px !important;
+    margin-top: 0.55rem !important;
+    border-radius: 999px !important;
+    background: linear-gradient(90deg, #003399, #1e75d8, #d7a900) !important;
+  }
+
+  /* ---------- Radio module navigation as lightweight tabs ---------- */
+
+  div[role="radiogroup"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.85rem !important;
+    align-items: center !important;
+    margin: 1.05rem 0 1.6rem 0 !important;
+  }
+
+  div[role="radiogroup"] label {
+    min-height: 46px !important;
+    padding: 0.62rem 1.05rem !important;
+    border: 1px solid rgba(16, 42, 76, 0.14) !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    box-shadow: 0 6px 14px rgba(16, 42, 76, 0.045) !important;
+    color: #07172f !important;
+    font-weight: 760 !important;
+    cursor: pointer !important;
+    transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease !important;
+  }
+
+  div[role="radiogroup"] label:hover {
+    border-color: rgba(0, 51, 153, 0.30) !important;
+    background: #f7fbff !important;
+    box-shadow: 0 8px 18px rgba(16, 42, 76, 0.065) !important;
+  }
+
+  /* Active selected module */
+  div[role="radiogroup"] label:has(input:checked) {
+    border-color: rgba(0, 51, 153, 0.65) !important;
+    background: linear-gradient(135deg, #003399 0%, #1e75d8 100%) !important;
+    box-shadow: 0 10px 20px rgba(0, 51, 153, 0.16) !important;
+  }
+
+  div[role="radiogroup"] label:has(input:checked) *,
+  div[role="radiogroup"] label:has(input:checked) p,
+  div[role="radiogroup"] label:has(input:checked) span {
+    color: #ffffff !important;
+    font-weight: 850 !important;
+  }
+
+  div[role="radiogroup"] input[type="radio"] {
+    accent-color: #003399 !important;
+  }
+
+  /* ---------- Active module caption / small guidance text ---------- */
+
+  div[data-testid="stMain"] div[data-testid="stCaptionContainer"] p {
+    color: #7a8699 !important;
+    font-weight: 720 !important;
+    letter-spacing: -0.005em !important;
+  }
+
+  /* ---------- Module intro text readability ---------- */
+
+  div[data-testid="stMain"] p {
+    font-size: 1.02rem !important;
+    line-height: 1.62 !important;
+    color: #1d2939 !important;
+  }
+
+  /* ---------- Module metric cards only, KPI cards excluded ---------- */
+
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetric"] {
+    min-height: 118px !important;
+    padding: 1rem 1.08rem !important;
+    border: 1px solid rgba(16, 42, 76, 0.11) !important;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.72) !important;
+    box-shadow: 0 6px 14px rgba(16, 42, 76, 0.04) !important;
+  }
+
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetricLabel"] p {
+    color: #344054 !important;
+    font-size: 0.92rem !important;
+    font-weight: 720 !important;
+    line-height: 1.28 !important;
+  }
+
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetricValue"],
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetricValue"] * {
+    color: #07172f !important;
+    font-size: clamp(1.9rem, 2vw, 2.45rem) !important;
+    font-weight: 780 !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.025em !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetricDelta"] {
+    margin-top: 0.35rem !important;
+  }
+
+  div[data-testid="stHorizontalBlock"]:not(:has([class*="st-key-kpi_card_"])) div[data-testid="stMetricDelta"] > div {
+    width: fit-content !important;
+    border-radius: 999px !important;
+    padding: 0.24rem 0.62rem !important;
+    font-size: 0.84rem !important;
+    font-weight: 760 !important;
+  }
+
+  /* ---------- Module visual spacing ---------- */
+
+  div[data-testid="stPlotlyChart"] {
+    margin-top: 1.05rem !important;
+    margin-bottom: 1.35rem !important;
+  }
+
+  div[data-testid="stExpander"] {
+    margin-top: 0.75rem !important;
+    margin-bottom: 1.35rem !important;
+  }
+
+  /* ---------- Keep module content clean in full viewport ---------- */
+
+  div[data-testid="stMain"] .block-container {
+    padding-bottom: 4rem !important;
+  }
+
+}
+
+/* =========================================================
+   SAFE PATCH — FULL DASHBOARD TEXT READABILITY UPGRADE
+   Add this at the END of ecb_dashboard.css only.
+   Do not replace existing CSS.
+   ========================================================= */
+
+/* ---------- Global text clarity ---------- */
+
+.stApp,
+div[data-testid="stMain"],
+div[data-testid="stSidebar"] {
+  color: #07172f !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* ---------- Main dashboard headings ---------- */
+
+div[data-testid="stMain"] h1 {
+  color: #06152b !important;
+  font-weight: 950 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.08 !important;
+}
+
+div[data-testid="stMain"] h2 {
+  color: #07172f !important;
+  font-weight: 920 !important;
+  letter-spacing: -0.028em !important;
+  line-height: 1.16 !important;
+}
+
+div[data-testid="stMain"] h3 {
+  color: #07172f !important;
+  font-weight: 890 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.22 !important;
+}
+
+div[data-testid="stMain"] h4,
+div[data-testid="stMain"] h5,
+div[data-testid="stMain"] h6 {
+  color: #0b1f3a !important;
+  font-weight: 850 !important;
+  line-height: 1.28 !important;
+}
+
+/* ---------- Paragraphs, explanations, and module body text ---------- */
+
+div[data-testid="stMain"] p,
+div[data-testid="stMain"] li,
+div[data-testid="stMain"] label {
+  color: #172033 !important;
+  font-size: 1.03rem !important;
+  font-weight: 610 !important;
+  line-height: 1.68 !important;
+}
+
+/* Strong/bold text should stand out clearly */
+div[data-testid="stMain"] strong,
+div[data-testid="stMain"] b {
+  color: #06152b !important;
+  font-weight: 900 !important;
+}
+
+/* ---------- Captions / guideline focus text ---------- */
+
+div[data-testid="stCaptionContainer"] p,
+div[data-testid="stCaptionContainer"] span {
+  color: #475467 !important;
+  font-size: 0.98rem !important;
+  font-weight: 760 !important;
+  line-height: 1.55 !important;
+}
+
+/* ---------- Sidebar text readability ---------- */
+
+section[data-testid="stSidebar"] h1 {
+  color: #07172f !important;
+  font-size: 1.62rem !important;
+  font-weight: 930 !important;
+  line-height: 1.18 !important;
+}
+
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+  color: #07172f !important;
+  font-weight: 880 !important;
+  line-height: 1.22 !important;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+  color: #344054 !important;
+  font-size: 0.98rem !important;
+  font-weight: 650 !important;
+  line-height: 1.55 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stCaptionContainer"] p {
+  color: #667085 !important;
+  font-weight: 700 !important;
+}
+
+/* ---------- Radio module navigation text ---------- */
+
+div[role="radiogroup"] label,
+div[role="radiogroup"] label p,
+div[role="radiogroup"] label span {
+  color: #07172f !important;
+  font-size: 0.98rem !important;
+  font-weight: 760 !important;
+  line-height: 1.25 !important;
+}
+
+div[role="radiogroup"] label:has(input:checked),
+div[role="radiogroup"] label:has(input:checked) p,
+div[role="radiogroup"] label:has(input:checked) span {
+  color: #ffffff !important;
+  font-weight: 880 !important;
+}
+
+/* ---------- Metric labels and values ---------- */
+
+div[data-testid="stMetricLabel"] p {
+  color: #24324a !important;
+  font-size: 0.96rem !important;
+  font-weight: 760 !important;
+  line-height: 1.28 !important;
+}
+
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricValue"] * {
+  color: #07172f !important;
+  font-weight: 820 !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.025em !important;
+}
+
+div[data-testid="stMetricDelta"],
+div[data-testid="stMetricDelta"] * {
+  font-weight: 760 !important;
+  line-height: 1.2 !important;
+}
+
+/* Prevent long metric values from becoming too unreadable */
+div[data-testid="stMetricValue"] {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* ---------- KPI cards text ---------- */
+
+[class*="st-key-kpi_card_"] h4 {
+  color: #06152b !important;
+  font-weight: 920 !important;
+  line-height: 1.22 !important;
+}
+
+[class*="st-key-kpi_card_"] div[data-testid="stMetricValue"],
+[class*="st-key-kpi_card_"] div[data-testid="stMetricValue"] * {
+  color: #06152b !important;
+  font-weight: 900 !important;
+}
+
+/* ---------- Expanders / how-to-read sections ---------- */
+
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary * {
+  color: #07172f !important;
+  font-size: 1.02rem !important;
+  font-weight: 860 !important;
+  line-height: 1.35 !important;
+}
+
+div[data-testid="stExpander"] p,
+div[data-testid="stExpander"] li {
+  color: #172033 !important;
+  font-size: 1rem !important;
+  font-weight: 610 !important;
+  line-height: 1.68 !important;
+}
+
+div[data-testid="stExpander"] strong,
+div[data-testid="stExpander"] b {
+  color: #06152b !important;
+  font-weight: 880 !important;
+}
+
+/* ---------- Alerts / insights ---------- */
+
+div[data-testid="stAlert"] p,
+div[data-testid="stAlert"] span,
+div[data-testid="stAlert"] li {
+  color: #172033 !important;
+  font-size: 1rem !important;
+  font-weight: 680 !important;
+  line-height: 1.6 !important;
+}
+
+/* ---------- Tables / dataframe text ---------- */
+
+div[data-testid="stDataFrame"],
+div[data-testid="stDataFrame"] * {
+  color: #172033 !important;
+  font-weight: 620 !important;
+}
+
+/* ---------- Mobile/tablet readability support ---------- */
+
+@media (max-width: 1024px) {
+  div[data-testid="stMain"] h1 {
+    font-size: 2rem !important;
+    line-height: 1.12 !important;
+  }
+
+  div[data-testid="stMain"] h2 {
+    font-size: 1.55rem !important;
+    line-height: 1.2 !important;
+  }
+
+  div[data-testid="stMain"] h3 {
+    font-size: 1.28rem !important;
     line-height: 1.25 !important;
-    margin: 1.1rem 0 0.65rem 0 !important;
   }
 
   div[data-testid="stMain"] p,
   div[data-testid="stMain"] li,
-  div[data-testid="stMain"] span,
   div[data-testid="stMain"] label {
-    color: var(--ecb-slate-800) !important;
-    font-weight: 560 !important;
-    line-height: 1.68 !important;
-    text-shadow: none !important;
-  }
-
-  div[data-testid="stCaptionContainer"] p,
-  div[data-testid="stCaptionContainer"] span {
-    color: var(--ecb-slate-500) !important;
-    font-size: 0.96rem !important;
-    font-weight: 720 !important;
-    line-height: 1.65 !important;
-    letter-spacing: 0.005em !important;
-  }
-
-  div[data-testid="stMarkdownContainer"] strong,
-  div[data-testid="stMarkdownContainer"] b {
-    color: var(--ecb-navy-900) !important;
-    font-weight: 900 !important;
-  }
-
-  div[data-testid="stMarkdownContainer"] a {
-    color: var(--ecb-blue-650) !important;
-    font-weight: 800 !important;
-    text-decoration-thickness: 2px !important;
-    text-underline-offset: 3px !important;
-  }
-
-  hr {
-    border: 0 !important;
-    height: 1px !important;
-    background: linear-gradient(90deg, transparent 0%, rgba(0, 51, 153, 0.20) 18%, rgba(16, 42, 76, 0.10) 82%, transparent 100%) !important;
-    margin: 1.55rem 0 1.9rem 0 !important;
-  }
-
-  /* =======================================================
-     03. SIDEBAR — LOCKED CLEAN PREMIUM FILTER PANEL
-     Final sidebar rules are placed at the end of this file
-     so they override older Streamlit/sidebar defaults safely.
-     ======================================================= */
-
-  /* =======================================================
-     04. ECB HEADER CARD
-     ======================================================= */
-
-  .st-key-ecb_header {
-    position: relative !important;
-    overflow: hidden !important;
-    width: 100% !important;
-    margin: 0.4rem auto 2.8rem auto !important;
-    padding: 2.35rem 2.7rem 2.45rem 2.7rem !important;
-    border-radius: 28px !important;
-    border: 1px solid rgba(0, 51, 153, 0.16) !important;
-    background:
-      radial-gradient(circle at 10% 8%, rgba(0, 51, 153, 0.08), transparent 36%),
-      radial-gradient(circle at 92% 16%, rgba(215, 169, 0, 0.08), transparent 28%),
-      linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 251, 255, 0.96) 52%, rgba(235, 244, 255, 0.92) 100%) !important;
-    box-shadow: var(--ecb-shadow-strong), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease !important;
-  }
-
-  .st-key-ecb_header::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0.9rem !important;
-    left: 2rem !important;
-    right: 2rem !important;
-    height: 4px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, var(--ecb-blue-700) 0%, var(--ecb-blue-500) 55%, var(--ecb-gold-500) 100%) !important;
-    box-shadow: 0 5px 14px rgba(0, 51, 153, 0.15) !important;
-    z-index: 2 !important;
-  }
-
-  .st-key-ecb_header::after {
-    content: "" !important;
-    position: absolute !important;
-    right: -80px !important;
-    bottom: -95px !important;
-    width: 230px !important;
-    height: 230px !important;
-    border-radius: 999px !important;
-    background: rgba(0, 51, 153, 0.045) !important;
-    pointer-events: none !important;
-  }
-
-  .st-key-ecb_header:hover {
-    transform: translateY(-2px) !important;
-    border-color: rgba(0, 51, 153, 0.26) !important;
-    box-shadow: 0 26px 62px rgba(16, 42, 76, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  .st-key-ecb_header > div {
-    position: relative !important;
-    z-index: 4 !important;
-  }
-
-  .st-key-ecb_header img {
-    filter: contrast(1.08) saturate(1.05) drop-shadow(0 10px 18px rgba(0, 51, 153, 0.15)) !important;
-  }
-
-  .st-key-ecb_header div[data-testid="stCaptionContainer"] p {
-    color: var(--ecb-blue-700) !important;
-    font-size: 0.78rem !important;
-    font-weight: 900 !important;
-    letter-spacing: 0.18em !important;
-    text-transform: uppercase !important;
-    margin-top: 0.45rem !important;
-  }
-
-  .st-key-ecb_header h1 {
-    color: var(--ecb-navy-950) !important;
-    font-size: clamp(2.3rem, 2.6vw, 3.25rem) !important;
-    font-weight: 950 !important;
-    letter-spacing: -0.035em !important;
-    line-height: 1.06 !important;
-    margin-bottom: 0.72rem !important;
-  }
-
-  .st-key-ecb_header div[data-testid="stMarkdownContainer"] p {
-    color: var(--ecb-slate-700) !important;
-    font-size: 1.08rem !important;
-    font-weight: 650 !important;
-    line-height: 1.62 !important;
-    max-width: 900px !important;
-  }
-
-  /* =======================================================
-     05. KPI CARDS — EXECUTIVE CARDS
-     ======================================================= */
-
-  div[data-testid="stHorizontalBlock"]:has([class*="st-key-kpi_card_"]) {
-    gap: 1.25rem !important;
-    align-items: stretch !important;
-    margin: 0.7rem 0 1.3rem 0 !important;
-  }
-
-  [class*="st-key-kpi_card_"] {
-    position: relative !important;
-    min-height: 178px !important;
-    padding: 1.28rem 1.34rem 1.18rem 1.34rem !important;
-    border-radius: 22px !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    background:
-      radial-gradient(circle at 94% 12%, rgba(0, 51, 153, 0.085), transparent 36%),
-      linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
-    box-shadow: var(--ecb-shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-    overflow: hidden !important;
-    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease !important;
-  }
-
-  [class*="st-key-kpi_card_"]::before {
-    content: "" !important;
-    position: absolute !important;
-    inset: 0 auto auto 0 !important;
-    width: 100% !important;
-    height: 5px !important;
-    background: linear-gradient(90deg, var(--ecb-blue-700) 0%, var(--ecb-blue-500) 70%, var(--ecb-gold-500) 100%) !important;
-  }
-
-  [class*="st-key-kpi_card_"]::after {
-    content: "" !important;
-    position: absolute !important;
-    right: -42px !important;
-    bottom: -48px !important;
-    width: 122px !important;
-    height: 122px !important;
-    border-radius: 50% !important;
-    background: rgba(0, 51, 153, 0.045) !important;
-  }
-
-  [class*="st-key-kpi_card_"]:hover {
-    transform: translateY(-3px) !important;
-    border-color: rgba(0, 51, 153, 0.28) !important;
-    box-shadow: var(--ecb-shadow-strong), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  [class*="st-key-kpi_card_"] h4 {
-    position: relative !important;
-    z-index: 2 !important;
-    color: var(--ecb-navy-950) !important;
-    font-size: 1.12rem !important;
-    font-weight: 920 !important;
-    letter-spacing: -0.018em !important;
-    line-height: 1.2 !important;
-    margin: 0 0 0.9rem 0 !important;
-  }
-
-  [class*="st-key-kpi_card_"] div[data-testid="stMetricLabel"] {
-    display: none !important;
-  }
-
-  [class*="st-key-kpi_card_"] div[data-testid="stMetricValue"],
-  [class*="st-key-kpi_card_"] div[data-testid="stMetricValue"] * {
-    position: relative !important;
-    z-index: 2 !important;
-    color: var(--ecb-navy-950) !important;
-    font-size: 2.32rem !important;
-    font-weight: 930 !important;
-    line-height: 1.02 !important;
-    letter-spacing: -0.055em !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  [class*="st-key-kpi_card_"] div[data-testid="stMetricDelta"] {
-    position: relative !important;
-    z-index: 2 !important;
-    margin-top: 0.72rem !important;
-  }
-
-  [class*="st-key-kpi_card_"] div[data-testid="stMetricDelta"] > div {
-    width: fit-content !important;
-    border-radius: 999px !important;
-    padding: 0.3rem 0.78rem !important;
-    font-size: 0.85rem !important;
-    font-weight: 900 !important;
-    box-shadow: 0 8px 16px rgba(16, 42, 76, 0.06) !important;
-  }
-
-  /* =======================================================
-     06. DASHBOARD MODULE NAVIGATION TABS
-     ======================================================= */
-
-  div[data-testid="stTabs"] {
-    margin: 1.25rem 0 1.7rem 0 !important;
-  }
-
-  div[data-testid="stTabs"] [role="tablist"] {
-    gap: 0.65rem !important;
-    border-bottom: 1px solid rgba(16, 42, 76, 0.13) !important;
-    padding: 0.35rem 0.2rem 0.5rem 0.2rem !important;
-  }
-
-  div[data-testid="stTabs"] [role="tab"] {
-    color: var(--ecb-slate-700) !important;
-    font-size: 0.96rem !important;
-    font-weight: 800 !important;
-    letter-spacing: -0.005em !important;
-    border-radius: 999px !important;
-    padding: 0.62rem 1.12rem !important;
-    min-height: 42px !important;
-    transition: all 180ms ease !important;
-  }
-
-  div[data-testid="stTabs"] [role="tab"]:hover {
-    background: rgba(0, 51, 153, 0.075) !important;
-    color: var(--ecb-blue-700) !important;
-  }
-
-  div[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
-    background: linear-gradient(135deg, var(--ecb-blue-700) 0%, var(--ecb-blue-500) 100%) !important;
-    color: #ffffff !important;
-    box-shadow: 0 12px 24px rgba(0, 51, 153, 0.20) !important;
-  }
-
-  div[data-testid="stTabs"] [role="tab"][aria-selected="true"] * {
-    color: #ffffff !important;
-  }
-
-  div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
-    background: var(--ecb-gold-500) !important;
-    height: 3px !important;
-    border-radius: 999px !important;
-  }
-
-  div[data-testid="stTabs"] [role="tabpanel"] {
-    padding-top: 0.6rem !important;
-  }
-
-  /* =======================================================
-     07. MODULE TOP SECTIONS + METRIC ROWS
-     ======================================================= */
-
-  div[data-testid="stTabs"] [role="tabpanel"] > div > div > div:first-child h2,
-  div[data-testid="stTabs"] [role="tabpanel"] > div > div > div:first-child h3 {
-    margin-top: 1.25rem !important;
-  }
-
-  div[data-testid="stTabs"] [role="tabpanel"] h2,
-  div[data-testid="stTabs"] [role="tabpanel"] h3 {
-    position: relative !important;
-    padding-left: 1.05rem !important;
-  }
-
-  div[data-testid="stTabs"] [role="tabpanel"] h2::before,
-  div[data-testid="stTabs"] [role="tabpanel"] h3::before {
-    content: "" !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0.18rem !important;
-    width: 5px !important;
-    height: 72% !important;
-    border-radius: 999px !important;
-    background: linear-gradient(180deg, var(--ecb-blue-700), var(--ecb-gold-500)) !important;
-  }
-
-  div[data-testid="stMetric"] {
-    padding: 0.25rem 0.15rem !important;
-  }
-
-  div[data-testid="stMetricLabel"] p {
-    color: var(--ecb-navy-850) !important;
-    font-size: 0.92rem !important;
-    font-weight: 820 !important;
-    letter-spacing: -0.005em !important;
-    line-height: 1.28 !important;
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
   }
 
   div[data-testid="stMetricValue"],
   div[data-testid="stMetricValue"] * {
-    color: var(--ecb-slate-900) !important;
-    font-size: 2.02rem !important;
-    font-weight: 820 !important;
-    letter-spacing: 0.03em !important;
-    line-height: 1.05 !important;
-    max-width: 100% !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  div[data-testid="stMetricDelta"] > div {
-    border-radius: 999px !important;
-    padding: 0.24rem 0.66rem !important;
-    font-size: 0.84rem !important;
-    font-weight: 880 !important;
-  }
-
-  /* =======================================================
-     08. CHART CARDS + PLOTLY READABILITY
-     ======================================================= */
-
-  div[data-testid="stPlotlyChart"] {
-    position: relative !important;
-    background: rgba(255, 255, 255, 0.94) !important;
-    border: 1px solid rgba(16, 42, 76, 0.11) !important;
-    border-radius: 22px !important;
-    padding: 1.05rem 1.15rem 0.85rem 1.15rem !important;
-    margin: 1.05rem 0 1.28rem 0 !important;
-    box-shadow: var(--ecb-shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-    overflow: hidden !important;
-    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease !important;
-  }
-
-  div[data-testid="stPlotlyChart"]::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 1.25rem !important;
-    right: 1.25rem !important;
-    height: 3px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, rgba(0, 51, 153, 0.8), rgba(30, 117, 216, 0.55), rgba(215, 169, 0, 0.65)) !important;
-    opacity: 0.9 !important;
-  }
-
-  div[data-testid="stPlotlyChart"]:hover {
-    transform: translateY(-2px) !important;
-    border-color: rgba(0, 51, 153, 0.20) !important;
-    box-shadow: var(--ecb-shadow-strong), inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  div[data-testid="stPlotlyChart"] .js-plotly-plot,
-  div[data-testid="stPlotlyChart"] .plot-container,
-  div[data-testid="stPlotlyChart"] .svg-container {
-    border-radius: 16px !important;
-  }
-
-  div[data-testid="stPlotlyChart"] text {
-    font-family: inherit !important;
-    font-weight: 680 !important;
-    fill: var(--ecb-slate-700) !important;
-  }
-
-  div[data-testid="stPlotlyChart"] .gtitle text,
-  div[data-testid="stPlotlyChart"] .xtitle text,
-  div[data-testid="stPlotlyChart"] .ytitle text,
-  div[data-testid="stPlotlyChart"] .legendtext {
-    font-weight: 820 !important;
-    fill: var(--ecb-navy-850) !important;
-  }
-
-  div[data-testid="stPlotlyChart"] .annotation-text,
-  div[data-testid="stPlotlyChart"] .bartext,
-  div[data-testid="stPlotlyChart"] .pointtext {
-    font-weight: 860 !important;
-    fill: var(--ecb-navy-950) !important;
-  }
-
-  /* =======================================================
-     09. EXPANDERS — HOW TO READ VISUALS
-     ======================================================= */
-
-  div[data-testid="stExpander"] {
-    margin: 0.9rem 0 1.65rem 0 !important;
-    border-radius: 20px !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 251, 255, 0.98) 100%) !important;
-    box-shadow: 0 12px 28px rgba(16, 42, 76, 0.065) !important;
-    overflow: hidden !important;
-  }
-
-  div[data-testid="stExpander"] summary {
-    color: var(--ecb-navy-950) !important;
-    font-size: 1.04rem !important;
-    font-weight: 920 !important;
-    letter-spacing: -0.01em !important;
-    padding: 0.72rem 0.98rem !important;
-    background: linear-gradient(90deg, rgba(0, 51, 153, 0.045), rgba(215, 169, 0, 0.035)) !important;
-  }
-
-  div[data-testid="stExpander"] summary svg {
-    fill: var(--ecb-blue-700) !important;
-  }
-
-  div[data-testid="stExpander"] div[data-testid="stMarkdownContainer"] {
-    padding: 0.25rem 0.4rem !important;
-  }
-
-  div[data-testid="stExpander"] h4,
-  div[data-testid="stExpander"] h5,
-  div[data-testid="stExpander"] h6 {
-    color: var(--ecb-navy-950) !important;
-    font-size: 1.05rem !important;
-    font-weight: 930 !important;
-    margin: 0.85rem 0 0.35rem 0 !important;
-  }
-
-  div[data-testid="stExpander"] p,
-  div[data-testid="stExpander"] li {
-    color: var(--ecb-slate-800) !important;
-    font-size: 1.02rem !important;
-    font-weight: 660 !important;
-    line-height: 1.72 !important;
-  }
-
-  /* =======================================================
-     10. TABLES / DATAFRAMES — EXECUTIVE READABILITY
-     ======================================================= */
-
-  div[data-testid="stDataFrame"] {
-    border-radius: 18px !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    background: #ffffff !important;
-    box-shadow: 0 14px 32px rgba(16, 42, 76, 0.075) !important;
-    overflow: hidden !important;
-    margin: 1rem 0 1.7rem 0 !important;
-  }
-
-  div[data-testid="stDataFrame"] [role="grid"] {
-    border: none !important;
-  }
-
-  div[data-testid="stDataFrame"] [role="columnheader"],
-  div[data-testid="stDataFrame"] [role="columnheader"] * {
-    background: linear-gradient(180deg, #f5f8fc 0%, #eef4fb 100%) !important;
-    color: var(--ecb-navy-950) !important;
-    font-size: 0.92rem !important;
-    font-weight: 900 !important;
-  }
-
-  div[data-testid="stDataFrame"] [role="gridcell"],
-  div[data-testid="stDataFrame"] [role="gridcell"] * {
-    color: var(--ecb-slate-800) !important;
-    font-size: 0.93rem !important;
-    font-weight: 650 !important;
-  }
-
-  div[data-testid="stDataFrame"] [role="row"]:hover [role="gridcell"] {
-    background: rgba(0, 51, 153, 0.04) !important;
-  }
-
-  /* =======================================================
-     11. ALERTS / INSIGHT CARDS / ACTION PANELS
-     ======================================================= */
-
-  div[data-testid="stAlert"] {
-    border-radius: 18px !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    box-shadow: 0 12px 26px rgba(16, 42, 76, 0.065) !important;
-    margin: 0.95rem 0 1.05rem 0 !important;
-    overflow: hidden !important;
-  }
-
-  div[data-testid="stAlert"] p,
-  div[data-testid="stAlert"] li,
-  div[data-testid="stAlert"] span {
-    font-size: 1.02rem !important;
-    font-weight: 720 !important;
-    line-height: 1.68 !important;
-  }
-
-  div[data-testid="stAlert"][kind="info"],
-  div[data-testid="stAlert"]:has(svg[aria-label="Info icon"]) {
-    background: linear-gradient(135deg, #eaf3ff 0%, #dbeeff 100%) !important;
-    border-color: rgba(0, 51, 153, 0.18) !important;
-  }
-
-  div[data-testid="stAlert"][kind="success"],
-  div[data-testid="stAlert"]:has(svg[aria-label="Success icon"]) {
-    background: linear-gradient(135deg, #e6f7ef 0%, #d9f1e8 100%) !important;
-    border-color: rgba(0, 107, 79, 0.18) !important;
-  }
-
-  div[data-testid="stAlert"][kind="warning"],
-  div[data-testid="stAlert"]:has(svg[aria-label="Warning icon"]) {
-    background: linear-gradient(135deg, #fff7df 0%, #fff0c2 100%) !important;
-    border-color: rgba(135, 85, 0, 0.22) !important;
-  }
-
-  div[data-testid="stAlert"][kind="error"],
-  div[data-testid="stAlert"]:has(svg[aria-label="Error icon"]) {
-    background: linear-gradient(135deg, #fdecef 0%, #fbe1e6 100%) !important;
-    border-color: rgba(180, 35, 45, 0.22) !important;
-  }
-
-  /* Markdown paragraphs after business interpretation headings */
-  div[data-testid="stMarkdownContainer"] p:has(strong) {
-    color: var(--ecb-slate-900) !important;
-  }
-
-  /* =======================================================
-     12. FORM INPUTS + BUTTON-LIKE INTERACTIVE STATES
-     ======================================================= */
-
-  button,
-  div[data-testid="stBaseButton-secondary"] button,
-  div[data-testid="stBaseButton-primary"] button {
-    border-radius: 999px !important;
-    font-weight: 850 !important;
-    transition: all 180ms ease !important;
-  }
-
-  button:hover {
-    transform: translateY(-1px) !important;
-    box-shadow: 0 10px 22px rgba(0, 51, 153, 0.15) !important;
-  }
-
-  input,
-  textarea,
-  div[data-baseweb="input"] input {
-    color: var(--ecb-navy-950) !important;
-    font-weight: 700 !important;
-  }
-
-  /* =======================================================
-     13. FOOTER / PROJECT CREDITS
-     ======================================================= */
-
-  div[data-testid="stMain"] h3:has(+ div),
-  div[data-testid="stMain"] div[data-testid="stMarkdownContainer"] h3 {
-    color: var(--ecb-navy-950) !important;
-  }
-
-  .block-container > div:last-child {
-    padding-bottom: 1.5rem !important;
-  }
-
-  /* Footer columns become premium credit cards */
-  .block-container > div:last-child div[data-testid="stHorizontalBlock"]:last-of-type > div[data-testid="column"] {
-    background: rgba(255, 255, 255, 0.76) !important;
-    border: 1px solid rgba(16, 42, 76, 0.10) !important;
-    border-radius: 18px !important;
-    padding: 1rem 1.1rem !important;
-    box-shadow: 0 10px 24px rgba(16, 42, 76, 0.055) !important;
-  }
-
-  /* =========================================================
-   DEFAULT FOOTER POLISH — NO APP.PY CHANGE REQUIRED
-   Works with existing Streamlit markdown + columns footer
-========================================================= */
-
-/* Footer divider refinement */
-[data-testid="stMarkdownContainer"] hr {
-    margin-top: 2.2rem !important;
-    margin-bottom: 1.4rem !important;
-    border: none !important;
-    height: 1px !important;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(11, 31, 58, 0.22) 14%,
-        rgba(15, 139, 114, 0.35) 48%,
-        rgba(215, 173, 69, 0.35) 78%,
-        transparent 100%
-    ) !important;
-}
-
-/* Footer heading: Project Information & Credits */
-[data-testid="stMarkdownContainer"] h3 {
-    color: #0b1f3a !important;
-    font-size: 27px !important;
-    line-height: 1.25 !important;
-    font-weight: 950 !important;
-    letter-spacing: 0.1px !important;
-    margin-top: 1.1rem !important;
-    margin-bottom: 1.2rem !important;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65) !important;
-}
-
-/* Give footer area soft premium spacing */
-[data-testid="column"] [data-testid="stMarkdownContainer"] {
-    padding: 2px 4px !important;
-}
-
-/* Footer column text visibility */
-[data-testid="column"] [data-testid="stMarkdownContainer"] p {
-    color: #0b1f3a !important;
-    font-size: 15.2px !important;
-    line-height: 1.75 !important;
-    font-weight: 650 !important;
-}
-
-/* Footer bold labels */
-[data-testid="column"] [data-testid="stMarkdownContainer"] strong {
-    color: #071827 !important;
-    font-weight: 950 !important;
-}
-
-/* Footer bottom built-with line */
-[data-testid="stMarkdownContainer"] div[style*="text-align: center"] {
-    margin-top: 18px !important;
-    padding: 12px 16px !important;
-    border-radius: 16px !important;
-    color: #0b1f3a !important;
-    font-size: 14.4px !important;
-    font-weight: 850 !important;
-    background: rgba(15, 139, 114, 0.075) !important;
-    border: 1px solid rgba(15, 139, 114, 0.16) !important;
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.055) !important;
-}
-
-/* Footer columns hover polish */
-[data-testid="column"]:has([data-testid="stMarkdownContainer"] strong) {
-    border-radius: 16px !important;
-    transition: all 0.22s ease-in-out !important;
-}
-
-[data-testid="column"]:has([data-testid="stMarkdownContainer"] strong):hover {
-    transform: translateY(-1px) !important;
-}
-
-/* Keep footer readable on tablet */
-@media (max-width: 1100px) {
-    [data-testid="stMarkdownContainer"] h3 {
-        font-size: 23px !important;
-    }
-
-    [data-testid="column"] [data-testid="stMarkdownContainer"] p {
-        font-size: 14.2px !important;
-    }
-}
-
-/* Mobile footer readability */
-@media (max-width: 700px) {
-    [data-testid="stMarkdownContainer"] h3 {
-        font-size: 19px !important;
-        line-height: 1.35 !important;
-    }
-
-    [data-testid="column"] [data-testid="stMarkdownContainer"] p {
-        font-size: 13.2px !important;
-        line-height: 1.65 !important;
-    }
-
-    [data-testid="stMarkdownContainer"] div[style*="text-align: center"] {
-        font-size: 12.8px !important;
-        padding: 11px 12px !important;
-    }
-}
-
-/* =========================================================
-   FOOTER GAP COMPACT POLISH
-========================================================= */
-
-[data-testid="stMarkdownContainer"] hr {
-    margin-top: 1.4rem !important;
-    margin-bottom: 1.1rem !important;
-}
-
-[data-testid="stMarkdownContainer"] h3 {
-    margin-top: 0.4rem !important;
-    margin-bottom: 1rem !important;
-}
-
-  /* =======================================================
-     14. SCROLLBAR POLISH
-     ======================================================= */
-
-  ::-webkit-scrollbar {
-    width: 10px !important;
-    height: 10px !important;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #eef4fb !important;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(0, 51, 153, 0.55), rgba(30, 117, 216, 0.55)) !important;
-    border-radius: 999px !important;
-    border: 2px solid #eef4fb !important;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(0, 51, 153, 0.75), rgba(30, 117, 216, 0.75)) !important;
-  }
-
-  /* =======================================================
-     15. GLOBAL VISIBILITY PATCHES FOR CHART LABELS/TEXT
-     ======================================================= */
-
-  .plotly .main-svg text,
-  .plotly .legend text,
-  .plotly .xtick text,
-  .plotly .ytick text {
-    font-size: 12px !important;
-    font-weight: 720 !important;
-  }
-
-  .plotly .gtitle,
-  .plotly .xtitle,
-  .plotly .ytitle {
-    font-weight: 850 !important;
-  }
-
-  .stMarkdown,
-  div[data-testid="stMarkdownContainer"] {
-    color: var(--ecb-slate-900) !important;
-  }
-
-}
-
-/* =========================================================
-   DESKTOP ONLY — FULL SCREEN VIEWPORT / REMOVE TOP WHITE STRIP
-   Paste this at the END of app/assets/ecb_dashboard.css
-   Mobile and tablet untouched
-========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Remove Streamlit default top header white strip */
-  header[data-testid="stHeader"] {
-    height: 0rem !important;
-    min-height: 0rem !important;
-    max-height: 0rem !important;
-    visibility: hidden !important;
-    background: transparent !important;
-  }
-
-  /* Hide Streamlit toolbar/menu/decorative top line on desktop */
-  div[data-testid="stToolbar"],
-  div[data-testid="stDecoration"],
-  div[data-testid="stStatusWidget"],
-  #MainMenu,
-  footer {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-  }
-
-  /* Main app should start from very top */
-  .stApp {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    min-height: 100vh !important;
-    background:
-      radial-gradient(circle at top left, rgba(22, 91, 186, 0.10), transparent 32%),
-      radial-gradient(circle at top right, rgba(214, 164, 28, 0.10), transparent 34%),
-      linear-gradient(135deg, #f4f8fd 0%, #edf4fb 45%, #f8fbff 100%) !important;
-  }
-
-  /* Main section full viewport */
-  section[data-testid="stMain"],
-  div[data-testid="stAppViewContainer"],
-  div[data-testid="stAppViewBlockContainer"] {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* Main content full width after sidebar */
-  section[data-testid="stMain"] > div {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* Remove default Streamlit container top gap */
-  .main .block-container,
-  section[data-testid="stMain"] .block-container,
-  div[data-testid="stVerticalBlock"] > div:has(.stTabs) {
-    padding-top: 0rem !important;
-    margin-top: 0rem !important;
-  }
-
-  /* Make dashboard content use full desktop canvas */
-  .main .block-container,
-  section[data-testid="stMain"] .block-container {
-    max-width: none !important;
-    width: 100% !important;
-    padding-left: 3.8rem !important;
-    padding-right: 3.8rem !important;
-    padding-bottom: 5rem !important;
-  }
-
-  /* Reduce first element top gap */
-  section[data-testid="stMain"] .block-container > div:first-child {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Sidebar should also start cleanly from top */
-  section[data-testid="stSidebar"] {
-    top: 0 !important;
-    height: 100vh !important;
-    min-height: 100vh !important;
-    padding-top: 0 !important;
-    background:
-      linear-gradient(180deg, #f5f9fe 0%, #edf5fc 52%, #f7fbff 100%) !important;
-    border-right: 1px solid rgba(15, 45, 83, 0.12) !important;
-  }
-
-  section[data-testid="stSidebar"] > div {
-    padding-top: 1.8rem !important;
-    height: 100vh !important;
-  }
-
-  /* Hero/header card should sit closer to top in full-screen mode */
-  .hero-section,
-  .dashboard-hero,
-  .hero-card,
-  [class*="hero"] {
-    margin-top: 0.8rem !important;
-  }
-
-  /* Remove accidental empty top blocks */
-  .element-container:empty,
-  div[data-testid="stVerticalBlock"] > div:empty {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
-/* =========================================================
-   DESKTOP ONLY — FINAL TOP VIEWPORT TIGHTENING PATCH
-   Paste at END of ecb_dashboard.css
-   Mobile/tablet untouched
-========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Force main app viewport to start immediately */
-  html,
-  body,
-  .stApp,
-  div[data-testid="stAppViewContainer"],
-  section[data-testid="stMain"] {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Stronger Streamlit header removal */
-  header[data-testid="stHeader"],
-  div[data-testid="stToolbar"],
-  div[data-testid="stDecoration"],
-  div[data-testid="stStatusWidget"],
-  #MainMenu,
-  footer {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    min-height: 0 !important;
-    max-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: transparent !important;
-  }
-
-  /* Remove default Streamlit block-container top gap */
-  .main .block-container,
-  section[data-testid="stMain"] .block-container,
-  div[data-testid="stAppViewBlockContainer"] {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-    max-width: none !important;
-  }
-
-  /* Remove top spacing from first dashboard block */
-  section[data-testid="stMain"] .block-container > div:first-child,
-  section[data-testid="stMain"] .block-container > div:first-child > div,
-  section[data-testid="stMain"] .block-container > div:first-child .element-container {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Bring hero/header card closer to the top */
-  .hero-section,
-  .dashboard-hero,
-  .hero-card,
-  .main-hero,
-  [class*="hero"],
-  [class*="Hero"] {
-    margin-top: 0 !important;
-    padding-top: 1.2rem !important;
-  }
-
-  /* If first visible block is the hero wrapper/card */
-  section[data-testid="stMain"] .block-container > div:first-child [class*="hero"],
-  section[data-testid="stMain"] .block-container > div:first-child [class*="Hero"] {
-    margin-top: 0 !important;
-  }
-
-  /* Reduce content canvas top breathing space */
-  section[data-testid="stMain"] .block-container {
-    padding-left: 3.8rem !important;
-    padding-right: 3.8rem !important;
-    padding-bottom: 5rem !important;
-  }
-
-  /* Sidebar full height and no top offset */
-  section[data-testid="stSidebar"] {
-    top: 0 !important;
-    height: 100vh !important;
-    min-height: 100vh !important;
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] > div {
-    padding-top: 1.2rem !important;
-    margin-top: 0 !important;
-    height: 100vh !important;
-  }
-
-  /* Remove invisible empty spacer blocks */
-  .element-container:empty,
-  div[data-testid="stVerticalBlock"] > div:empty {
-    display: none !important;
-    height: 0 !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
-/* =========================================================
-   DESKTOP ONLY — FINAL HERO TOP ALIGNMENT MICRO PATCH
-   Paste at END of CSS
-========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Remove remaining top breathing space inside Streamlit canvas */
-  .stApp,
-  div[data-testid="stAppViewContainer"],
-  section[data-testid="stMain"],
-  section[data-testid="stMain"] > div,
-  div[data-testid="stAppViewBlockContainer"],
-  .main .block-container {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* Tighten first visible content block */
-  section[data-testid="stMain"] .block-container > div:first-child,
-  section[data-testid="stMain"] .block-container > div:first-child > div,
-  section[data-testid="stMain"] .block-container > div:first-child .element-container {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* Bring ECB hero card closer to top */
-  .ecb-hero,
-  .dashboard-hero,
-  .hero-card,
-  [class*="hero"],
-  [class*="Hero"] {
-    margin-top: 0 !important;
-  }
-
-  /* Reduce main content vertical starting offset */
-  section[data-testid="stMain"] .block-container {
-    padding-top: 1.1rem !important;
-  }
-
-  /* Sidebar should remain fixed from top */
-  section[data-testid="stSidebar"],
-  section[data-testid="stSidebar"] > div {
-    top: 0 !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Remove hidden Streamlit top toolbar/header space */
-  header[data-testid="stHeader"],
-  div[data-testid="stToolbar"],
-  div[data-testid="stDecoration"],
-  #MainMenu,
-  footer {
-    height: 0 !important;
-    min-height: 0 !important;
-    max-height: 0 !important;
-    display: none !important;
-    visibility: hidden !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-}
-
-/* =========================================================
-   LOCKED SAME-ITEMS PREMIUM SIDEBAR UPGRADE
-   Scope: Desktop sidebar only | No extra sidebar items
-   Keeps native Streamlit filters dynamic and connected
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Sidebar shell: premium but stable; no fixed/stuck behavior */
-  section[data-testid="stSidebar"] {
-    background:
-      radial-gradient(circle at 18% 5%, rgba(0, 51, 153, 0.085), transparent 30%),
-      radial-gradient(circle at 86% 14%, rgba(215, 169, 0, 0.055), transparent 28%),
-      linear-gradient(180deg, #f8fbff 0%, #eef5fd 52%, #f7fbff 100%) !important;
-    border-right: 1px solid rgba(16, 42, 76, 0.12) !important;
-    box-shadow: 10px 0 30px rgba(16, 42, 76, 0.07) !important;
-    overflow-x: hidden !important;
-  }
-
-  section[data-testid="stSidebar"] > div:first-child {
-    background: transparent !important;
-    padding: 1.05rem 1.05rem 1.6rem 1.05rem !important;
-    overflow-x: hidden !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] {
-    background: transparent !important;
-    overflow-x: hidden !important;
-    scroll-behavior: smooth !important;
-    scrollbar-gutter: stable !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"],
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"],
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"] {
-    overflow-x: hidden !important;
-    max-height: none !important;
-  }
-
-  section[data-testid="stSidebar"] .block-container {
-    max-width: 100% !important;
-    padding: 0 !important;
-  }
-
-  /* Unified Mentor logo: same item, cleaner placement */
-  section[data-testid="stSidebar"] .st-key-sidebar_logo_panel {
-    margin: 0 0 0.95rem 0 !important;
-    padding: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_logo_panel [data-testid="stImage"] {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-    padding: 0.88rem 0.75rem !important;
-    border-radius: 18px !important;
-    background: rgba(255, 255, 255, 0.72) !important;
-    border: 1px solid rgba(16, 42, 76, 0.09) !important;
-    box-shadow: 0 12px 24px rgba(16, 42, 76, 0.055), inset 0 1px 0 rgba(255, 255, 255, 0.90) !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_logo_panel img {
-    display: block !important;
-    width: auto !important;
-    max-width: 225px !important;
-    height: auto !important;
-    object-fit: contain !important;
-    margin: 0 auto !important;
-    filter: contrast(1.08) saturate(1.03) drop-shadow(0 8px 16px rgba(16, 42, 76, 0.13)) !important;
-  }
-
-  /* Header: same title/caption, default-readable premium typography */
-  section[data-testid="stSidebar"] .st-key-sidebar_header_panel {
-    margin: 0 0 0.65rem 0 !important;
-    padding: 0.15rem 0.15rem 0 0.15rem !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_header_panel h1 {
-    color: var(--ecb-navy-950, #07172f) !important;
-    font-size: 1.46rem !important;
-    font-weight: 820 !important;
-    letter-spacing: -0.018em !important;
-    line-height: 1.16 !important;
-    margin: 0 0 0.45rem 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_header_panel div[data-testid="stCaptionContainer"] p,
-  section[data-testid="stSidebar"] .st-key-sidebar_header_panel div[data-testid="stCaptionContainer"] span {
-    color: #5f7085 !important;
-    font-size: 0.89rem !important;
-    font-weight: 560 !important;
-    line-height: 1.48 !important;
-    letter-spacing: 0 !important;
-    text-transform: none !important;
-    margin: 0 !important;
-  }
-
-  /* Compact dividers: existing separators, less blank space */
-  section[data-testid="stSidebar"] hr {
-    border: 0 !important;
-    height: 1px !important;
-    margin: 0.85rem 0 0.9rem 0 !important;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(16, 42, 76, 0.12) 18%,
-      rgba(0, 51, 153, 0.18) 50%,
-      rgba(16, 42, 76, 0.10) 82%,
-      transparent 100%
-    ) !important;
-  }
-
-  /* Existing filter sections upgraded into clean cards */
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel,
-  section[data-testid="stSidebar"] .st-key-sidebar_product_panel,
-  section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel {
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0.92rem 0.9rem 0.98rem 0.9rem !important;
-    border-radius: 18px !important;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.93) 0%, rgba(247, 251, 255, 0.90) 100%) !important;
-    border: 1px solid rgba(16, 42, 76, 0.11) !important;
-    box-shadow: 0 12px 24px rgba(16, 42, 76, 0.062), inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
-    overflow: visible !important;
-    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel:hover,
-  section[data-testid="stSidebar"] .st-key-sidebar_product_panel:hover,
-  section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel:hover {
-    transform: translateY(-1px) !important;
-    border-color: rgba(0, 51, 153, 0.22) !important;
-    box-shadow: 0 16px 30px rgba(16, 42, 76, 0.085), inset 0 1px 0 rgba(255, 255, 255, 0.96) !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel::before,
-  section[data-testid="stSidebar"] .st-key-sidebar_product_panel::before,
-  section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0.85rem !important;
-    right: 0.85rem !important;
-    height: 3px !important;
-    border-radius: 0 0 999px 999px !important;
-    background: linear-gradient(90deg, var(--ecb-blue-700, #003399), var(--ecb-blue-500, #1e75d8), var(--ecb-gold-500, #d7a900)) !important;
-    opacity: 0.72 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel h3,
-  section[data-testid="stSidebar"] .st-key-sidebar_product_panel h3,
-  section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel h3 {
-    color: var(--ecb-navy-900, #0b1f3a) !important;
-    font-size: 1.02rem !important;
-    font-weight: 780 !important;
-    letter-spacing: -0.01em !important;
-    line-height: 1.22 !important;
-    margin: 0.15rem 0 0.72rem 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    text-transform: none !important;
-  }
-
-  /* Restore readable default text behavior inside sidebar */
-  section[data-testid="stSidebar"] p,
-  section[data-testid="stSidebar"] span,
-  section[data-testid="stSidebar"] label {
-    color: #344054 !important;
-    font-size: 0.91rem !important;
-    font-weight: 560 !important;
-    line-height: 1.45 !important;
-    letter-spacing: 0 !important;
-    text-transform: none !important;
-  }
-
-  section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
-    color: var(--ecb-navy-850, #102a4c) !important;
-    font-size: 0.88rem !important;
-    font-weight: 720 !important;
-    line-height: 1.22 !important;
-    margin: 0 0 0.48rem 0 !important;
-    letter-spacing: 0 !important;
-  }
-
-  /* Multiselect: premium, readable, not oversized */
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel div[data-testid="stMultiSelect"] {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel div[data-baseweb="select"] > div {
-    min-height: 44px !important;
-    border-radius: 13px !important;
-    background: #ffffff !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    box-shadow: inset 0 1px 2px rgba(16, 42, 76, 0.045) !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel div[data-baseweb="select"] > div:hover,
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel div[data-baseweb="select"] > div:focus-within {
-    border-color: rgba(0, 51, 153, 0.32) !important;
-    box-shadow: 0 0 0 3px rgba(0, 51, 153, 0.055), inset 0 1px 2px rgba(16, 42, 76, 0.045) !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel span[data-baseweb="tag"] {
-    background: linear-gradient(135deg, var(--ecb-blue-700, #003399) 0%, var(--ecb-blue-600, #0b63ce) 100%) !important;
-    color: #ffffff !important;
-    border-radius: 999px !important;
-    border: 1px solid rgba(255, 255, 255, 0.30) !important;
-    box-shadow: 0 5px 12px rgba(0, 51, 153, 0.18) !important;
-    font-size: 0.78rem !important;
-    font-weight: 720 !important;
-    padding: 0.16rem 0.32rem !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel span[data-baseweb="tag"] span,
-  section[data-testid="stSidebar"] .st-key-sidebar_engagement_panel span[data-baseweb="tag"] svg {
-    color: #ffffff !important;
-    fill: #ffffff !important;
-  }
-
-  /* Slider-specific visual rules removed during conflict cleanup.
-     A fresh slider-only block should be added at the end after testing. */
-
-  /* Existing success item: keep it, make it compact and professional */
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel div[data-testid="stAlert"] {
-    margin: 0 !important;
-    padding: 0.68rem 0.78rem !important;
-    border-radius: 14px !important;
-    background: linear-gradient(135deg, #e8f7f1 0%, #dff3eb 100%) !important;
-    border: 1px solid rgba(0, 107, 79, 0.15) !important;
-    box-shadow: 0 9px 18px rgba(16, 42, 76, 0.045) !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel div[data-testid="stAlert"] p,
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel div[data-testid="stAlert"] span {
-    color: var(--ecb-green-700, #006b4f) !important;
-    font-size: 0.86rem !important;
-    font-weight: 680 !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-  }
-
-  /* Single visible sidebar scrollbar styling */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar {
-    width: 8px !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar-track {
-    background: rgba(213, 225, 239, 0.62) !important;
-    border-radius: 999px !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #9cadc1 0%, #6f8196 100%) !important;
-    border-radius: 999px !important;
-    border: 2px solid rgba(242, 247, 255, 0.95) !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--ecb-blue-600, #0b63ce), var(--ecb-blue-700, #003399)) !important;
-  }
-}
-
-
-/* =========================================================
-   SIDEBAR SCROLL + BLANK SPACE FIX
-   Scope: Desktop sidebar only
-   Purpose:
-   - Keep only one sidebar scrollbar
-   - Remove scrollable blank space after sidebar items
-   - Avoid fixed/stuck sidebar behavior
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Outer sidebar must not create its own second scrollbar */
-  section[data-testid="stSidebar"] {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow-y: visible !important;
-    overflow-x: hidden !important;
-  }
-
-  /* Neutralize older 100vh rules applied to sidebar wrappers */
-  section[data-testid="stSidebar"] > div,
-  section[data-testid="stSidebar"] > div:first-child {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
-    padding-top: 1.05rem !important;
-    padding-bottom: 0.8rem !important;
-  }
-
-  /* The only sidebar scroll owner */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: calc(100dvh - 0px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    padding-bottom: 0.85rem !important;
-    scrollbar-gutter: stable !important;
-  }
-
-  /* Remove artificial extra height below the last sidebar item */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"],
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] > div,
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"],
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"],
-  section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div,
-  section[data-testid="stSidebar"] .element-container {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
-  }
-
-  /* Tighten final sidebar blocks so content ends naturally after status message */
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel + div,
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] > div:last-child,
-  section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  /* Hide any accidental outer-wrapper scrollbar; keep stSidebarContent scrollbar visible */
-  section[data-testid="stSidebar"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] > div::-webkit-scrollbar,
-  section[data-testid="stSidebar"] > div:first-child::-webkit-scrollbar,
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"]::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-    display: none !important;
-  }
-
-  section[data-testid="stSidebar"],
-  section[data-testid="stSidebar"] > div,
-  section[data-testid="stSidebar"] > div:first-child,
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"],
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"],
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"] {
-    scrollbar-width: none !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] {
-    scrollbar-width: thin !important;
-  }
-
-  /* Keep the one visible scrollbar clean */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar {
-    width: 8px !important;
-    display: block !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar-track {
-    background: rgba(213, 225, 239, 0.62) !important;
-    border-radius: 999px !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #9cadc1 0%, #6f8196 100%) !important;
-    border-radius: 999px !important;
-    border: 2px solid rgba(242, 247, 255, 0.95) !important;
-  }
-}
-
-/* =========================================================
-   FINAL SIDEBAR BOTTOM-BLANK REMOVAL PATCH
-   Scope: Desktop sidebar only
-   Purpose:
-   - Remove extra scrollable blank area after last sidebar item
-   - Keep sidebar unstuck
-   - Keep only the native sidebar content scrollbar
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Keep Streamlit sidebar natural; prevent outer wrapper blank scroll */
-  section[data-testid="stSidebar"] {
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-  }
-
-  section[data-testid="stSidebar"] > div,
-  section[data-testid="stSidebar"] > div:first-child {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* Single scroll owner: sidebar content only */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] {
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    min-height: 0 !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    scrollbar-gutter: stable !important;
-  }
-
-  /* Critical: stop inner content from forcing an artificial full-height blank area */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"],
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"] > div,
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"],
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"],
-  section[data-testid="stSidebar"] [data-testid="stVerticalBlockBorderWrapper"],
-  section[data-testid="stSidebar"] [data-testid="stElementContainer"],
-  section[data-testid="stSidebar"] .element-container {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: max-content !important;
-    overflow: visible !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* Compact vertical rhythm so the sidebar ends after the last actual item */
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
-    gap: 0.62rem !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] > div {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] > div:last-child,
-  section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div:last-child,
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"] > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  /* Remove large gap around the final divider/status area without hiding any item */
-  section[data-testid="stSidebar"] .st-key-sidebar_threshold_panel {
-    margin-bottom: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  section[data-testid="stSidebar"] .st-key-sidebar_status_panel div[data-testid="stAlert"] {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* Last divider should not create a large empty runway */
-  section[data-testid="stSidebar"] hr {
-    margin-top: 0.62rem !important;
-    margin-bottom: 0.62rem !important;
-  }
-
-  /* Any accidental empty sidebar blocks should not reserve space */
-  section[data-testid="stSidebar"] div:empty {
-    min-height: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* Hide all non-content side scrollbars. Keep stSidebarContent scrollbar visible. */
-  section[data-testid="stSidebar"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] > div::-webkit-scrollbar,
-  section[data-testid="stSidebar"] > div:first-child::-webkit-scrollbar,
-  section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"]::-webkit-scrollbar,
-  section[data-testid="stSidebar"] [class*="stVerticalBlock"]::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-    display: none !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"]::-webkit-scrollbar {
-    width: 8px !important;
-    display: block !important;
-  }
-}
-
-/* =========================================================
-   SIDEBAR SPACING RELAX PATCH
-   Purpose: Add breathing space between existing sidebar items
-   Scope: Desktop sidebar only
-   Safe: No scroll/height/fixed-position changes
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Sidebar inner content breathing space */
-  section[data-testid="stSidebar"] div[data-testid="stSidebarContent"] {
-    padding-top: 1.35rem !important;
-    padding-bottom: 1.25rem !important;
-  }
-
-  /* Add controlled vertical rhythm between sidebar blocks */
-  section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
-    gap: 1.05rem !important;
-  }
-
-  /* Logo block should breathe before title */
-  section[data-testid="stSidebar"] div[data-testid="stImage"] {
-    margin-bottom: 1.45rem !important;
-  }
-
-  /* Dashboard Filters title spacing */
-  section[data-testid="stSidebar"] h1 {
-    margin-top: 0.35rem !important;
-    margin-bottom: 0.85rem !important;
-    line-height: 1.18 !important;
-  }
-
-  /* Description spacing below title */
-  section[data-testid="stSidebar"] div[data-testid="stCaptionContainer"] {
-    margin-bottom: 1.15rem !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stCaptionContainer"] p {
-    line-height: 1.6 !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* Divider should not crush sections */
-  section[data-testid="stSidebar"] hr {
-    margin-top: 1.05rem !important;
-    margin-bottom: 1.25rem !important;
-  }
-
-  /* Existing premium sidebar cards: add breathing gap */
-  section[data-testid="stSidebar"] [class*="st-key-sidebar"],
-  section[data-testid="stSidebar"] [class*="st-key-filter"],
-  section[data-testid="stSidebar"] [class*="st-key-engagement"],
-  section[data-testid="stSidebar"] [class*="st-key-product"],
-  section[data-testid="stSidebar"] [class*="st-key-threshold"] {
-    margin-bottom: 1.35rem !important;
-  }
-
-
-
-  /* Section subheadings should not stick to cards */
-  section[data-testid="stSidebar"] h2,
-  section[data-testid="stSidebar"] h3 {
-    margin-top: 0.55rem !important;
-    margin-bottom: 0.8rem !important;
-    line-height: 1.22 !important;
-  }
-
-  /* Widget labels spacing */
-  section[data-testid="stSidebar"] label,
-  section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] {
-    margin-bottom: 0.45rem !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p {
-    margin-bottom: 0.35rem !important;
-    line-height: 1.35 !important;
-  }
-
-  /* Multiselect box breathing */
-  section[data-testid="stSidebar"] div[data-baseweb="select"] {
-    margin-top: 0.35rem !important;
-    margin-bottom: 0.35rem !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
-    min-height: 50px !important;
-    padding-top: 0.18rem !important;
-    padding-bottom: 0.18rem !important;
-  }
-
-
-
-  /* Success/status box spacing */
-  section[data-testid="stSidebar"] div[data-testid="stAlert"] {
-    margin-top: 1.15rem !important;
-    margin-bottom: 0.8rem !important;
-  }
-
-  /* Prevent excessive tight stacking inside cards */
-  section[data-testid="stSidebar"] .element-container {
-    margin-bottom: 0.45rem !important;
-  }
-}
-
-
-/* =========================================================
-   SIDEBAR SLIDER OUTER SPACING ONLY
-   Safe mode: no internal BaseWeb slider styling
-   Purpose:
-   - Preserve native Streamlit slider track/fill/drag behavior
-   - Avoid repeated number/layout overlap caused by forced internals
-   - Keep only spacing and label readability
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  section[data-testid="stSidebar"] div[data-testid="stSlider"] {
-    overflow: visible !important;
-    margin-top: 0.35rem !important;
-    margin-bottom: 1.15rem !important;
-    padding-top: 0.35rem !important;
-    padding-bottom: 0.55rem !important;
-  }
-
-  section[data-testid="stSidebar"] div[data-testid="stSlider"] div[data-testid="stWidgetLabel"] p {
-    color: #07172f !important;
-    font-size: 0.9rem !important;
-    font-weight: 800 !important;
-    line-height: 1.35 !important;
-    margin-bottom: 0.5rem !important;
-  }
-}
-
-/* =========================================================
-   COMMON MODULE FOUNDATION CSS
-   Scope: Dashboard Analysis Modules + 4 Tab Modules only
-   Safe: Sidebar untouched | Sliders untouched | Header untouched
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* =======================================================
-     01. MODULE TABS AREA — SHARED PREMIUM FOUNDATION
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] {
-    margin-top: 1.35rem !important;
-    margin-bottom: 2.25rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tablist"] {
-    position: relative !important;
-    gap: 0.7rem !important;
-    padding: 0.55rem 0.4rem 0.75rem 0.4rem !important;
-    border-bottom: 1px solid rgba(16, 42, 76, 0.15) !important;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.42),
-      rgba(239, 246, 255, 0.55),
-      rgba(255, 255, 255, 0.32)
-    ) !important;
-    border-radius: 18px 18px 0 0 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"] {
-    min-height: 44px !important;
-    padding: 0.68rem 1.22rem !important;
-    border-radius: 999px !important;
-    color: #102a4c !important;
-    font-size: 0.96rem !important;
-    font-weight: 820 !important;
-    letter-spacing: -0.01em !important;
-    transition:
-      background 180ms ease,
-      color 180ms ease,
-      box-shadow 180ms ease,
-      transform 180ms ease !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"]:hover {
-    background: rgba(0, 51, 153, 0.08) !important;
-    color: #003399 !important;
-    transform: translateY(-1px) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
-    background: linear-gradient(135deg, #003399 0%, #0b63ce 100%) !important;
-    color: #ffffff !important;
-    box-shadow: 0 12px 26px rgba(0, 51, 153, 0.22) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] * {
-    color: #ffffff !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
-    background: linear-gradient(90deg, #d7a900, #f2d46b) !important;
-    height: 3px !important;
-    border-radius: 999px !important;
-  }
-
-  /* =======================================================
-     02. MODULE PANEL — COMMON BODY CANVAS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] {
-    position: relative !important;
-    margin-top: 1.15rem !important;
-    padding: 1.65rem 1.8rem 2rem 1.8rem !important;
-    border-radius: 28px !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    background:
-      radial-gradient(circle at 8% 2%, rgba(0, 51, 153, 0.055), transparent 32%),
-      radial-gradient(circle at 92% 0%, rgba(215, 169, 0, 0.045), transparent 26%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.74) 0%, rgba(245, 250, 255, 0.66) 100%) !important;
-    box-shadow:
-      0 20px 46px rgba(16, 42, 76, 0.075),
-      inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
-    overflow: visible !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"]::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 1.65rem !important;
-    right: 1.65rem !important;
-    height: 4px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, #003399 0%, #1e75d8 58%, #d7a900 100%) !important;
-    box-shadow: 0 6px 16px rgba(0, 51, 153, 0.16) !important;
-  }
-
-  /* =======================================================
-     03. MODULE HEADINGS + SECTION HIERARCHY
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h2,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h3 {
-    color: #07172f !important;
-    font-weight: 930 !important;
-    letter-spacing: -0.025em !important;
-    line-height: 1.14 !important;
-    margin-top: 0.95rem !important;
-    margin-bottom: 0.9rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h3 {
-    font-size: 1.9rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h2::before,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h3::before {
-    content: "" !important;
-    display: inline-block !important;
-    width: 5px !important;
-    height: 1.45rem !important;
-    margin-right: 0.75rem !important;
-    border-radius: 999px !important;
-    vertical-align: -0.18rem !important;
-    background: linear-gradient(180deg, #003399 0%, #d7a900 100%) !important;
-    box-shadow: 0 7px 15px rgba(0, 51, 153, 0.20) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h4 {
-    color: #07172f !important;
-    font-size: 1.42rem !important;
-    font-weight: 910 !important;
-    letter-spacing: -0.02em !important;
-    margin-top: 1.65rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  /* =======================================================
-     04. GUIDELINE / CAPTION STRIP
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stCaptionContainer"] {
-    margin: 0.55rem 0 1rem 0 !important;
-    padding: 0.85rem 1rem !important;
-    border-radius: 16px !important;
-    border: 1px solid rgba(0, 51, 153, 0.11) !important;
-    background: linear-gradient(135deg, rgba(234, 243, 255, 0.88), rgba(248, 251, 255, 0.88)) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stCaptionContainer"] p {
-    color: #52637a !important;
-    font-size: 0.96rem !important;
-    font-weight: 780 !important;
-    line-height: 1.58 !important;
-    margin: 0 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] p {
-    color: #1d2939 !important;
-    font-size: 1.03rem !important;
-    font-weight: 590 !important;
-    line-height: 1.72 !important;
-  }
-
-  /* =======================================================
-     05. MODULE METRIC CARDS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stHorizontalBlock"] {
-    gap: 1rem !important;
-    align-items: stretch !important;
-    margin: 0.55rem 0 1.25rem 0 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetric"] {
-    position: relative !important;
-    min-height: 128px !important;
-    padding: 1rem 1.05rem 0.95rem 1.05rem !important;
-    border-radius: 20px !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    background:
-      radial-gradient(circle at 95% 10%, rgba(0, 51, 153, 0.055), transparent 36%),
-      linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
-    box-shadow:
-      0 14px 30px rgba(16, 42, 76, 0.065),
-      inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
-    overflow: hidden !important;
-    transition:
-      transform 180ms ease,
-      border-color 180ms ease,
-      box-shadow 180ms ease !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetric"]::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0.85rem !important;
-    right: 0.85rem !important;
-    height: 3px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, #003399 0%, #1e75d8 70%, #d7a900 100%) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetric"]:hover {
-    transform: translateY(-2px) !important;
-    border-color: rgba(0, 51, 153, 0.22) !important;
-    box-shadow:
-      0 19px 40px rgba(16, 42, 76, 0.095),
-      inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricLabel"] p {
-    color: #344054 !important;
-    font-size: 0.92rem !important;
-    font-weight: 780 !important;
-    line-height: 1.3 !important;
-    letter-spacing: -0.005em !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricValue"],
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricValue"] * {
-    color: #07172f !important;
-    font-size: 2.05rem !important;
-    font-weight: 920 !important;
-    letter-spacing: -0.035em !important;
-    line-height: 1.06 !important;
-    white-space: nowrap !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricDelta"] {
-    margin-top: 0.45rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricDelta"] > div {
-    width: fit-content !important;
-    padding: 0.28rem 0.7rem !important;
-    border-radius: 999px !important;
-    font-size: 0.82rem !important;
-    font-weight: 880 !important;
-    box-shadow: 0 8px 16px rgba(16, 42, 76, 0.06) !important;
-  }
-
-  /* =======================================================
-     06. MODULE CHARTS / TABLES / EXPLAINERS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    margin-top: 1.25rem !important;
-    margin-bottom: 1.45rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stDataFrame"] {
-    margin-top: 1.05rem !important;
-    margin-bottom: 1.8rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stExpander"] {
-    margin-top: 0.75rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stAlert"] {
-    margin-top: 1rem !important;
-    margin-bottom: 1.25rem !important;
-  }
-}
-
-/* =========================================================
-   MODULE 1 — ENGAGEMENT VS CHURN SPECIFIC POLISH
-   Scope: Active dashboard module tab content
-   Safe: Sidebar untouched | Sliders untouched | Header untouched
-   Goal:
-   - Better Module 1 overview readability
-   - Fix long metric text truncation
-   - Improve metric card spacing
-   - Improve Plotly chart card breathing room
-   - Improve expanders, table and interpretation sections
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* =======================================================
-     01. MODULE 1 TOP OVERVIEW RHYTHM
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] {
-    padding-top: 2.05rem !important;
-    padding-bottom: 2.6rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h3:first-of-type {
-    margin-top: 0.85rem !important;
-    margin-bottom: 1.25rem !important;
-    font-size: 2.05rem !important;
-    line-height: 1.12 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stCaptionContainer"] {
-    margin-top: 1.05rem !important;
-    margin-bottom: 1.35rem !important;
-    padding: 1rem 1.18rem !important;
-    border-radius: 18px !important;
-    border: 1px solid rgba(0, 51, 153, 0.13) !important;
-    background:
-      linear-gradient(135deg, rgba(234, 243, 255, 0.94), rgba(248, 251, 255, 0.96)) !important;
-    box-shadow:
-      0 10px 24px rgba(16, 42, 76, 0.045),
-      inset 0 1px 0 rgba(255, 255, 255, 0.94) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stCaptionContainer"] p {
-    color: #52637a !important;
-    font-size: 0.98rem !important;
-    font-weight: 780 !important;
-    line-height: 1.62 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMarkdownContainer"] p {
-    max-width: 1100px !important;
-  }
-
-  /* =======================================================
-     02. SNAPSHOT + DECISION SIGNAL METRIC CARDS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h4 {
-    margin-top: 2.05rem !important;
-    margin-bottom: 1.15rem !important;
-    color: #07172f !important;
-    font-size: 1.48rem !important;
-    font-weight: 930 !important;
-    letter-spacing: -0.025em !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stHorizontalBlock"]:has(div[data-testid="stMetric"]) {
-    gap: 1.12rem !important;
-    align-items: stretch !important;
-    margin-top: 0.7rem !important;
-    margin-bottom: 1.9rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetric"] {
-    min-height: 142px !important;
-    padding: 1.12rem 1.15rem 1.06rem 1.15rem !important;
-    border-radius: 22px !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    background:
-      radial-gradient(circle at 96% 12%, rgba(0, 51, 153, 0.07), transparent 35%),
-      linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
-    box-shadow:
-      0 16px 34px rgba(16, 42, 76, 0.075),
-      inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricLabel"] p {
-    color: #263b59 !important;
-    font-size: 0.94rem !important;
-    font-weight: 820 !important;
-    line-height: 1.28 !important;
-    margin-bottom: 0.42rem !important;
-  }
-
-  /* Fix long values like "Inactive Member" getting truncated */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricValue"],
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricValue"] * {
+    font-size: 1.75rem !important;
     white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    max-width: 100% !important;
-    color: #07172f !important;
-    font-size: clamp(1.62rem, 1.55vw, 2.08rem) !important;
-    font-weight: 930 !important;
-    letter-spacing: -0.04em !important;
-    line-height: 1.04 !important;
-    word-break: normal !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricDelta"] {
-    margin-top: 0.62rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMetricDelta"] > div {
-    padding: 0.32rem 0.76rem !important;
-    border-radius: 999px !important;
-    font-size: 0.82rem !important;
-    font-weight: 900 !important;
-    box-shadow: 0 8px 18px rgba(16, 42, 76, 0.065) !important;
-  }
-
-  /* =======================================================
-     03. MODULE 1 VISUAL SECTION SPACING
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h4 + div[data-testid="stPlotlyChart"],
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h3 + div[data-testid="stPlotlyChart"] {
-    margin-top: 1.25rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    padding: 1.35rem 1.45rem 1.25rem 1.45rem !important;
-    margin-top: 1.25rem !important;
-    margin-bottom: 1.55rem !important;
-    border-radius: 24px !important;
-    overflow: visible !important;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 251, 255, 0.98) 100%) !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    box-shadow:
-      0 16px 36px rgba(16, 42, 76, 0.075),
-      inset 0 1px 0 rgba(255, 255, 255, 0.98) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]::before {
-    left: 1.35rem !important;
-    right: 1.35rem !important;
-    height: 4px !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .js-plotly-plot,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .plot-container,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .svg-container {
-    overflow: visible !important;
-  }
-
-  /* Reduce clipping around long Plotly labels where possible */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg {
-    overflow: visible !important;
-  }
-
-  /* =======================================================
-     04. EXPANDERS / HOW TO READ VISUALS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stExpander"] {
-    margin-top: 0.9rem !important;
-    margin-bottom: 1.75rem !important;
-    border-radius: 18px !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    box-shadow: 0 12px 26px rgba(16, 42, 76, 0.055) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stExpander"] summary {
-    padding: 0.82rem 1.05rem !important;
-    color: #07172f !important;
-    font-weight: 900 !important;
-    background:
-      linear-gradient(90deg, rgba(234, 243, 255, 0.78), rgba(255, 255, 255, 0.95)) !important;
-  }
-
-  /* =======================================================
-     05. SUMMARY TABLE POLISH
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stDataFrame"] {
-    margin-top: 1.2rem !important;
-    margin-bottom: 2rem !important;
-    border-radius: 20px !important;
-    border: 1px solid rgba(16, 42, 76, 0.14) !important;
-    box-shadow:
-      0 16px 34px rgba(16, 42, 76, 0.075),
-      inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
-  }
-
-  /* =======================================================
-     06. BUSINESS INTERPRETATION & ACTION CARDS
-     ======================================================= */
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stAlert"] {
-    margin-top: 1.05rem !important;
-    margin-bottom: 1.35rem !important;
-    border-radius: 20px !important;
-    box-shadow:
-      0 14px 32px rgba(16, 42, 76, 0.065),
-      inset 0 1px 0 rgba(255, 255, 255, 0.82) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stAlert"] p,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stAlert"] li,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stAlert"] span {
-    font-size: 1.02rem !important;
-    font-weight: 700 !important;
-    line-height: 1.72 !important;
-  }
-
-  /* Two-column interpretation cards */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stHorizontalBlock"]:has(div[data-testid="stMarkdownContainer"] strong) {
-    gap: 1.25rem !important;
-    margin-top: 1.1rem !important;
-    margin-bottom: 1.35rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stHorizontalBlock"]:has(div[data-testid="stMarkdownContainer"] strong) > div {
-    padding: 0.95rem 1rem !important;
-    border-radius: 18px !important;
-    background:
-      linear-gradient(180deg, rgba(255,255,255,0.72), rgba(247,251,255,0.72)) !important;
-    border: 1px solid rgba(16, 42, 76, 0.09) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stMarkdownContainer"] strong {
-    color: #07172f !important;
-    font-weight: 930 !important;
   }
 }
 
 /* =========================================================
-   MODULE 1 — VISUALIZATION READABILITY & VISIBILITY PATCH
-   Safe Mode: CSS only | No app.py change
-   Scope: Module charts / plotly visuals / legends / labels
+   SAFE PATCH — HEADER LOGO + TITLE VERTICAL ALIGNMENT
+   Add this at the END of ecb_dashboard.css only.
+   Do not replace existing CSS.
    ========================================================= */
 
-@media (min-width: 1025px) {
-
-  /* -----------------------------------------------------
-     1) Plot container overall polish
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] .element-container:has(> div[data-testid="stPlotlyChart"]) {
-    margin-top: 1.15rem !important;
-    margin-bottom: 1.55rem !important;
-    overflow: visible !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    position: relative !important;
-    padding: 1.5rem 1.8rem 1.9rem 1.8rem !important;
-    border-radius: 26px !important;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    box-shadow:
-      0 16px 34px rgba(16, 42, 76, 0.07),
-      inset 0 1px 0 rgba(255, 255, 255, 0.96) !important;
-    overflow: visible !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 1.25rem !important;
-    right: 1.25rem !important;
-    height: 4px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, #0d4fbf 0%, #6ea8ff 52%, #d6b300 100%) !important;
-  }
-
-  /* -----------------------------------------------------
-     2) Plotly internal wrappers — allow visibility
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] > div,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .js-plotly-plot,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .plot-container,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .svg-container,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .main-svg {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-  }
-
-  /* -----------------------------------------------------
-     3) Minimum visual heights for better breathing room
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .svg-container {
-    min-height: 520px !important;
-  }
-
-  /* Larger visuals like matrix / heatmap */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .hm) .svg-container,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .heatmaplayer) .svg-container {
-    min-height: 610px !important;
-  }
-
-  /* -----------------------------------------------------
-     4) SVG text readability — titles, ticks, legends, labels
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg text {
-    fill: #0b1f3f !important;
-    font-family: "Inter", "Segoe UI", Arial, sans-serif !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.01em !important;
-  }
-
-  /* Chart titles */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .gtitle text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg g.gtitle text {
-    font-size: 20px !important;
-    font-weight: 900 !important;
-    fill: #07172f !important;
-  }
-
-  /* Axis titles */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .xtitle text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .ytitle text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .cbtitle text {
-    font-size: 15px !important;
-    font-weight: 800 !important;
-    fill: #203754 !important;
-  }
-
-  /* Tick labels */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .xtick text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .ytick text {
-    font-size: 13.5px !important;
-    font-weight: 700 !important;
-    fill: #2a3d59 !important;
-  }
-
-  /* Legend title & legend items */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .legend text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .legendtitletext {
-    font-size: 14px !important;
-    font-weight: 800 !important;
-    fill: #0b1f3f !important;
-  }
-
-  /* Bar labels / annotations / inside text */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .bartext text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .annotation text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .pointtext text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg .textpoint text {
-    font-size: 15px !important;
-    font-weight: 800 !important;
-    fill: #07172f !important;
-  }
-
-  /* -----------------------------------------------------
-     5) Improve long labels / legends visibility
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] svg {
-    overflow: visible !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] .legend {
-    overflow: visible !important;
-  }
-
-  /* Extra space on right side to reduce legend clipping feel */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    padding-right: 2.2rem !important;
-  }
-
-  /* Extra bottom space for slanted / longer x-axis labels */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    padding-bottom: 2.35rem !important;
-  }
-
-  /* -----------------------------------------------------
-     6) Heatmap / matrix specific readability
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .hm),
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .heatmaplayer) {
-    padding-left: 1.9rem !important;
-    padding-right: 2.3rem !important;
-    padding-bottom: 2.8rem !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .hm) svg .xtick text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .heatmaplayer) svg .xtick text {
-    font-size: 13px !important;
-    font-weight: 800 !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .hm) svg .ytick text,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"]:has(svg .heatmaplayer) svg .ytick text {
-    font-size: 13px !important;
-    font-weight: 800 !important;
-  }
-
-  /* -----------------------------------------------------
-     7) Expander readability below charts
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stExpander"] {
-    margin-top: 0.8rem !important;
-    margin-bottom: 1.7rem !important;
-    border-radius: 18px !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    box-shadow: 0 10px 24px rgba(16, 42, 76, 0.05) !important;
-    overflow: hidden !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stExpander"] summary {
-    padding: 0.95rem 1.1rem !important;
-    background: linear-gradient(90deg, rgba(240, 246, 255, 0.85), rgba(255, 255, 255, 0.95)) !important;
-    color: #07172f !important;
-    font-size: 1rem !important;
-    font-weight: 850 !important;
-  }
-
-  /* -----------------------------------------------------
-     8) Section heading spacing between visuals
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] h4 {
-    margin-top: 2.2rem !important;
-    margin-bottom: 1.05rem !important;
-  }
-
-  /* -----------------------------------------------------
-     9) Slight compact cleanup for plot modebar if visible
-     ----------------------------------------------------- */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] .modebar {
-    top: 10px !important;
-    right: 10px !important;
-    opacity: 0.95 !important;
-    border-radius: 12px !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 8px 18px rgba(16, 42, 76, 0.08) !important;
-  }
+/* Header logo-title row alignment */
+.st-key-ecb_header div[data-testid="stHorizontalBlock"] {
+  align-items: center !important;
 }
 
-/* =========================================================
-   DASHBOARD MODULE TABS — PREMIUM INTERACTIVE NAVIGATION
-   Scope: Dashboard Analysis Modules tabs only
-   Safe: Sidebar / sliders / charts untouched
-   ========================================================= */
-
-@media (min-width: 1025px) {
-
-  /* Main tabs wrapper spacing */
-  [data-testid="stMain"] div[data-testid="stTabs"] {
-    width: 100% !important;
-    margin-top: 1.15rem !important;
-  }
-
-  /* Premium tab navigation rail */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tablist"] {
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 0.85rem !important;
-    padding: 0.75rem 0.85rem !important;
-    margin: 0.6rem 0 1.15rem 0 !important;
-    border-radius: 24px !important;
-    border: 1px solid rgba(16, 42, 76, 0.12) !important;
-    background:
-      radial-gradient(circle at 5% 0%, rgba(0, 51, 153, 0.07), transparent 30%),
-      radial-gradient(circle at 94% 0%, rgba(215, 169, 0, 0.08), transparent 28%),
-      linear-gradient(135deg, rgba(255,255,255,0.92), rgba(239,246,255,0.82)) !important;
-    box-shadow:
-      0 16px 34px rgba(16, 42, 76, 0.07),
-      inset 0 1px 0 rgba(255,255,255,0.95) !important;
-    overflow: visible !important;
-  }
-
-  /* Each tab becomes equal-width premium pill/card */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"] {
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    min-height: 54px !important;
-    padding: 0.85rem 1rem !important;
-    border-radius: 18px !important;
-    border: 1px solid rgba(16, 42, 76, 0.08) !important;
-    background: rgba(255, 255, 255, 0.68) !important;
-    color: #102a4c !important;
-    box-shadow:
-      0 8px 18px rgba(16, 42, 76, 0.04),
-      inset 0 1px 0 rgba(255,255,255,0.9) !important;
-    transition:
-      transform 180ms ease,
-      box-shadow 180ms ease,
-      background 180ms ease,
-      border-color 180ms ease,
-      color 180ms ease !important;
-  }
-
-  /* Text inside tabs */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"] p,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"] span,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"] div {
-    width: 100% !important;
-    text-align: center !important;
-    color: inherit !important;
-    font-size: 0.95rem !important;
-    font-weight: 840 !important;
-    letter-spacing: -0.01em !important;
-    white-space: nowrap !important;
-  }
-
-  /* Hover state */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"]:hover {
-    transform: translateY(-2px) !important;
-    border-color: rgba(0, 51, 153, 0.22) !important;
-    background:
-      linear-gradient(135deg, rgba(239,246,255,0.96), rgba(255,255,255,0.92)) !important;
-    color: #003399 !important;
-    box-shadow:
-      0 14px 28px rgba(16, 42, 76, 0.08),
-      inset 0 1px 0 rgba(255,255,255,0.98) !important;
-  }
-
-  /* Active tab */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
-    position: relative !important;
-    color: #ffffff !important;
-    border-color: rgba(0, 51, 153, 0.42) !important;
-    background:
-      linear-gradient(135deg, #003399 0%, #0b63ce 72%, #1e75d8 100%) !important;
-    box-shadow:
-      0 18px 34px rgba(0, 51, 153, 0.22),
-      inset 0 1px 0 rgba(255,255,255,0.24) !important;
-  }
-
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] p,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] span,
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"] div {
-    color: #ffffff !important;
-    font-weight: 900 !important;
-  }
-
-  /* Gold active accent line inside active tab */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tab"][aria-selected="true"]::after {
-    content: "" !important;
-    position: absolute !important;
-    left: 18% !important;
-    right: 18% !important;
-    bottom: 8px !important;
-    height: 3px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, #f2d46b, #d7a900) !important;
-    box-shadow: 0 4px 12px rgba(215, 169, 0, 0.32) !important;
-  }
-
-  /* Remove old Streamlit tab underline conflict */
-  [data-testid="stMain"] div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
-    display: none !important;
-  }
-
-  /* Prevent default bottom line from making it text-like */
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tablist"]::after {
-    display: none !important;
-  }
+/* Logo column ko title ke level par align karo */
+.st-key-ecb_header div[data-testid="stHorizontalBlock"] div[data-testid="column"]:first-child {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-/* Donut chart outer card polish only */
-@media (min-width: 1025px) {
-  [data-testid="stMain"] div[data-testid="stTabs"] [role="tabpanel"] div[data-testid="stPlotlyChart"] {
-    border-radius: 26px !important;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
-    border: 1px solid rgba(16, 42, 76, 0.13) !important;
-    box-shadow:
-      0 16px 36px rgba(16, 42, 76, 0.075),
-      inset 0 1px 0 rgba(255,255,255,0.96) !important;
-  }
+/* ECB logo ko thoda upar shift karo */
+.st-key-ecb_header div[data-testid="stHorizontalBlock"] div[data-testid="column"]:first-child img {
+  transform: translateY(-8px) !important;
 }
 
-/* =========================================================
-   KPI Formula Reference Premium Cards
-   Safe final polish patch | Streamlit-native container keys
-   ========================================================= */
-
-[class*="st-key-kpi_formula_card_"] {
-    position: relative !important;
-    margin: 1.05rem 0 1.25rem 0 !important;
-    padding: 1.15rem 1.25rem 1.1rem 1.25rem !important;
-    border-radius: 20px !important;
-    border: 1px solid rgba(0, 51, 153, 0.16) !important;
-    background:
-        radial-gradient(circle at 96% 8%, rgba(215, 169, 0, 0.08), transparent 30%),
-        linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(247,251,255,0.96) 100%) !important;
-    box-shadow:
-        0 14px 32px rgba(16, 42, 76, 0.075),
-        inset 0 1px 0 rgba(255,255,255,0.96) !important;
-    overflow: hidden !important;
+/* Title column vertical balance */
+.st-key-ecb_header div[data-testid="stHorizontalBlock"] div[data-testid="column"]:nth-child(2) {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 
-[class*="st-key-kpi_formula_card_"]::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 5px !important;
-    height: 100% !important;
-    background: linear-gradient(180deg, #003399 0%, #1e75d8 58%, #d7a900 100%) !important;
+/* Main heading ka extra top/bottom imbalance remove */
+.st-key-ecb_header h1 {
+  margin-top: 0 !important;
+  margin-bottom: 0.55rem !important;
+  line-height: 1.08 !important;
 }
 
-[class*="st-key-kpi_formula_card_"] h3 {
-    color: #07172f !important;
-    font-size: 1.25rem !important;
-    font-weight: 930 !important;
-    letter-spacing: -0.02em !important;
-    margin: 0 0 0.35rem 0 !important;
-    padding-left: 0.15rem !important;
-}
-
-[class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"],
-[class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"] p {
-    width: fit-content !important;
-    margin-left: auto !important;
-    padding: 0.28rem 0.68rem !important;
-    border-radius: 999px !important;
-    color: #003399 !important;
-    background: rgba(0, 51, 153, 0.08) !important;
-    border: 1px solid rgba(0, 51, 153, 0.14) !important;
-    font-size: 0.72rem !important;
-    font-weight: 900 !important;
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-}
-
-[class*="st-key-kpi_formula_card_"] p {
-    color: #1d2939 !important;
-    font-size: 1rem !important;
-    font-weight: 620 !important;
-    line-height: 1.58 !important;
-    margin-bottom: 0.65rem !important;
-}
-
-[class*="st-key-kpi_formula_card_"] strong {
-    color: #07172f !important;
-    font-weight: 920 !important;
-}
-
-[class*="st-key-kpi_formula_card_"] code {
-    display: inline-block !important;
-    margin-top: 0.22rem !important;
-    padding: 0.46rem 0.72rem !important;
-    border-radius: 12px !important;
-    color: #07172f !important;
-    background: linear-gradient(135deg, #eef5ff 0%, #f7fbff 100%) !important;
-    border: 1px solid rgba(0, 51, 153, 0.14) !important;
-    font-size: 0.95rem !important;
-    font-weight: 820 !important;
-    white-space: normal !important;
-}
-
-/* Mobile safety */
-@media (max-width: 760px) {
-    [class*="st-key-kpi_formula_card_"] {
-        padding: 1rem 1rem 0.95rem 1.05rem !important;
-        border-radius: 17px !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] h3 {
-        font-size: 1.08rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] p {
-        font-size: 0.94rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] code {
-        font-size: 0.88rem !important;
-    }
-}
-
-/* =========================================================
-   FINAL POLISH — KPI Formula Reference Premium Interactive Cards
-   Safe CSS-only upgrade | No app.py change required
-   ========================================================= */
-
-[class*="st-key-kpi_formula_card_"] {
-    position: relative !important;
-    isolation: isolate !important;
-    margin: 1.15rem 0 1.55rem 0 !important;
-    padding: 1.45rem 1.55rem 1.35rem 1.55rem !important;
-    border-radius: 24px !important;
-    border: 1px solid rgba(0, 51, 153, 0.18) !important;
-    background:
-        radial-gradient(circle at 94% 10%, rgba(215, 169, 0, 0.12), transparent 28%),
-        radial-gradient(circle at 8% 18%, rgba(0, 51, 153, 0.08), transparent 34%),
-        linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(247,251,255,0.97) 48%, rgba(239,246,255,0.94) 100%) !important;
-    box-shadow:
-        0 18px 42px rgba(16, 42, 76, 0.085),
-        inset 0 1px 0 rgba(255,255,255,0.98) !important;
-    overflow: hidden !important;
-    transition:
-        transform 220ms ease,
-        box-shadow 220ms ease,
-        border-color 220ms ease,
-        background 220ms ease !important;
-}
-
-/* Premium left institutional accent */
-[class*="st-key-kpi_formula_card_"]::before {
-    content: "" !important;
-    position: absolute !important;
-    inset: 0 auto 0 0 !important;
-    width: 6px !important;
-    border-radius: 24px 0 0 24px !important;
-    background: linear-gradient(180deg, #003399 0%, #1e75d8 48%, #d7a900 100%) !important;
-    box-shadow: 0 0 18px rgba(0, 51, 153, 0.22) !important;
-    z-index: 1 !important;
-}
-
-/* Soft premium glow */
-[class*="st-key-kpi_formula_card_"]::after {
-    content: "" !important;
-    position: absolute !important;
-    right: -90px !important;
-    top: -90px !important;
-    width: 220px !important;
-    height: 220px !important;
-    border-radius: 999px !important;
-    background:
-        radial-gradient(circle, rgba(215,169,0,0.13) 0%, rgba(215,169,0,0.06) 42%, transparent 72%) !important;
-    pointer-events: none !important;
-    z-index: 0 !important;
-}
-
-[class*="st-key-kpi_formula_card_"]:hover {
-    transform: translateY(-4px) !important;
-    border-color: rgba(0, 51, 153, 0.34) !important;
-    box-shadow:
-        0 26px 58px rgba(16, 42, 76, 0.135),
-        0 0 0 4px rgba(0, 51, 153, 0.045),
-        inset 0 1px 0 rgba(255,255,255,0.98) !important;
-}
-
-/* Keep all card content above glow */
-[class*="st-key-kpi_formula_card_"] > div,
-[class*="st-key-kpi_formula_card_"] [data-testid="stVerticalBlock"],
-[class*="st-key-kpi_formula_card_"] [data-testid="stMarkdownContainer"] {
-    position: relative !important;
-    z-index: 2 !important;
-}
-
-/* KPI title */
-[class*="st-key-kpi_formula_card_"] h3 {
-    color: #06172f !important;
-    font-size: 1.34rem !important;
-    font-weight: 960 !important;
-    letter-spacing: -0.032em !important;
-    line-height: 1.12 !important;
-    margin: 0 0 0.55rem 0 !important;
-    padding-left: 0.1rem !important;
-}
-
-/* Right-side category badge */
-[class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"],
-[class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"] p {
-    width: fit-content !important;
-    margin-left: auto !important;
-    color: #003399 !important;
-    background:
-        linear-gradient(135deg, rgba(234,243,255,0.98) 0%, rgba(242,247,255,0.98) 100%) !important;
-    border: 1px solid rgba(0, 51, 153, 0.18) !important;
-    border-radius: 999px !important;
-    padding: 0.36rem 0.82rem !important;
-    font-size: 0.72rem !important;
-    font-weight: 950 !important;
-    letter-spacing: 0.12em !important;
-    text-transform: uppercase !important;
-    box-shadow:
-        0 8px 18px rgba(16, 42, 76, 0.075),
-        inset 0 1px 0 rgba(255,255,255,0.96) !important;
-}
-
-/* Main text */
-[class*="st-key-kpi_formula_card_"] p {
-    color: #1d2939 !important;
-    font-size: 1.01rem !important;
-    font-weight: 650 !important;
-    line-height: 1.62 !important;
-    margin: 0.52rem 0 0.58rem 0 !important;
-    letter-spacing: -0.006em !important;
-}
-
-/* Section headings: Formula, Business Meaning, Decision Focus */
-[class*="st-key-kpi_formula_card_"] strong {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 0.35rem !important;
-    color: #07172f !important;
-    font-size: 0.86rem !important;
-    font-weight: 950 !important;
-    letter-spacing: 0.055em !important;
-    text-transform: uppercase !important;
-    margin: 0.15rem 0 0.28rem 0 !important;
-}
-
-/* Small blue indicator before each label */
-[class*="st-key-kpi_formula_card_"] strong::before {
-    content: "" !important;
-    width: 8px !important;
-    height: 8px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(135deg, #003399 0%, #1e75d8 100%) !important;
-    box-shadow: 0 0 0 4px rgba(0, 51, 153, 0.08) !important;
-}
-
-/* Formula pill/card */
-[class*="st-key-kpi_formula_card_"] code {
-    display: block !important;
-    width: fit-content !important;
-    max-width: 100% !important;
-    margin: 0.38rem 0 0.76rem 0 !important;
-    padding: 0.62rem 0.86rem !important;
-    border-radius: 14px !important;
-    color: #07172f !important;
-    background:
-        linear-gradient(135deg, #eef5ff 0%, #f8fbff 100%) !important;
-    border: 1px solid rgba(0, 51, 153, 0.18) !important;
-    box-shadow:
-        0 8px 18px rgba(16, 42, 76, 0.06),
-        inset 0 1px 0 rgba(255,255,255,0.96) !important;
-    font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace !important;
-    font-size: 0.96rem !important;
-    font-weight: 850 !important;
-    line-height: 1.45 !important;
-    white-space: normal !important;
-}
-
-/* Hover effect on formula pill */
-[class*="st-key-kpi_formula_card_"]:hover code {
-    border-color: rgba(0, 51, 153, 0.28) !important;
-    box-shadow:
-        0 12px 24px rgba(16, 42, 76, 0.085),
-        inset 0 1px 0 rgba(255,255,255,0.98) !important;
-}
-
-/* Add subtle separation between sections inside card */
-[class*="st-key-kpi_formula_card_"] div[data-testid="stMarkdownContainer"]:not(:first-child) {
-    margin-top: 0.18rem !important;
-}
-
-/* Make business meaning and decision focus feel richer */
-[class*="st-key-kpi_formula_card_"] div[data-testid="stMarkdownContainer"] p:not(:has(code)) {
-    max-width: 980px !important;
-}
-
-/* Mobile/tablet safety */
-@media (max-width: 1024px) {
-    [class*="st-key-kpi_formula_card_"] {
-        padding: 1.25rem 1.2rem 1.15rem 1.25rem !important;
-        border-radius: 21px !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] h3 {
-        font-size: 1.18rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"],
-    [class*="st-key-kpi_formula_card_"] div[data-testid="stCaptionContainer"] p {
-        margin-left: 0 !important;
-        margin-top: 0.25rem !important;
-        font-size: 0.68rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] p {
-        font-size: 0.96rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] code {
-        font-size: 0.88rem !important;
-        width: 100% !important;
-    }
-}
-
-@media (max-width: 760px) {
-    [class*="st-key-kpi_formula_card_"] {
-        margin: 0.95rem 0 1.15rem 0 !important;
-        padding: 1.1rem 1rem 1rem 1.1rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] h3 {
-        font-size: 1.05rem !important;
-        line-height: 1.22 !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] strong {
-        font-size: 0.76rem !important;
-    }
-
-    [class*="st-key-kpi_formula_card_"] p {
-        font-size: 0.92rem !important;
-        line-height: 1.55 !important;
-    }
+/* Header subtitle ko title ke saath clean spacing do */
+.st-key-ecb_header div[data-testid="stMarkdownContainer"] p {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0 !important;
 }
