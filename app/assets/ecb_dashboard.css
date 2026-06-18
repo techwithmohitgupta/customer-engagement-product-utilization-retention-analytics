@@ -885,7 +885,7 @@ div[data-testid="stDataFrame"] * {
 
 /* ECB logo ko thoda upar shift karo */
 .st-key-ecb_header div[data-testid="stHorizontalBlock"] div[data-testid="column"]:first-child img {
-  transform: translateY(-8px) !important;
+  transform: translateY(-12px) !important;
 }
 
 /* Title column vertical balance */
