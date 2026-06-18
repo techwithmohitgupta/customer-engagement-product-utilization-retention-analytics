@@ -1281,11 +1281,50 @@ def render_kpi_summary(
             },
         ]
 
-        st.dataframe(
-            formula_rows,
-            use_container_width=True,
-            hide_index=True,
-        )
+    formula_card_meta = {
+            "Engagement Retention Ratio": {
+                "tag": "ENGAGEMENT QUALITY",
+                "focus": "Use this KPI to compare whether active members retain better than inactive members.",
+            },
+            "Product Depth Index": {
+                "tag": "PRODUCT DEPTH",
+                "focus": "Use this KPI to understand whether deeper product adoption supports loyalty.",
+            },
+            "High-Balance Disengagement Rate": {
+                "tag": "PREMIUM RISK",
+                "focus": "Use this KPI to detect valuable customers who may silently churn despite high balance.",
+            },
+            "Credit Card Stickiness Score": {
+                "tag": "CARD RETENTION",
+                "focus": "Use this KPI to evaluate whether credit-card ownership strengthens retention.",
+            },
+            "Relationship Strength Index": {
+                "tag": "RELATIONSHIP SCORE",
+                "focus": "Use this KPI to summarize overall engagement and product relationship strength.",
+            },
+        }
+
+    for index, row in enumerate(formula_rows, start=1):
+            meta = formula_card_meta.get(
+                row["KPI"],
+                {
+                    "tag": "RETENTION KPI",
+                    "focus": "Use this KPI to support retention strategy decisions.",
+                },
+            )
+
+            with st.container(key=f"kpi_formula_card_{index}"):
+                title_col, tag_col = st.columns([0.78, 0.22], vertical_alignment="center")
+
+                with title_col:
+                    st.markdown(f"### {index}. {row['KPI']}")
+
+                with tag_col:
+                    st.caption(meta["tag"])
+
+                st.markdown(f"**Formula**  \n`{row['Formula']}`")
+                st.markdown(f"**Business Meaning**  \n{row['Meaning']}")
+                st.markdown(f"**Decision Focus**  \n{meta['focus']}")
 
 render_kpi_summary(
     current_kpis=required_kpis,
