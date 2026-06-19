@@ -29,7 +29,7 @@ APP_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = APP_DIR.parent
 
 ASSETS_DIR = APP_DIR / "assets"
-CSS_FILE = ASSETS_DIR / "ecb_dashboard.css"
+CSS_FILE = ASSETS_DIR / "ecb_dashboard_optimized_safe_mode.css"
 
 # Safe-mode fallback: this optimized app can run side-by-side during testing,
 # and it will still work after you rename the optimized CSS back to ecb_dashboard.css.
@@ -1520,7 +1520,12 @@ def apply_premium_plotly_layout(
     show_legend: bool = True,
 ) -> go.Figure:
     """
-    Apply a consistent premium institutional Plotly layout across all dashboard visuals.
+    Apply a consistent lightweight institutional Plotly layout.
+
+    Safe-mode visual polish:
+    - Bottom horizontal legends by default to prevent right-side clipping.
+    - Larger automatic margins for long labels and axis titles.
+    - No heavy styling, no custom HTML, no dashboard logic change.
     """
     fig.update_layout(
         title={
@@ -1533,7 +1538,7 @@ def apply_premium_plotly_layout(
             },
         },
         height=height,
-        margin=dict(l=24, r=24, t=76, b=54),
+        margin=dict(l=76, r=96, t=78, b=96),
         plot_bgcolor="white",
         paper_bgcolor="white",
         font=dict(
@@ -1542,12 +1547,15 @@ def apply_premium_plotly_layout(
             color=ECB_CHART_COLORS["dark_text"],
         ),
         legend=dict(
-            orientation="v",
+            orientation="h",
             yanchor="top",
-            y=0.98,
-            xanchor="left",
-            x=1.02,
-            title=legend_title,
+            y=-0.22,
+            xanchor="center",
+            x=0.5,
+            title=dict(text=legend_title or ""),
+            font=dict(size=11, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
         ),
         showlegend=show_legend,
         hoverlabel=dict(
@@ -1560,25 +1568,26 @@ def apply_premium_plotly_layout(
 
     fig.update_xaxes(
         title_text=xaxis_title,
+        automargin=True,
         showgrid=False,
         zeroline=False,
         linecolor="#D0D7E2",
-        tickfont=dict(color=ECB_CHART_COLORS["gray"]),
-        title_font=dict(color=ECB_CHART_COLORS["gray"]),
+        tickfont=dict(size=11, color=ECB_CHART_COLORS["gray"]),
+        title_font=dict(size=12, color=ECB_CHART_COLORS["gray"]),
     )
 
     fig.update_yaxes(
         title_text=yaxis_title,
+        automargin=True,
         showgrid=True,
         gridcolor="#E6ECF3",
         zeroline=False,
         linecolor="#D0D7E2",
-        tickfont=dict(color=ECB_CHART_COLORS["gray"]),
-        title_font=dict(color=ECB_CHART_COLORS["gray"]),
+        tickfont=dict(size=11, color=ECB_CHART_COLORS["gray"]),
+        title_font=dict(size=12, color=ECB_CHART_COLORS["gray"]),
     )
 
     return fig
-
 
 def add_overall_churn_reference_line(
     fig: go.Figure,
@@ -1826,7 +1835,7 @@ def create_churn_heatmap(
     height: int = 450,
 ) -> go.Figure:
     """
-    Reusable churn-rate heatmap with text labels.
+    Reusable churn-rate heatmap with label-safe margins.
     """
     available_rows = get_existing_category_order(
         matrix_summary,
@@ -1889,12 +1898,17 @@ def create_churn_heatmap(
             text=text_matrix.values,
             customdata=customer_matrix.values,
             texttemplate="%{text}",
+            textfont=dict(size=11),
             colorscale=DIVERGENT_RISK_COLORSCALE,
             zmin=0,
             zmax=100,
             colorbar=dict(
-                title="Churn Rate (%)",
+                title=dict(text="Churn Rate (%)"),
                 ticksuffix="%",
+                thickness=18,
+                len=0.78,
+                x=1.015,
+                xanchor="left",
             ),
             hovertemplate=(
                 "<b>%{y}</b><br>"
@@ -1908,20 +1922,28 @@ def create_churn_heatmap(
     fig = apply_premium_plotly_layout(
         fig=fig,
         title=title,
-        height=height,
+        height=max(height, 510),
         xaxis_title=xaxis_title,
         yaxis_title=yaxis_title,
         show_legend=False,
     )
 
-    fig.update_xaxes(tickangle=-22)
+    fig.update_xaxes(
+        tickangle=-24,
+        automargin=True,
+        tickfont=dict(size=11, color=ECB_CHART_COLORS["gray"]),
+    )
+
+    fig.update_yaxes(
+        automargin=True,
+        tickfont=dict(size=11, color=ECB_CHART_COLORS["gray"]),
+    )
 
     fig.update_layout(
-        margin=dict(l=24, r=80, t=76, b=95),
+        margin=dict(l=165, r=145, t=82, b=138),
     )
 
     return fig
-
 
 # =========================================================
 # MODULE 1 — ENGAGEMENT VS CHURN OVERVIEW
@@ -2778,9 +2800,11 @@ def create_product_utilization_summary(data_frame: pd.DataFrame) -> pd.DataFrame
 def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure:
     """
     Combo chart: customer volume + retention/churn rates by product count.
+    Safe-mode label and legend fix.
     """
     chart_data = product_summary.copy()
     chart_data["Product_Count_Label"] = chart_data["NumOfProducts"].astype(str)
+    max_customer_count = pd.to_numeric(chart_data["Customer_Count"], errors="coerce").fillna(0).max()
 
     fig = go.Figure()
 
@@ -2788,10 +2812,11 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
         go.Bar(
             x=chart_data["Product_Count_Label"],
             y=chart_data["Customer_Count"],
-            name="Customer Count",
+            name="Customers",
             text=chart_data["Customer_Count"],
             texttemplate="%{text:,}",
             textposition="outside",
+            cliponaxis=False,
             marker_color=ECB_CHART_COLORS["blue"],
             yaxis="y",
             hovertemplate="<b>%{x} Products</b><br>Customers: %{y:,}<extra></extra>",
@@ -2802,13 +2827,15 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
         go.Scatter(
             x=chart_data["Product_Count_Label"],
             y=chart_data["Retention_Rate"],
-            name="Retention Rate",
+            name="Retention",
             mode="lines+markers+text",
             text=chart_data["Retention_Rate"].map(lambda value: f"{value:.1f}%"),
             textposition="top center",
+            textfont=dict(size=11, color=ECB_CHART_COLORS["green"]),
             line=dict(width=3, color=ECB_CHART_COLORS["green"]),
             marker=dict(size=9),
             yaxis="y2",
+            cliponaxis=False,
             hovertemplate="<b>%{x} Products</b><br>Retention Rate: %{y:.2f}%<extra></extra>",
         )
     )
@@ -2817,13 +2844,15 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
         go.Scatter(
             x=chart_data["Product_Count_Label"],
             y=chart_data["Churn_Rate"],
-            name="Churn Rate",
+            name="Churn",
             mode="lines+markers+text",
             text=chart_data["Churn_Rate"].map(lambda value: f"{value:.1f}%"),
             textposition="bottom center",
+            textfont=dict(size=11, color=ECB_CHART_COLORS["red"]),
             line=dict(width=3, color=ECB_CHART_COLORS["red"]),
             marker=dict(size=9),
             yaxis="y2",
+            cliponaxis=False,
             hovertemplate="<b>%{x} Products</b><br>Churn Rate: %{y:.2f}%<extra></extra>",
         )
     )
@@ -2831,40 +2860,46 @@ def create_product_count_combo_chart(product_summary: pd.DataFrame) -> go.Figure
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Product Count Impact on Retention and Churn",
-        height=500,
+        height=520,
         xaxis_title="Number of Products",
         yaxis_title="Customer Count",
         legend_title=None,
     )
 
     fig.update_xaxes(type="category", automargin=True)
+
     fig.update_layout(
+        bargap=0.35,
+        hovermode="x unified",
+        margin=dict(l=86, r=104, t=84, b=150),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.28,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=10, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
+        yaxis=dict(
+            title=dict(text="Customer Count"),
+            range=[0, max_customer_count * 1.18 if max_customer_count > 0 else 1],
+            automargin=True,
+        ),
         yaxis2=dict(
-            title="Rate (%)",
+            title=dict(text="Rate (%)"),
             overlaying="y",
             side="right",
-            rangemode="tozero",
+            range=[0, 105],
             ticksuffix="%",
             showgrid=False,
             automargin=True,
         ),
-        bargap=0.35,
-        margin=dict(l=62, r=34, t=76, b=112),
-        legend=dict(
-            orientation="h",
-            yanchor="top",
-            y=-0.18,
-            xanchor="center",
-            x=0.5,
-            title=None,
-            font=dict(size=11, color=ECB_CHART_COLORS["dark_text"]),
-            bgcolor="rgba(255,255,255,0)",
-            borderwidth=0,
-        ),
     )
 
     return fig
-
 
 @st.cache_data(show_spinner=False)
 def create_single_multi_product_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
@@ -2925,6 +2960,7 @@ def create_single_multi_product_summary(data_frame: pd.DataFrame) -> pd.DataFram
 def create_single_multi_stacked_chart(product_type_summary: pd.DataFrame) -> go.Figure:
     """
     100% horizontal stacked bar: retained/churn share.
+    Safe-mode label and legend fix.
     """
     chart_data = product_type_summary.copy()
 
@@ -2934,10 +2970,12 @@ def create_single_multi_stacked_chart(product_type_summary: pd.DataFrame) -> go.
         go.Bar(
             y=chart_data["Product_Relationship_Type"].astype(str),
             x=chart_data["Retention_Rate"],
-            name="Retention Rate",
+            name="Retained",
             orientation="h",
             text=chart_data["Retention_Rate"].map(lambda value: f"{value:.1f}%"),
             textposition="inside",
+            insidetextanchor="middle",
+            cliponaxis=False,
             marker_color=ECB_CHART_COLORS["green"],
             hovertemplate="<b>%{y}</b><br>Retention Rate: %{x:.2f}%<extra></extra>",
         )
@@ -2947,10 +2985,12 @@ def create_single_multi_stacked_chart(product_type_summary: pd.DataFrame) -> go.
         go.Bar(
             y=chart_data["Product_Relationship_Type"].astype(str),
             x=chart_data["Churn_Rate"],
-            name="Churn Rate",
+            name="Churned",
             orientation="h",
             text=chart_data["Churn_Rate"].map(lambda value: f"{value:.1f}%"),
             textposition="inside",
+            insidetextanchor="middle",
+            cliponaxis=False,
             marker_color=ECB_CHART_COLORS["red"],
             hovertemplate="<b>%{y}</b><br>Churn Rate: %{x:.2f}%<extra></extra>",
         )
@@ -2959,24 +2999,36 @@ def create_single_multi_stacked_chart(product_type_summary: pd.DataFrame) -> go.
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Single vs Multi-Product Retention Split",
-        height=350,
+        height=430,
         xaxis_title="Customer Outcome Share (%)",
         yaxis_title=None,
-        legend_title="Customer Outcome",
+        legend_title=None,
     )
 
     fig.update_layout(
         barmode="stack",
-        xaxis=dict(range=[0, 100], ticksuffix="%"),
-        margin=dict(l=24, r=24, t=76, b=50),
+        xaxis=dict(range=[0, 100], ticksuffix="%", automargin=True),
+        yaxis=dict(automargin=True),
+        margin=dict(l=210, r=74, t=82, b=132),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.26,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=11, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
     )
 
     return fig
 
-
 def create_product_strength_bubble_chart(product_summary: pd.DataFrame) -> go.Figure:
     """
     Bubble scatter: product count vs relationship strength, bubble size = customers.
+    Safe-mode colorbar margin fix.
     """
     chart_data = product_summary.copy()
     chart_data["Product_Count_Label"] = chart_data["NumOfProducts"].astype(str)
@@ -3006,6 +3058,7 @@ def create_product_strength_bubble_chart(product_summary: pd.DataFrame) -> go.Fi
 
     fig.update_traces(
         textposition="middle center",
+        cliponaxis=False,
         marker=dict(
             sizemode="area",
             opacity=0.78,
@@ -3016,21 +3069,25 @@ def create_product_strength_bubble_chart(product_summary: pd.DataFrame) -> go.Fi
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Product Count Relationship Strength Bubble Map",
-        height=460,
+        height=500,
         xaxis_title="Avg Relationship Strength Index",
         yaxis_title="Avg Retention Strength Score",
         show_legend=False,
     )
 
     fig.update_layout(
+        margin=dict(l=82, r=120, t=82, b=92),
         coloraxis_colorbar=dict(
-            title="Churn Rate (%)",
+            title=dict(text="Churn Rate (%)"),
             ticksuffix="%",
+            thickness=16,
+            len=0.78,
+            x=1.015,
+            xanchor="left",
         )
     )
 
     return fig
-
 
 @st.cache_data(show_spinner=False)
 def create_product_depth_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
@@ -3530,11 +3587,7 @@ def create_high_value_matrix_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
 def create_high_value_segment_donut(detector_summary: pd.DataFrame) -> go.Figure:
     """
     Premium 100% stacked bar: high-value customer segment mix.
-
-    Note:
-    - Function name is intentionally kept unchanged for safe call-order stability.
-    - This replaces the previous donut because two-category donuts created too much
-      empty left/right space in the Streamlit wide layout.
+    Safe-mode legend/axis overlap fix.
     """
     chart_data = detector_summary.copy()
     chart_data["Detector_Group"] = chart_data["Detector_Group"].astype(str)
@@ -3565,6 +3618,7 @@ def create_high_value_segment_donut(detector_summary: pd.DataFrame) -> go.Figure
                 ],
                 textposition="inside",
                 insidetextanchor="middle",
+                cliponaxis=False,
                 hovertemplate=(
                     f"<b>{row['Detector_Group']}</b><br>"
                     f"Customers: {int(row['Customer_Count']):,}<br>"
@@ -3578,24 +3632,17 @@ def create_high_value_segment_donut(detector_summary: pd.DataFrame) -> go.Figure
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="High-Value Customer Segment Mix",
-        height=300,
+        height=330,
         xaxis_title="Share of High-Value Customers (%)",
         yaxis_title=None,
-        legend_title="Detector Group",
+        show_legend=False,
     )
 
     fig.update_layout(
         barmode="stack",
-        bargap=0.55,
-        margin=dict(l=24, r=24, t=76, b=44),
-        legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=-0.30,
-            xanchor="center",
-            x=0.5,
-            title="Detector Group",
-        ),
+        bargap=0.50,
+        margin=dict(l=44, r=44, t=82, b=82),
+        showlegend=False,
     )
 
     fig.update_xaxes(
@@ -3603,16 +3650,17 @@ def create_high_value_segment_donut(detector_summary: pd.DataFrame) -> go.Figure
         ticksuffix="%",
         showgrid=True,
         gridcolor="#E6ECF3",
+        automargin=True,
     )
 
     fig.update_yaxes(
         showticklabels=False,
         showgrid=False,
         zeroline=False,
+        automargin=True,
     )
 
     return fig
-
 
 def create_high_value_balance_treemap(detector_summary: pd.DataFrame) -> go.Figure:
     """
@@ -3667,6 +3715,7 @@ def create_high_value_balance_treemap(detector_summary: pd.DataFrame) -> go.Figu
 def create_salary_balance_bubble_chart(salary_summary: pd.DataFrame) -> go.Figure:
     """
     Bubble scatter: salary-balance mismatch risk.
+    Safe-mode legend and label fix.
     """
     chart_data = salary_summary.copy()
 
@@ -3694,26 +3743,51 @@ def create_salary_balance_bubble_chart(salary_summary: pd.DataFrame) -> go.Figur
     fig.update_traces(
         texttemplate="%{text:,}",
         textposition="middle center",
+        cliponaxis=False,
         marker=dict(
             opacity=0.76,
             line=dict(width=1, color="white"),
         ),
     )
 
+    salary_legend_labels = {
+        "No Salary-Balance Mismatch": "No Mismatch",
+        "Salary-Balance Mismatch": "Mismatch",
+    }
+
+    for trace in fig.data:
+        if trace.name in salary_legend_labels:
+            trace.name = salary_legend_labels[trace.name]
+            trace.legendgroup = salary_legend_labels[trace.legendgroup] if trace.legendgroup in salary_legend_labels else trace.name
+
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Salary-Balance Mismatch Risk Bubble Map",
-        height=460,
+        height=500,
         xaxis_title="Average Balance",
         yaxis_title="Churn Rate (%)",
-        legend_title="Salary-Balance Status",
+        legend_title=None,
     )
 
-    fig.update_yaxes(ticksuffix="%")
-    fig.update_xaxes(tickformat=",")
+    fig.update_layout(
+        margin=dict(l=88, r=84, t=82, b=148),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.28,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=10, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
+    )
+
+    fig.update_yaxes(ticksuffix="%", automargin=True)
+    fig.update_xaxes(tickformat=",", automargin=True)
 
     return fig
-
 
 def create_high_value_matrix_chart(matrix_summary: pd.DataFrame) -> go.Figure:
     """
@@ -4115,6 +4189,7 @@ def create_retention_strength_summary(data_frame: pd.DataFrame) -> pd.DataFrame:
 def create_retention_score_histogram(data_frame: pd.DataFrame) -> go.Figure:
     """
     Histogram: retention strength score distribution.
+    Safe-mode legend fix; removes marginal rug to avoid top label clutter.
     """
     working_df = data_frame.copy()
     working_df["Retention_Strength_Score"] = pd.to_numeric(
@@ -4136,23 +4211,49 @@ def create_retention_score_histogram(data_frame: pd.DataFrame) -> go.Figure:
         x="Retention_Strength_Score",
         color="Retention_Strength_Tier",
         nbins=24,
-        marginal="rug",
         color_discrete_map=color_map,
         category_orders={"Retention_Strength_Tier": RETENTION_TIER_ORDER},
         hover_data=["Retention_Strength_Tier", "Engagement_Status", "NumOfProducts"],
     )
 
+    retention_legend_labels = {
+        "Critical Retention Risk": "Critical Risk",
+        "Weak Retention": "Weak",
+        "Moderate Retention": "Moderate",
+        "Strong Retention": "Strong",
+        "Very Strong Retention": "Very Strong",
+    }
+
+    for trace in fig.data:
+        if trace.name in retention_legend_labels:
+            trace.name = retention_legend_labels[trace.name]
+            trace.legendgroup = retention_legend_labels[trace.legendgroup] if trace.legendgroup in retention_legend_labels else trace.name
+
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Retention Strength Score Distribution",
-        height=450,
+        height=500,
         xaxis_title="Retention Strength Score",
         yaxis_title="Customer Count",
-        legend_title="Retention Tier",
+        legend_title=None,
+    )
+
+    fig.update_layout(
+        margin=dict(l=86, r=72, t=82, b=152),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.30,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=10, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
     )
 
     return fig
-
 
 def create_retention_tier_box_plot(data_frame: pd.DataFrame) -> go.Figure:
     """
@@ -4203,6 +4304,7 @@ def create_retention_tier_box_plot(data_frame: pd.DataFrame) -> go.Figure:
 def create_retention_relationship_scatter(data_frame: pd.DataFrame) -> go.Figure:
     """
     Scatter plot: relationship strength vs retention score.
+    Safe-mode legend fix.
     """
     working_df = data_frame.copy()
 
@@ -4250,21 +4352,46 @@ def create_retention_relationship_scatter(data_frame: pd.DataFrame) -> go.Figure
         marker=dict(line=dict(width=0.5, color="white"))
     )
 
+    outcome_legend_labels = {
+        "Churned Customers": "Churned",
+        "Retained Customers": "Retained",
+    }
+
+    for trace in fig.data:
+        if trace.name in outcome_legend_labels:
+            trace.name = outcome_legend_labels[trace.name]
+            trace.legendgroup = outcome_legend_labels[trace.legendgroup] if trace.legendgroup in outcome_legend_labels else trace.name
+
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Relationship Strength vs Retention Strength Map",
-        height=500,
+        height=520,
         xaxis_title="Relationship Strength Index",
         yaxis_title="Retention Strength Score",
-        legend_title="Customer Outcome",
+        legend_title=None,
+    )
+
+    fig.update_layout(
+        margin=dict(l=82, r=56, t=82, b=122),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.22,
+            xanchor="center",
+            x=0.5,
+            title=None,
+            font=dict(size=10, color=ECB_CHART_COLORS["dark_text"]),
+            bgcolor="rgba(255,255,255,0)",
+            borderwidth=0,
+        ),
     )
 
     return fig
 
-
 def create_retention_tier_ranking_chart(retention_summary: pd.DataFrame) -> go.Figure:
     """
     Horizontal ranking bar: churn rate by retention tier.
+    Safe-mode outside-label margin fix.
     """
     chart_data = retention_summary.copy()
 
@@ -4310,16 +4437,17 @@ def create_retention_tier_ranking_chart(retention_summary: pd.DataFrame) -> go.F
     fig = apply_premium_plotly_layout(
         fig=fig,
         title="Retention Tier Churn Risk Ranking",
-        height=430,
+        height=460,
         xaxis_title="Churn Rate (%)",
         yaxis_title="Retention Strength Tier",
         show_legend=False,
     )
 
-    fig.update_xaxes(ticksuffix="%")
+    fig.update_layout(margin=dict(l=175, r=100, t=82, b=82))
+    fig.update_xaxes(ticksuffix="%", automargin=True)
+    fig.update_yaxes(automargin=True)
 
     return fig
-
 
 @st.cache_data(show_spinner=False)
 def calculate_retention_signals(
